@@ -1,0 +1,146 @@
+In this chapter tackle  the more complex problem of the time dependence of the system at hand.
+
+\section*{Dynamical system}
+
+To study the dynamics of the system, we need to consider the complete diffusion equation, along with the time dependent electric potential equation.
+
+We consider
+
+\begin{align}
+\frac{\partial C_+}{\partial t} &= D_+ \left[\nabla^2 C_+ -  \nabla (C_+ \nabla \Psi) \right] , \\
+\frac{\partial C_-}{\partial t} &= D_- \left[\nabla^2 C_- + \nabla (C_- \nabla \Psi) \right], \\
+\nabla^2 \Psi &= -\kappa^2 \left(C_+ - C_- \right).
+\label{eq:dynamic-system}
+\end{align}
+
+subject to the border condition 
+\begin{align}
+C_+(0, x) & = C^{SS}_+(x)\\
+C_-(0, x) & =  C^{SS}_-(x)\\\
+\Phi(0, x) &= \Phi^{SS}_+(x)\
+\end{align}
+
+where the super-script $SS$ indicates the steady state solution (See Ch. 2)%\ref{ch:2).
+
+\section*{Numeric Solution}
+
+We will use the finite element method to treat this problem numerically. First, we divide the time axis in $M$ subspaces, such that $\Delta t = \frac{(t_f- t_i)}{M}$. Therefore, we can approximate the time derivative as
+
+\begin{align}
+\frac{\partial C_s}{\partial t} \approx \frac{C^{n+1, k}_s - C^{n, k}_s}{\Delta t}
+\end{align}
+
+The same idea applies to the position axis $x$. We subdivide the interval $x_f - x_i$ in N subintervals. We get a partition element of size $\Delta x = \frac{x_f - x_i}{N}$. Thus, the derivatives in $x$ can be approximated by
+
+\begin{align}
+\frac{\partial C_s}{\partial x} &\approx \frac{C^{n, k+1}_s - C^{n, k}_s}{\Delta x}\\
+\frac{\partial^2 C_s}{\partial x^2} &\approx \frac{C^{n, k + 1}_s - 2C^{n, k}_s + C^{n, k-1}_s}{\Delta x^2}
+\end{align}
+
+and
+
+\begin{align}
+\frac{\partial \Psi}{\partial x} &\approx \frac{\Psi^{n, k+1}_s - \Psi^{n, k}_s}{\Delta x}\\
+\frac{\partial^2 \Psi}{\partial x^2} &\approx \frac{\Psi^{n, k + 1}_s - 2\Psi^{n, k}_s + \Psi^{n, k-1}_s}{\Delta x^2}
+\end{align}
+
+Thus, system \ref{eq:dynamic-system} can be rewritten in a finite element form as
+
+\begin{align}
+C_+^{n+1,k} = C_+^{n,k}(1-\rho_+ (-2+psi^{n,k}-\psi^{n,k-1})- \rho_+ C_+^{n,k+1}(1 + (\Psi^{n,k}-\Psi^{n,k+1})) - \rho_+C_+^{n,k-1}& \\
+C_-^{n+1,k} = C_-^{n,k}(1-\rho_-(-2-\Psi^{n,k}+\Psi^{n,k-1})) - \rho_- C_-^{n, k+1}(1+\Psi^{n,k+1}-\Psi^{n,k})) - \rho_- C_-^{n,k-1}& \\
+ \Psi^{n+1,k+1}  - 2\Psi^{n+1,k} +\Psi^{n+1,k-1}  = -\bar{\kappa}^2 (C_+^{n+1,k} - C_-^{n+1,k})&
+\label{eq:alg-eq}
+\end{align}
+
+where $\rho_s = \frac{\Delta t D_s}{\Delta x^2}$ and $\bar{\kappa} =\Delta x\kappa$. Rewriting the border conditions in this algebraic form we get,
+
+\begin{align}
+C_+^{0,i}  = C_+^{SS}(x_i) \\
+C_-^{0,i}  = C_-^{SS}(x_i) \\
+\Psi^{0, i} = \Psi^{SS} (x_i) \\
+C_+^{i,0}  = C_b \\
+C_b^{i,0}  = C_b \\
+\Psi^{i, 0} = 0 \\
+\Psi^{i, M} = \Psi_0
+\label{eq:alg-border-cond}
+\end{align}
+
+\subsection{Algorithm}
+
+We have transformed the PDE system into an algebraic system, now we need an algorithm to treat the problem. Notice from equation \ref{eq:alg-eq} that $C_+^{n+1,k}$ and $C_-^{n+1,k}$ depend only on $\Psi^{n,k}$, that is, it depends on the potential evaluated at a previous time. Since $\Psi^{n+1,k}$ depends directly on $C_+^{n+1,k}$ and  $C_-^{n+1,k}$ the algorithm to compute $\Psi$ is quite direct. 
+
+\begin{enumerate}
+\item Create a the matrices $C_+$, $C_-$ and $\Psi$ and initialize it to the border conditions \ref{eq:alg-border-cond}. 
+\item Compute the next step in time using the border values for $C_+$ and $C_-$. 
+\item With $C_+^{n+1, k}$, $C_-^{n+1, k}$ already computed, we use them to find the next step in $\Psi$: $\Psi^{n+1,i}$, with $i \in [0, N]$.
+\item Notice that the equation for $\Psi$ in \ref{eq:alg-eq} depends on $k-1$, $k$ and $k+1$. Since $C_+^{n+1,k}$ and $C_-^{n+1,k}$ are known from previous steps, we get a system of the form
+\begin{align}
+\begin{bmatrix}
+    -2       & 1  & 0 & \dots & 0   & 0\\
+    1       & -2 & 1 & \dots & 0 & 0 \\
+  \hdotsfor{6} \\
+   \hdotsfor{6} \\  
+   0       & 0 & 0 & \dots & -2 & 1 \\
+   0       & 0 & 0 & \dots & 1 & -2 
+\end{bmatrix}
+\cdot \begin{bmatrix}
+    \Psi^{n+1, 1}       \\
+     \Psi^{n+1, 2}        \\
+	\vdots \\
+    \Psi^{n+1, M-2}        \\
+    \Psi^{n+1, M-1}
+\end{bmatrix} 
+= -\bar{\kappa}^2 \begin{bmatrix}
+    \Delta C^{n+1, 1}  -\Psi^{n+1, 0}     \\
+     \Delta C^{n+1, 2}        \\
+	\vdots \\
+    \Delta C^{n+1, M-2}        \\
+    \Delta C^{n+1, M-1}   -\Psi^{n+1, M} 
+\end{bmatrix} 
+\end{align}
+
+where $\Delta C^{n+1,k} = C_+^{n+1,k}- C_-^{n+1, k}$. Notice that the vector to the right hand side of the previous equation is a constant vector. Therefore, we need only invert the matrix
+
+\begin{align}
+A &= \begin{bmatrix}
+    -2       & 1  & 0 & \dots & 0   & 0\\
+    1       & -2 & 1 & \dots & 0 & 0 \\
+  \hdotsfor{6} \\
+   \hdotsfor{6} \\  
+   0       & 0 & 0 & \dots & -2 & 1 \\
+   0       & 0 & 0 & \dots & 1 & -2 
+\end{bmatrix},
+\end{align}
+
+in order to get the resulting vector 
+\begin{align}
+\vec{x} &= \begin{bmatrix}
+    \Psi^{n+1, 1}       \\
+     \Psi^{n+1, 2}        \\
+	\vdots \\
+    \Psi^{n+1, M-2}        \\
+    \Psi^{n+1, M-1}
+\end{bmatrix} .
+\end{align}
+
+If we let 
+\begin{align}
+\vec{b} &= -\bar{\kappa} \begin{bmatrix}
+    \Delta C^{n+1, 1}  -\Psi^{n+1, 0}     \\
+     \Delta C^{n+1, 2}        \\
+	\vdots \\
+    \Delta C^{n+1, M-2}        \\
+    \Delta C^{n+1, M-1}   -\Psi^{n+1, M} 
+\end{bmatrix} 
+\end{align}
+
+Then the solution is 
+\begin{align}
+\vec{x} = A^{-1}\vec{b}^{n+1}.
+\end{align}
+
+ 
+\item Once the vector $\vec{x}$ is found, we start over and compute the solution for $n+2$ and so on.
+\end{enumerate}
+

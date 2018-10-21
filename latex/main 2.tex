@@ -1,0 +1,57 @@
+\documentclass[12pt]{report}
+\renewcommand{\baselinestretch}{1}
+\usepackage{braket}
+\usepackage{wrapfig}
+\usepackage{dsfont}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[left=2.5cm,top=2cm,right=2.5cm,bottom=2.5cm]{geometry}
+\usepackage{multicol}
+\usepackage{authblk}
+\usepackage{subcaption}
+\usepackage{cite}
+\usepackage[font={small,it}]{caption}
+\graphicspath{{./img/}}
+\DeclareMathOperator\erf{erf}
+
+%user-defined commands
+
+\newcommand{\qty}[1]
+{
+	\left({#1}\right)
+}
+
+
+\font\myfont=cmr12 at 16pt
+
+
+\title{\bf{Mathematical model for the concentration and electric potential profiles in a solution of electrolytes under a redox reaction}}
+
+\author{{\myfont Student: Agust\'in Escobar Blanc\\Professor: Enrique Mu\~ noz Tavera}}
+\affil{\textit{Departamento de F\'isica, Facultad de F\'isica, Pontificia Universidad Cat\'olica de Chile}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Diffusion Of Electrolytes In Solution}
+\input{chapters/ch02/0-diffusion-reaction-system.tex}
+
+
+\chapter{Steady State Solution}
+\input{chapters/ch02/1-analytic-solution.tex}
+\input{chapters/ch02/2-numeric-solution.tex}
+
+\chapter{Dynamic Solution}
+\input{chapters/ch03/3-dynamic-solution-analytic.tex}
+\input{chapters/ch03/3-dynamic-solution-numeric.tex}
+
+\newpage
+\bibliography{mybib}{}
+\bibliographystyle{plain}
+
+\end{document}

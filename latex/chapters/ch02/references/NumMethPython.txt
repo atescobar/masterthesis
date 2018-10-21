@@ -1,0 +1,1 @@
+@book{kiusalaas_2013, place={Cambridge}, edition={3}, title={Numerical Methods in Engineering with Python 3}, DOI={10.1017/CBO9781139523899}, publisher={Cambridge University Press}, author={Kiusalaas, Jaan}, year={2013}}

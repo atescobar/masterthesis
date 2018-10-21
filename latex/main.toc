@@ -1,0 +1,16 @@
+\contentsline {chapter}{\numberline {1}Diffusion Of Electrolytes In Solution}{2}
+\contentsline {section}{\numberline {1.1}System of equations}{2}
+\contentsline {chapter}{\numberline {2}Steady State Solution}{4}
+\contentsline {section}{\numberline {2.1}Linearization of the Poisson Equation}{4}
+\contentsline {section}{\numberline {2.2}Steady State Solution To The Diffusion-Reaction Problem}{5}
+\contentsline {section}{\numberline {2.3}Zero order solution to Poisson's equation for the electrolyte solution}{8}
+\contentsline {section}{\numberline {2.4}Charge Density At The Interface}{10}
+\contentsline {section}{\numberline {2.5}Solution to the concentration at first order in the current $I_0$}{12}
+\contentsline {section}{\numberline {2.6}Potential to first order in the current}{14}
+\contentsline {section}{\numberline {2.7}Numerical Analysis}{15}
+\contentsline {subsection}{\numberline {2.7.1}Runge-Kutta Method}{16}
+\contentsline {subsection}{\numberline {2.7.2}The Shooting Method}{17}
+\contentsline {subsection}{\numberline {2.7.3}Ridder's Method}{18}
+\contentsline {subsection}{\numberline {2.7.4}Results}{19}
+\contentsline {chapter}{\numberline {3}Dynamic Solution}{24}
+\contentsline {subsection}{\numberline {3.0.1}Algorithm}{25}
