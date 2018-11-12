@@ -1,120 +1,142 @@
-\section{Analytic Solution}
+\section{Dynamical System: Analytic Solution}
 
-Consider know the dynamical model in which time dependence is not neglected
+To study the dynamics of the system, we need to consider the complete diffusion equation, along with the time dependent electric potential equation.
 
-\begin{eqnarray}
-	\frac{\partial C_+}{\partial t} = D_+\qty{\frac{\partial^2 C_p}{\partial x^2} - \frac{\partial}{\partial x}\qty{C_+\frac{\partial\Psi}{\partial x}}} \\
-	\frac{\partial C_+}{\partial t} = D_+\qty{\frac{\partial^2 C_p}{\partial x^2} - \frac{\partial}{\partial x}\qty{C_+\frac{\partial\Psi}{\partial x}}} \\
-	\nabla^2 \Psi = -(C_+-C_-)
-\end{eqnarray}
+We consider
 
-By making the following change of variables 
+\begin{align}
+\frac{\partial C_+}{\partial t} &= D_+ \left[\nabla^2 C_+ -  \nabla (C_+ \nabla \Psi) \right] , \\
+\frac{\partial C_-}{\partial t} &= D_- \left[\nabla^2 C_- + \nabla (C_- \nabla \Psi) \right], \\
+\nabla^2 \Psi &= -\kappa^2 \left(C_+ - C_- \right).
+\label{eq:dynamic-system}
+\end{align}
 
-\begin{eqnarray}
-	\xi = \frac{\kappa x}{\sqrt{4Dt}}\\
-	\frac{\partial \xi}{\partial x} = \frac{\kappa}{\sqrt{4Dt}}\\
-	\frac{\partial \xi}{\partial x} = -\frac{\kappa x}{2\sqrt{4Dt^3}}
-\end{eqnarray}
+subject to the border condition 
+\begin{align}
+C_+(0, x) & = C^{SS}_+(x)\\
+C_-(0, x) & =  C^{SS}_-(x)\\\
+\Phi(0, x) &= \Phi^{SS}_+(x)\
+\end{align}
 
-we can re-write the system of equations as
+where the super-script $SS$ indicates the steady state solution (See Ch. 2)%\ref{ch:2).
 
-\begin{eqnarray}
-	\label{eq:sys_dyn1}
-	\frac{\partial^2 C_+}{\partial \xi^2} + \frac{2\xi}{\kappa}\frac{\partial C_p}{\partial \xi}  -\frac{\partial C_+}{\partial \xi}\frac{\partial \Psi}{\partial x}-C_+\frac{\partial^2\Psi}{\partial \xi^2} \\
-	\label{eq:sys_dyn2}
-	\frac{\partial^2 C_+}{\partial \xi^2} + \frac{2\xi}{\kappa}\frac{\partial C_p}{\partial \xi}  +\frac{\partial C_+}{\partial \xi}\frac{\partial \Psi}{\partial \xi}+C_+\frac{\partial^2\Psi}{\partial \xi^2} \\
-	\label{eq:sys_dyn3}
-	\nabla^2 \Psi + 4Dt(C_+-C_-) = 0
-\end{eqnarray}
+\subsection{Diffusion Only}
 
-In order to solve the previous system, we will integrate equations \ref{eq:sys_dyn1} and \ref{eq:sys_dyn1}. Lets write the two equations as one in terms of the charge of the electrolyte $s=\pm$.
-
-\begin{equation}
-	\frac{\partial^2 C_s}{\partial \xi^2} + \frac{2\xi}{\kappa}\frac{\partial C_s}{\partial \xi}  -s\frac{\partial C_s}{\partial \xi}\frac{\partial \Psi}{\partial \xi}-sC_s\frac{\partial^2\Psi}{\partial \xi^2}
-\end{equation}
-
-Since,
-
-\begin{equation}
-	\int_0^\xi \frac{\partial C_s}{\partial \xi} = \xi C_s(\xi) - \int_0^\xi C_s(\xi) d\xi
-\end{equation}
-\begin{equation}
-	\int_0^\xi \frac{\partial C_s}{\partial \xi}\frac{\partial \Psi}{\partial \xi} = \frac{\partial \Psi}{\partial \xi} C_s - \int_0^\xi C_s(\xi) \frac{\partial^2 \Psi}{\partial \xi^2} d\xi
-\end{equation}
-
-We get,
-
-\begin{equation}
-	\frac{\partial C_s}{\partial \xi} + \frac{2\xi}{\kappa} - \frac{2}{\kappa} \int_0^\xi C_s(\xi)-s\frac{\partial C_s}{\partial \xi}\frac{\partial \Psi}{\partial \xi} = 0
-\end{equation}
-
-Dividing the equation by $C_s$, which should be always possible, we get
-
-\begin{equation}
-\frac{1}{C_s}\frac{d C_s}{d\xi} = \frac{-2}{\kappa}\xi + \frac{2C_s}{\kappa}\int_0^\xi C_s(\xi) d\xi + s\frac{\partial \Psi}{\partial \xi}	
-\end{equation}
-
-Integrating we get
-
-\begin{equation}
-	\log\qty{\frac{C_s}{C_s(0)}} = -\frac{\xi^2}{\kappa} + \Psi + \frac{2}{\kappa} \int_0^\xi C_s(z)\int_0^z C_s (z')dz' dz
-\end{equation}
-
-From the Poisson Equation \ref{eq:sys_dyn3} we get
-
-\begin{eqnarray*}
-	C_s(\xi) = C_{-s}-\frac{s}{4Dt}\frac{\partial^2 \Psi}{\partial \xi^2}
-\end{eqnarray*}
-
-We make the approximation that $C_+ << C_-$ near the interface. Therefore
-
-\begin{equation}
-	\int_0^\xi C_s(z)\int_0^z C_s (z')dz' dz \approx \int_0^\xi  dz \frac{1}{(4Dt)^2}\Psi' \Psi '' = \frac{1}{(4Dt)^2}\qty{\frac{\partial \Psi}{\partial \xi}}^2
-\end{equation}
-
-Therefore, the concentration for each species in terms of the potential an the electric field is
-
-\begin{equation}
-	C_s = C_b e^{-\frac{1}{k}\qty{\xi^2 - \frac{E^2}{8D^2t^2}}}  e^{s\Psi}
-\end{equation}
-
-\section{Potential}
-
-Now we solve for the electric potential. The Poisson equation in terms of the previously found concentration profiles is
-
-\begin{equation}
-	\frac{\partial^2 \Psi}{\partial \xi^2} = -2C_be^{\frac{1}{2}{\xi^2-\frac{E^2}{8D^2t^2}}}\sinh{\Psi}
-\end{equation}
-
-This can be written as
-
-\begin{equation}
-	e^{-\frac{E^2}{8D^2t^2\kappa}}\Psi'' = -2C_b e^{\frac{\xi^2}{\kappa}}\sinh{\Psi}
-\end{equation}
-
-Integrating over $\xi$ we get
-
-\begin{equation}
-	\frac{\sqrt{\pi}}{2}\erf(\sqrt{\alpha}\Psi')\qty{-\frac{4Cb}{\sqrt{\pi}}\int_0^\xi e^{-\frac{s^2}{\kappa}}\sinh{\Psi(s)}ds}
-\end{equation}
-
-
-\begin{equation}
-	\Psi'= \frac{1}{\sqrt{\alpha}}\erf^{-1}\qty{-\frac{4Cb}{\sqrt{\pi}}\int_0^\xi e^{-\frac{s^2}{\kappa}}\sinh{\Psi(s)}ds}
-\end{equation}
-
-Integrating and using the properties of the $\erf^{-1}$ function we get
-
-\begin{equation}
-	\Psi'= \frac{1}{\sqrt{\pi\alpha}}\erf^{-1}\qty{-\frac{4Cb}{\sqrt{\pi}}\int_0^\xi e^{-\frac{s^2}{\kappa}}\sinh{\Psi(s)}ds}
-\end{equation}
+As a first approach to our problem, we evaluate the simpler diffusion-only problem
 
 
 
+\begin{align}
+\frac{\partial C_+}{\partial t} &= D_+ \nabla^2 C_+,\\
+\frac{\partial C_-}{\partial t} &= D_- \nabla^2 C_-,
+\label{eq:diffusion}
+\end{align}
+
+which in our limit (infinite plate) we can write it as
 
 
+\begin{align}
+\frac{\partial C_s}{\partial t} &= D_+ \frac{\partial^2 C_s}{\partial x^2},\\
+\label{eq:diffusion-1d}
+\end{align}
+
+with $s=\pm$. The equation is subject to the following boundary conditions
 
 
+\begin{align}
+C(\delta, t) = C_b,\\
+J(0,t) = D_s\frac{\partial C}{\partial x}\big|_{x=0} = r\delta_{+,s},
+\label{eq:diffusion-bc}
+\end{align}
+
+where $J(x,t)$ is the flux.
+
+First, we solve for $s=-$. Let 
+\begin{align}
+	\rho_-(x,t) &= C_s(x,t) - C_b,\\
+	D_-\frac{\partial \rho_-}{\partial x}\big|_{x=0} &= J(0, t) = 0.
+\end{align}
+
+Considering the previous change of variables, we know need to solve the system
+
+\begin{align}
+\frac{\partial \rho_s}{\partial t} &= D_+ \frac{\partial^2 \rho_s}{\partial x^2},\\
+\label{eq:diffusion-1d}
+\end{align}
+
+
+We will solve this equation using the method of separation of variables. Let
+
+\begin{align}
+	\rho_-(x,t) = g_-(t)f_-(x)
+\end{align}
+
+We get the following two equations for $g_-(t)$ and $f_-(x)$
+
+
+\begin{align}
+	g_-'(t) - \lambda g_-(t) &= 0,\\
+	f_-''(x) - \frac{\lambda}{D_-} f_-(t) &= 0.
+\end{align}
+
+$\lambda$ is a positive constant. The solution to these equations are
+
+\begin{align}
+	g_-(t) =& G_{-,0}e^{\lambda t},\\
+	f_-(x) =& F^1_{-,\lambda}\cos\qty{{\sqrt{\frac{\lambda}{D_-}} x}} + F^2_{-,\lambda}\sin\qty{\sqrt{\frac{\lambda}{D_-}} x},
+\end{align}
+
+where $F^1_{-,\lambda}$, $F^2_{-,\lambda}$ and $G_{-,0}$ are constants dependent on the parameter $\lambda$, which is yet to be determined. Border conditions \ref{eq:diffusion-1d} yield $B_{-,\lambda} = 0$. We get the general solution,
+
+
+\begin{align}
+	\rho_-(x,t) = \sum_{\lambda} A_\lambda e^{\lambda t} \cos\qty{\frac{\lambda}{D_-} x}
+\end{align}
+
+Considering the border condition at $x=\delta$, we can determine the value of $\lambda$,
+
+
+\begin{align}
+	\rho_-(x=\delta,t) = \sum_{\lambda} A_\lambda e^{\lambda t} \cos\qty{\frac{\lambda}{D_-} \delta} = 0.
+	\label{bc-delta}
+\end{align}
+
+The only way for equation \ref{bc-delta} to be zero is if we get
+
+\begin{align}\nonumber
+	\cos\qty{\frac{\lambda}{D_-} \delta} = \frac{(2n+1)\pi}{2}
+\end{align}
+
+
+\begin{align}
+	\lambda = \frac{(2n+1)\pi}{2\delta^2}D_-.
+\end{align}
+
+The general solution is
+
+
+\begin{align}
+	\rho_-(x,t) = \sum_{n} A_n e^{\frac{(2n+1)\pi}{2\delta^2}D_- t} \cos\qty{\sqrt{\frac{(2n+1)\pi}{2\delta^2}} x}
+	\label{bc-delta}
+\end{align}
+
+Consider the initial condition as
+
+\begin{align}
+	C_-(x,0) = 0 \rightarrow \rho_-(x,0) = -C_b.
+\end{align}
+
+Finally, we get
+
+\begin{align}
+	\rho_- (x,t) = -C_b\sum_{n}e^{\frac{(2n+1)\pi}{2\delta^2}D_- t} \cos\qty{\sqrt{\frac{(2n+1)\pi}{2\delta^2}} x}.
+\end{align}
+
+The concentration is then,
+
+\begin{align}
+	C_- (x,t) =C_b\qty{1-\sum_{n}e^{\frac{(2n+1)\pi}{2\delta^2}D_- t} \cos\qty{\sqrt{\frac{(2n+1)\pi}{2\delta^2}} x}}
+\end{align}
 
 
 
