@@ -1,28 +1,7 @@
 In this chapter tackle  the more complex problem of the time dependence of the system at hand.
 
-\section*{Dynamical system}
 
-To study the dynamics of the system, we need to consider the complete diffusion equation, along with the time dependent electric potential equation.
-
-We consider
-
-\begin{align}
-\frac{\partial C_+}{\partial t} &= - D_+ \left[\nabla^2 C_+ -  \nabla (C_+ \nabla \Psi) \right] , \\
-\frac{\partial C_-}{\partial t} &= - D_- \left[\nabla^2 C_- + \nabla (C_- \nabla \Psi) \right], \\
-\nabla^2 \Psi &= -\kappa^2 \left(C_+ - C_- \right).
-\label{eq:dynamic-system}
-\end{align}
-
-subject to the border condition 
-\begin{align}
-C_+(0, x) & = C^{SS}_+(x)\\
-C_-(0, x) & =  C^{SS}_-(x)\\\
-\Phi(0, x) &= \Phi^{SS}_+(x)\
-\end{align}
-
-where the super-script $SS$ indicates the steady state solution (See Ch. 2)%\ref{ch:2).
-
-\section*{Numeric Solution}
+\section{Numeric Solution}
 
 We will use the finite element method to treat this problem numerically. First, we divide the time axis in $M$ subspaces, such that $\Delta t = \frac{(t_f- t_i)}{M}$. Therefore, we can approximate the time derivative as
 

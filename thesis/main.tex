@@ -12,6 +12,7 @@
 \usepackage{authblk}
 \usepackage{subcaption}
 \usepackage{cite}
+\usepackage{mwe}
 \usepackage[font={small,it}]{caption}
 \graphicspath{{./img/}}
 
@@ -47,8 +48,8 @@
 \input{chapters/ch02/2-numeric-solution.tex}
 
 \chapter{Dynamic Solution}
-\input{chapters/ch03/3-dynamic-solution-analytic.tex}
-\input{chapters/ch03/3-dynamic-solution-numeric.tex}
+\include{chapters/ch03/3-dynamic-solution-analytic}
+%\input{chapters/ch03/3-dynamic-solution.tex}
 
 \newpage
 \bibliography{mybib}{}

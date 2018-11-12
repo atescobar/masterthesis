@@ -397,25 +397,11 @@ Since our border condition yields $ C^{(1)}_{b,-} = 0$, the contribution to firs
 Computing the integral, we find to first order in the current the following solutions for the concentrations.
 
 \begin{eqnarray}
-C^{(1)}_+(\xi) &=& -\frac{1}{\kappa} e^{-\Phi^{(0)}(\xi)}\left(\xi-2\qty{\tanh\qty{\frac{\xi-\xi_0}{2}} + \tanh\qty{\frac{\xi_0}{2}}}\right)\nonumber\\ 
+C^{(1)}_+(\xi) &=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}}\\
 C^{(1)}_-(\xi) &=& 0
 \label{eq:firstordersol}
 \end{eqnarray}
 
-In Figure \ref{fig:concentration}, we show the concentration for $\bar{V}_0=-\frac{zF}{RT}0.15 V$, with $T = 300 K $. (\textbf{add Reference})
-
-\begin{figure*}[t!]
-    \centering
-    \begin{subfigure}[t]{0.75\textwidth}
-        \centering
-        \includegraphics[width=\linewidth]{concentrations.eps}
-    \end{subfigure}%
-	\caption{ (b) Comparison of the equilibrium concentration and the concentration modified by the reaction with the interface}
-\label{fig:concentration}	
-\end{figure*}
-
-
-\newpage
 
 
 \section{Potential to first order in the current}
@@ -429,53 +415,54 @@ Expanding, we have
 
 \begin{eqnarray}\nonumber
 \frac{\partial^2  \Phi^{(1)}}{\partial \xi^2} &=& -C^{(1)}_{+}(\xi)\\
-&=& \frac{1}{\kappa} e^{-\Phi^{(0)}(\xi)}\left(\xi-2\qty{\tanh\qty{\frac{\xi-\xi_0}{2}} + \tanh\qty{\frac{\xi_0}{2}}}\right)\\
-&=& \frac{1}{\kappa} \coth^2\qty{\frac{\xi-\xi_0}{2}}\left(\xi-2\qty{\tanh\qty{\frac{\xi-\xi_0}{2}} + \tanh\qty{\frac{\xi_0}{2}}}\right)
+&=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}}
 \end{eqnarray}
 
 
-Notice that
+Integrating twice and using the fact that $\Psi'^{(1)} = 0$, $\Psi^{(1)} = 0$ we obtain
 
 \begin{eqnarray}
- \int d\xi \coth\qty{\frac{\xi-\xi_0}{2}} &= \xi - 2 \coth\qty{\frac{\xi-\xi_0}{2}}\\
- \int d\xi \xi \coth^2\qty{\frac{\xi-\xi_0}{2}} &= \frac{1}{2}\xi^2 - 2 \xi\coth\qty{\frac{\xi-\xi_0}{2}}-4G(\xi) \\
- \int d\xi \xi \coth\qty{\frac{\xi-\xi_0}{2}} &= 2\log{|\sinh\frac{\xi-\xi_0}{2}|} = 2G(\xi)
- \label{eq:integrals}
+\Phi'^{(1)}(\xi) = \frac{1}{\kappa} \qty{A + B\xi + C\xi^2 + D \tanh{\frac{\xi-\xi_0}{2}}+E\xi\tanh{\frac{\xi-\xi_0}{2}}} 
 \end{eqnarray}
 
-Using integrals\ref{eq:integrals}, we obtain
+
+And 
 
 \begin{eqnarray}
-\nonumber
-\Phi'^{(1)}(\xi) = \frac{1}{\kappa} \qty{\frac{1}{2}\xi^2 -2\gamma \xi + 2(2\gamma-\xi)\coth\qty{\frac{\xi-\xi_0}{2}}} + C\\
-C = -\frac{1}{\kappa} \qty{\frac{1}{2}\xi_\delta^2 -2\gamma \xi_\delta + 2(2\gamma-\xi_l)\coth\qty{\frac{\xi_l-\xi_0}{2}}}
+\Phi^{(1)}(\xi) = -\frac{1}{\kappa} (A(\xi_\delta - \xi) + \frac{B}{2}(\xi_\delta^2-\xi^2) + \frac{C}{3}(\xi_\delta^3 - \xi^3) + \\
+D\log\bigg|\frac{\cosh{\frac{\xi_\delta-\xi}{2}}}{\cosh{\frac{\xi-\xi}{2}}}\bigg| + E \qty{\xi_\delta\log|\cosh\qty{\frac{\xi_\delta-\xi_0}{2}}-\xi\log|\cosh\qty{\frac{\xi-\xi_0}{2}}}-EI_\delta(\xi)
 \end{eqnarray}
 
-Here, we have used the fact that $\lim \Phi'^{(1)}(\xi) = 0$, and  we defined $\xi_\delta = \kappa \delta$ and
-
-
-\begin{equation}
-\nonumber
-\gamma = \tanh\qty{\frac{\xi_0}{2}}.
-\end{equation}
-
-Integrating again, we obtain
-
-\begin{align}
-\phi^{(1)}(\xi) = \frac{1}{\kappa}\qty{\frac{1}{6}\xi^3 -\gamma \xi^2 + C\xi + 8 \gamma \qty{G(\xi)-G(0)} - 4 \xi G(\xi) + 4 I(\xi)},
-\end{align}
 
 where
 
+\begin{eqnarray*}
+	A = 2\gamma\xi_\delta - \frac{2\xi_\delta}{\gamma} - 2 \gamma - \frac{\xi_\delta^2}{2},\\
+	B = -\qty{\xi_\delta -\frac{2}{\gamma}},\\
+	C = \frac{3}{2}\\
+	D = -2 \qty{\xi_\delta - \frac{2}{\gamma}},\\
+	E = 2,\\
+	\gamma = \tanh\qty{\frac{\xi_0}{2}},
+\end{eqnarray*}
+
+and
+
 \begin{align}
-	I(\xi) = \int_0^{\xi} d\xi G(\xi).
+	I_\delta(\xi) = \int_\xi^{\xi_\delta} \log\bigg|\cosh\qty{\frac{\xi-\xi_0}{2}}\bigg| d\xi.
 \end{align}
 
-This integral must be evaluated numerically for each value of $\xi$. For this, we use the $integrate$ module in Python's scientific library SciPy. The evaluation is made using the quadrature method. Fig. \ref{fig:firstorderphi} shows the potential to first order in the current alongside with the zero order potential. 
+
+
+
+This integral must be evaluated numerically for each value of $\xi$. In order to do this, we use the Simpson Rule. Fig. \ref{fig:analytic-results} shows the potential to first order in the current alongside with the zero order potential. 
+
 
 \begin{figure}[h!]
  \centering
- \includegraphics[width = 0.6\linewidth]{potentials-ana}
- \caption{First order potential is plotted for a value of $r = k \times 10^{-5}$}
- \label{fig:firstorderphi}
+ \includegraphics[width = \linewidth]{analytic-results}
+ \caption{Analytic results. (a), (b) are the concentrations of each species of electrolytes. (c) is the electric potential and (d) the electric potential. Each plot is compared for 3 different values of the reactio rate.}
+ \label{fig:analytic-results}
 \end{figure}
+
+
+
