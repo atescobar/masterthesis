@@ -159,33 +159,42 @@ $$f(x_0) \in [-\epsilon,+\epsilon],$$
 
 where $\epsilon>0$ is a predefined tolerance.
 
-
-\newpage
 \subsection{Results}
 
-Fig. \ref{fig:numeric-results} show the results obtained. The solution of the steady state at different values of the reaction rate do not defer much closest to the surface of the electrode ($x=0$). Also, from Fig. \ref{fig:numeric-results} (c) and (d) we can see that the aproximation of the electric field and the electric potential is fairly 
-
-\begin{figure}[htbp]
- \centering
-\includegraphics[width = \linewidth]{results-numeric}
- \caption{The numerical and the analytic solution to the potential to first order in the current.}
- \label{fig:numeric-results}
-\end{figure}
+Figures \ref{fig:numerical_c} and \ref{fig:numerical-phi} show the results obtained. The tendency looks correct, since the concentration of $SO_4^{-2}$ drops rapidly close to the interface and the concentration of $Cu^{+2}$ explodes at the same location. The potential drops close to the value of $\bar{V}_0\approx -0.15 V$.
 
 Dealing with the equations as presented in Eq. \ref{eq:system} is extremely difficult when doing a numerical analysis. This is due to the fact that the natural units of the system (x which is measured in meters) are too small for the computer to handle. Also, non-linearity gives extreme fluctuations of the concentration of the positive ion near the surface. Since we where using the shooting method, we needed to change the values of the electric field at the bulk, such that the boundary condition for the electric potential is correct, but this induced such strong concentrations at the interface sometimes, that the computer could not handle the numbers resulting from Runge-Kutta method. We had to make a little adaptation in order to be able to find the correct boundary condition for the electric field with the shooting method. 
 
-
+\newpage
+\begin{figure}[h!]
+ \centering
+  \includegraphics[width = 0.6\linewidth]{concentration-num}
+ \caption{This figure shows the concentration found analytically and through numerical analysis.}
+ \label{fig:numerical_c}
+\end{figure}
 
 
 As it can be seen in figures  \ref{fig:numerical-phi},  \ref{fig:numerical-E}, the electric field and potential approach zero when the start moving into the bulk of the solution, as expected. The further away from the interface we go, the better the border conditions for the electric field are met. For our particular case, we cut the integration range when we reached a tolerance of $ E_{bulk} < 1\times 10^{-3}$, where $E_{bulk}$ is the border condition of the dimensionless electric field at the bulk. 
 
+\begin{figure}[h!]
+ \centering
+\includegraphics[width = 0.6\linewidth]{Efield-numeric}
+ \caption{The numerical and the analytic electric field found with Runge-Kutta Method.}
+ \label{fig:numerical-E}
+\end{figure}
 
 
 A similar analysis can be done for the concentrations (Fig.  \ref{fig:numerical_c}), but this time the value of both concentrations at the bulk is $C_b$, as defined by the border conditons for the system \ref{eq:system}.
 
 
+\begin{figure}[h!]
+ \centering
+\includegraphics[width = 0.6\linewidth]{potential-num}
+ \caption{The numerical and the analytic solution to the potential to first order in the current.}
+ \label{fig:numerical-phi}
+\end{figure}
 
-Another difficulty is that, since we used the adaptive Runge-Kutta method, the concentrations change so abruptly that the adaptive step $h$ becomes increadibly small. The problem with this is that the number of iterations needed with a step of the order of $h\approx 10^{-29}$. In order to reach the full length of integration is too big and therefore, we obtain only a part of the integration interval and not as close to the interface as we should like. 
+Another difficulty is that, since we used the adaptive Runge-Kutta method, the concentrations change so abruptly that the adaptive step $h$ becomes increadibly small. The problem with this is that the number of iterations needed with a step of the order of $h\approx 10^{-29}$ to reach the full length of integration is too big and therefore, we obtain only a part of the integration interval and not as close to the interface as we should like. 
 
 To avoid such difficulties, we have worked with the adimensional potential in a scale of adimensional length $\xi = \kappa x$. We have integrated on the interval $[0, 20 \kappa \delta]$.
 
@@ -193,36 +202,38 @@ To avoid such difficulties, we have worked with the adimensional potential in a 
 
 \newpage
 
-\section*{Comparing Numeric An Analytic Results}
+\section*{Comparing numeric an analytic results}
 
-Fig. \ref{fig:comparison} shows the comparison between the numeric and analytic results. 
+Fig. \ref{fig:numerical-phi} shows the comparison between the numeric and analytic results for the potential. In figures \ref{fig:results-c} to  \ref{fig:numerical-phi} there is a clear overestimation in the concentration of the positive ion, as well as an over estimation of the electric potential. This is due to the fact that we neglected the therm proportional to 
+
+$$C_s \frac{\partial \phi^{(1)}}{\partial x}.$$ 
 
 
-
-\begin{figure}[htbp]
-\begin{subfigure}{.5\linewidth}
-\centering
-\includegraphics[width=\textwidth]{comparison0}
-\caption{}
-\label{fig:sub1}
-\end{subfigure}%
-\begin{subfigure}{.5\linewidth}
-\centering
-\includegraphics[width =\textwidth]{comparison1}
-\caption{}
-\label{fig:sub2}
-\end{subfigure}\\[1ex]
-\begin{subfigure}{\linewidth}
-\centering
-\includegraphics[width =0.5\textwidth]{comparison2}
-\caption{}
-\label{fig:sub3}
-\end{subfigure}
-\caption{Three subfigures}
-\label{fig:test}
+\begin{figure}[h!]
+ \centering
+\includegraphics[width = 0.6\linewidth]{concentration-results}
+ \caption{Blue curves represent the concentration of the positive ion. Red curves represent the concentration of the negative ion. Dashed lines are numerical results and solid lines represent analytical results.}
+ \label{fig:results-c}
 \end{figure}
 
 
+This is a good approximation when calculating the $C_-$ concentration, since it drops to zero near the interface. Since the $C_+$ concentration explodes near the interface, the approximation should be valid only to about $8\kappa$, as can be seen from Fig. \ref{fig:results-c}. Nevertheless, since $\phi^{(1)}$ is only a small contribution to the potential and by condition \ref{}, since $r$ is small, the approximation might be consider for even closer distances to the interface.
+
+
+\begin{figure}[h!]
+ \centering
+\includegraphics[width = 0.6\linewidth]{potential-results}
+ \caption{Electric potential of the diffusion-reaction system subject to a non zero border condition for the potential. Dashed curve represents the numerical (exact) solution to system \ref{eq:system}, whereas the solid curve is the analytical solution obtained on section \ref{sec:analytic-result}. Screening due to positive ions gathering close to the interface is appreciated.}
+ \label{fig:numerical-phi}
+\end{figure}
+
+The estimation for the Electric field, however, does look promising (Fig.  \ref{fig:numerical-phi}) . The analytical and numerical solutions of the model fit together particularly well the closer they get to the interface, even though both results explode  to really high values around this point.
+\begin{figure}[h!]
+ \centering
+\includegraphics[width = 0.6\linewidth]{efield-results}
+ \caption{The electric field is plotted comparing analytical (solid line) to numeric (dashed line) results.}
+ \label{fig:numerical-phi}
+\end{figure}
 
 
 
