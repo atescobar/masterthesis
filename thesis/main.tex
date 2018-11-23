@@ -1,5 +1,6 @@
 \documentclass[12pt]{report}
 \renewcommand{\baselinestretch}{1}
+\usepackage{minted}
 \usepackage{braket}
 \usepackage{wrapfig}
 \usepackage{dsfont}
@@ -24,7 +25,15 @@
 	\left({#1}\right)
 }
 
+\newcommand{\qtys}[1]
+{
+	\left[{#1}\right]
+}
 
+\newcommand{\qtyc}[1]
+{
+	\left{{#1}\right}
+}
 \font\myfont=cmr12 at 16pt
 
 
@@ -50,7 +59,7 @@
 \chapter{Dynamic Solution}
 \include{chapters/ch03/3-dynamic-solution-analytic}
 %\input{chapters/ch03/3-dynamic-solution.tex}
-
+\include{chapters/ch03/diffusion-only-numeric}
 \newpage
 \bibliography{mybib}{}
 \bibliographystyle{plain}

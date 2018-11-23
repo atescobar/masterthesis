@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  12 NOV 2018 11:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 NOV 2018 09:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -24,79 +24,222 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen103
-\WF@size=\dimen104
-\c@WF@wrappedlines=\count89
-\WF@box=\box26
-\WF@everypar=\toks14
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/minted/minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/fvextra/fvextra.sty
+Package: fvextra 2017/07/08 v1.3.1 fvextra - extensions and patches for fancyvrb
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count89
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
+\FV@CodeLineNo=\count90
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count91
+\FV@StepNumber=\count92
+\FV@OutFile=\write3
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count93
+\output=\toks15
+\linenoprevgraf=\count94
+\linenumbersep=\dimen103
+\linenumberwidth=\dimen104
+\c@linenumber=\count95
+\c@pagewiselinenumber=\count96
+\c@LN@truepage=\count97
+\c@internallinenumber=\count98
+\c@internallinenumbers=\count99
+\quotelinenumbersep=\dimen105
+\bframerule=\dimen106
+\bframesep=\dimen107
+\bframebox=\box27
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count100
+\c@FV@TrueTabCounter=\count101
+\FV@TabBox@Group=\box28
+\FV@TmpLength=\skip43
+\c@FV@HighlightLinesStart=\count102
+\c@FV@HighlightLinesStop=\count103
+\FV@LoopCount=\count104
+\FV@NCharsBox=\box29
+\FV@BreakIndent=\dimen108
+\FV@BreakIndentNChars=\count105
+\FV@BreakSymbolSepLeft=\dimen109
+\FV@BreakSymbolSepLeftNChars=\count106
+\FV@BreakSymbolSepRight=\dimen110
+\FV@BreakSymbolSepRightNChars=\count107
+\FV@BreakSymbolIndentLeft=\dimen111
+\FV@BreakSymbolIndentLeftNChars=\count108
+\FV@BreakSymbolIndentRight=\dimen112
+\FV@BreakSymbolIndentRightNChars=\count109
+\c@FancyVerbLineBreakLast=\count110
+\FV@LineBox=\box30
+\FV@LineIndentBox=\box31
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count111
+\calc@Bcount=\count112
+\calc@Adimen=\dimen113
+\calc@Bdimen=\dimen114
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count113
+\calc@Cskip=\skip46
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ifplatform/ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+)
+runsystem(uname -s > "main.w18")...executed.
+
+ (./main.w18)
+runsystem(rm -- "main.w18")...executed.
+
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count114
+\decimalpart=\count115
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip47
+\fb@frw=\dimen115
+\fb@frh=\dimen116
+\FrameRule=\dimen117
+\FrameSep=\dimen118
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count116
+\float@exts=\toks16
+\float@box=\box32
+\@float@everytoks=\toks17
+\@floatcapt=\box33
+)
+\minted@appexistsfile=\read2
+\minted@bgbox=\box34
+\minted@code=\write5
+\c@minted@FancyVerbLineTemp=\count117
+\c@minted@pygmentizecounter=\count118
+\@float@every@listing=\toks18
+\c@listing=\count119
+)
+runsystem(mkdir -p _minted-main)...executed.
+
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2018/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen119
+\WF@size=\dimen120
+\c@WF@wrappedlines=\count120
+\WF@box=\box35
+\WF@everypar=\toks19
 Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/doublestroke/dsfont.sty
 Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks15
-\inpenc@posthook=\toks16
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen105
+\@emptytoks=\toks22
+\ex@=\dimen121
 )) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen106
+\pmbraise@=\dimen122
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count90
+\inf@bad=\count121
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count91
-\leftroot@=\count92
+\uproot@=\count122
+\leftroot@=\count123
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count93
-\DOTSCASE@=\count94
+\classnum@=\count124
+\DOTSCASE@=\count125
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen107
+\Mathstrutbox@=\box36
+\strutbox@=\box37
+\big@size=\dimen123
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count95
-\c@MaxMatrixCols=\count96
+\macc@depth=\count126
+\c@MaxMatrixCols=\count127
 \dotsspace@=\muskip10
-\c@parentequation=\count97
-\dspbrk@lvl=\count98
-\tag@help=\toks18
-\row@=\count99
-\column@=\count100
-\maxfields@=\count101
-\andhelp@=\toks19
-\eqnshift@=\dimen108
-\alignsep@=\dimen109
-\tagshift@=\dimen110
-\tagwidth@=\dimen111
-\totwidth@=\dimen112
-\lineht@=\dimen113
-\@envbody=\toks20
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks21
+\c@parentequation=\count128
+\dspbrk@lvl=\count129
+\tag@help=\toks23
+\row@=\count130
+\column@=\count131
+\maxfields@=\count132
+\andhelp@=\toks24
+\eqnshift@=\dimen124
+\alignsep@=\dimen125
+\tagshift@=\dimen126
+\tagwidth@=\dimen127
+\totwidth@=\dimen128
+\lineht@=\dimen129
+\@envbody=\toks25
+\multlinegap=\skip49
+\multlinetaggap=\skip50
+\mathdisplay@stack=\toks26
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks22
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -107,8 +250,8 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen114
-\Gin@req@width=\dimen115
+\Gin@req@height=\dimen130
+\Gin@req@width=\dimen131
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
@@ -116,73 +259,63 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen116
-\captionmargin@=\dimen117
-\captionwidth=\dimen118
-\caption@tempdima=\dimen119
-\caption@indent=\dimen120
-\caption@parindent=\dimen121
-\caption@hangindent=\dimen122
+\captionmargin=\dimen132
+\captionmargin@=\dimen133
+\captionwidth=\dimen134
+\caption@tempdima=\dimen135
+\caption@indent=\dimen136
+\caption@parindent=\dimen137
+\caption@hangindent=\dimen138
 )
-\c@ContinuedFloat=\count102
+\c@ContinuedFloat=\count133
+Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-\c@subfigure=\count103
-\c@subtable=\count104
+\c@subfigure=\count134
+\c@subtable=\count135
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 ) (/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count105
-\Gm@cntv=\count106
-\c@Gm@tempcnt=\count107
-\Gm@bindingoffset=\dimen123
-\Gm@wd@mp=\dimen124
-\Gm@odd@mp=\dimen125
-\Gm@even@mp=\dimen126
-\Gm@layoutwidth=\dimen127
-\Gm@layoutheight=\dimen128
-\Gm@layouthoffset=\dimen129
-\Gm@layoutvoffset=\dimen130
-\Gm@dimlist=\toks23
+\Gm@cnth=\count136
+\Gm@cntv=\count137
+\c@Gm@tempcnt=\count138
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks27
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
-\c@tracingmulticols=\count108
-\mult@box=\box29
-\multicol@leftmargin=\dimen131
-\c@unbalance=\count109
-\c@collectmore=\count110
-\doublecol@number=\count111
-\multicoltolerance=\count112
-\multicolpretolerance=\count113
-\full@width=\dimen132
-\page@free=\dimen133
-\premulticols=\dimen134
-\postmulticols=\dimen135
-\multicolsep=\skip46
-\multicolbaselineskip=\skip47
-\partial@page=\box30
-\last@line=\box31
-\maxbalancingoverflow=\dimen136
-\mult@rightbox=\box32
-\mult@grightbox=\box33
-\mult@gfirstbox=\box34
-\mult@firstbox=\box35
-\@tempa=\box36
-\@tempa=\box37
-\@tempa=\box38
-\@tempa=\box39
-\@tempa=\box40
-\@tempa=\box41
-\@tempa=\box42
-\@tempa=\box43
-\@tempa=\box44
+\c@tracingmulticols=\count139
+\mult@box=\box38
+\multicol@leftmargin=\dimen147
+\c@unbalance=\count140
+\c@collectmore=\count141
+\doublecol@number=\count142
+\multicoltolerance=\count143
+\multicolpretolerance=\count144
+\full@width=\dimen148
+\page@free=\dimen149
+\premulticols=\dimen150
+\postmulticols=\dimen151
+\multicolsep=\skip51
+\multicolbaselineskip=\skip52
+\partial@page=\box39
+\last@line=\box40
+\maxbalancingoverflow=\dimen152
+\mult@rightbox=\box41
+\mult@grightbox=\box42
+\mult@gfirstbox=\box43
+\mult@firstbox=\box44
 \@tempa=\box45
 \@tempa=\box46
 \@tempa=\box47
@@ -191,26 +324,83 @@ Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
 \@tempa=\box50
 \@tempa=\box51
 \@tempa=\box52
-\c@columnbadness=\count114
-\c@finalcolumnbadness=\count115
-\last@try=\dimen137
-\multicolovershoot=\dimen138
-\multicolundershoot=\dimen139
-\mult@nat@firstbox=\box53
-\colbreak@box=\box54
-\mc@col@check@num=\count116
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\@tempa=\box56
+\@tempa=\box57
+\@tempa=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\c@columnbadness=\count145
+\c@finalcolumnbadness=\count146
+\last@try=\dimen153
+\multicolovershoot=\dimen154
+\multicolundershoot=\dimen155
+\mult@nat@firstbox=\box62
+\colbreak@box=\box63
+\mc@col@check@num=\count147
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/preprint/authblk.sty
 Package: authblk 2001/02/27 1.3 (PWD)
-\affilsep=\skip48
-\@affilsep=\skip49
-\c@Maxaffil=\count117
-\c@authors=\count118
-\c@affil=\count119
+\affilsep=\skip53
+\@affilsep=\skip54
+\c@Maxaffil=\count148
+\c@authors=\count149
+\c@affil=\count150
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 332.
 Package: cite 2015/02/27  v 5.5
-) (/Users/creative-work/Desktop/aux/thesis/thesis/.texpadtmp/main.aux
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count151
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count152
+\c@Blindtext=\count153
+\c@blind@countparstart=\count154
+\blind@countxx=\count155
+\blindtext@numBlindtext=\count156
+\blind@countyy=\count157
+\c@blindlist=\count158
+\c@blindlistlevel=\count159
+\c@blindlist@level=\count160
+\blind@listitem=\count161
+\c@blind@listcount=\count162
+\c@blind@levelcount=\count163
+\blind@mathformula=\count164
+\blind@Mathformula=\count165
+\c@blind@randomcount=\count166
+\c@blind@randommax=\count167
+\c@blind@pangramcount=\count168
+\c@blind@pangrammax=\count169
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+runsystem(which pygmentize && touch main.aex)...executed.
+
+runsystem(rm main.aex)...executed.
+
+ (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.aux
 
 LaTeX Warning: Label `eq:pot0' multiply defined.
 
@@ -236,10 +426,23 @@ LaTeX Warning: Label `eq:linear-system' multiply defined.
 LaTeX Warning: Label `eq:error' multiply defined.
 
 
-LaTeX Warning: Label `fig:numerical-phi' multiply defined.
+LaTeX Warning: Label `fig:sub1' multiply defined.
 
 
-LaTeX Warning: Label `fig:numerical-phi' multiply defined.
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+(/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/3-dynamic-solution-analytic.aux
+
+LaTeX Warning: Label `eq:diffusion-bc' multiply defined.
 
 
 LaTeX Warning: Label `eq:diffusion-1d' multiply defined.
@@ -247,65 +450,48 @@ LaTeX Warning: Label `eq:diffusion-1d' multiply defined.
 
 LaTeX Warning: Label `bc-delta' multiply defined.
 
-)
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-only-numeric.aux
+
+LaTeX Warning: Label `eq:diffusion' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen140
-\scratchbox=\box55
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen141
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count170
+\scratchdimen=\dimen156
+\scratchbox=\box64
+\nofMPsegments=\count171
+\nofMParguments=\count172
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count173
+\MPscratchDim=\dimen157
+\MPnumerator=\count174
+\makeMPintoPDFobject=\count175
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-))) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
- (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-))) (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
@@ -352,9 +538,9 @@ Package caption Info: End \AtBeginDocument code.
 
 [1
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/creative-work/Desktop/aux/thesis/thesis/.texpadtmp/main.toc)
-\tf@toc=\write3
-\openout3 = `main.toc'.
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.toc)
+\tf@toc=\write6
+\openout6 = `main.toc'.
 
  [1
 
@@ -366,10 +552,10 @@ Chapter 1.
 Chapter 2.
 (./chapters/ch02/1-analytic-solution.tex
 Package epstopdf Info: Source file: <./img/comparison-phi.eps>
-(epstopdf)                    date: 2018-02-05 16:56:38
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 500405 bytes
 (epstopdf)             Output file: <./img/comparison-phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:53
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 84896 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison-phi-eps-converted-to.pdf ./img/comparison-phi.eps>
 (epstopdf)             \includegraphics on input line 25.
@@ -393,10 +579,10 @@ Package pdftex.def Info: ./img/geometry.png  used on input line 63.
 (pdftex.def)             Requested size: 236.01561pt x 147.51118pt.
  [6 <./img/geometry.png>] [7] [8] [9] [10]
 Package epstopdf Info: Source file: <./img/sigma-voltage.eps>
-(epstopdf)                    date: 2018-08-07 12:20:44
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 25902 bytes
 (epstopdf)             Output file: <./img/sigma-voltage-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-07 12:21:28
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 13638 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/sigma-voltage-eps-converted-to.pdf ./img/sigma-voltage.eps>
 (epstopdf)             \includegraphics on input line 319.
@@ -407,10 +593,10 @@ File: ./img/sigma-voltage-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/sigma-voltage-eps-converted-to.pdf  used on input line 319.
 (pdftex.def)             Requested size: 188.8096pt x 125.87228pt.
 Package epstopdf Info: Source file: <./img/voltage-sigma.eps>
-(epstopdf)                    date: 2018-08-07 12:20:36
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 25293 bytes
 (epstopdf)             Output file: <./img/voltage-sigma-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-07 12:21:29
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 13935 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/voltage-sigma-eps-converted-to.pdf ./img/voltage-sigma.eps>
 (epstopdf)             \includegraphics on input line 325.
@@ -421,10 +607,10 @@ File: ./img/voltage-sigma-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/voltage-sigma-eps-converted-to.pdf  used on input line 325.
 (pdftex.def)             Requested size: 188.8096pt x 125.87228pt.
 Package epstopdf Info: Source file: <./img/sigma-concentration.eps>
-(epstopdf)                    date: 2018-08-07 12:14:58
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 30376 bytes
 (epstopdf)             Output file: <./img/sigma-concentration-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-07 12:20:04
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 16775 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/sigma-concentration-eps-converted-to.pdf ./img/sigma-concentration.eps>
 (epstopdf)             \includegraphics on input line 337.
@@ -435,10 +621,10 @@ File: ./img/sigma-concentration-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/sigma-concentration-eps-converted-to.pdf  used on input line 337.
 (pdftex.def)             Requested size: 188.8096pt x 125.87228pt.
 Package epstopdf Info: Source file: <./img/voltage-concentration.eps>
-(epstopdf)                    date: 2018-08-07 12:14:59
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 30912 bytes
 (epstopdf)             Output file: <./img/voltage-concentration-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-08-07 12:20:04
+(epstopdf)                    date: 2018-11-12 11:28:50
 (epstopdf)                    size: 15811 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/voltage-concentration-eps-converted-to.pdf ./img/voltage-concentration.eps>
 (epstopdf)             \includegraphics on input line 343.
@@ -448,164 +634,174 @@ File: ./img/voltage-concentration-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/voltage-concentration-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/voltage-concentration-eps-converted-to.pdf  used on input line 343.
 (pdftex.def)             Requested size: 188.8096pt x 125.87228pt.
- [11 <./img/sigma-voltage-eps-converted-to.pdf> <./img/voltage-sigma-eps-converted-to.pdf> <./img/sigma-concentration-eps-converted-to.pdf> <./img/voltage-concentration-eps-converted-to.pdf>] [12]
-Package epstopdf Info: Source file: <./img/concentrations.eps>
-(epstopdf)                    date: 2018-04-12 12:37:48
-(epstopdf)                    size: 34387 bytes
-(epstopdf)             Output file: <./img/concentrations-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:54
-(epstopdf)                    size: 18339 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/concentrations-eps-converted-to.pdf ./img/concentrations.eps>
-(epstopdf)             \includegraphics on input line 411.
+ [11 <./img/sigma-voltage-eps-converted-to.pdf> <./img/voltage-sigma-eps-converted-to.pdf> <./img/sigma-concentration-eps-converted-to.pdf> <./img/voltage-concentration-eps-converted-to.pdf>] [12] [13]
+Package epstopdf Info: Source file: <./img/analytic-results.eps>
+(epstopdf)                    date: 2018-11-13 10:30:25
+(epstopdf)                    size: 198025 bytes
+(epstopdf)             Output file: <./img/analytic-results-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-13 10:30:30
+(epstopdf)                    size: 128567 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/analytic-results-eps-converted-to.pdf ./img/analytic-results.eps>
+(epstopdf)             \includegraphics on input line 462.
 Package epstopdf Info: Output file is already uptodate.
-<./img/concentrations-eps-converted-to.pdf, id=250, 462.72874pt x 346.29375pt>
-File: ./img/concentrations-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/concentrations-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/concentrations-eps-converted-to.pdf  used on input line 411.
-(pdftex.def)             Requested size: 354.02342pt x 264.94554pt.
- [13 <./img/concentrations-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./img/potentials-ana.eps>
-(epstopdf)                    date: 2018-04-12 11:46:21
-(epstopdf)                    size: 37125 bytes
-(epstopdf)             Output file: <./img/potentials-ana-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:55
-(epstopdf)                    size: 19748 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/potentials-ana-eps-converted-to.pdf ./img/potentials-ana.eps>
-(epstopdf)             \includegraphics on input line 478.
-Package epstopdf Info: Output file is already uptodate.
-<./img/potentials-ana-eps-converted-to.pdf, id=306, 462.72874pt x 346.29375pt>
-File: ./img/potentials-ana-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/potentials-ana-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/potentials-ana-eps-converted-to.pdf  used on input line 478.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
- [14]) (./chapters/ch02/2-numeric-solution.tex [15 <./img/potentials-ana-eps-converted-to.pdf>] [16]
+<./img/analytic-results-eps-converted-to.pdf, id=253, 1445.4pt x 1156.32pt>
+File: ./img/analytic-results-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/analytic-results-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/analytic-results-eps-converted-to.pdf  used on input line 462.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+) (./chapters/ch02/2-numeric-solution.tex [14 <./img/analytic-results-eps-converted-to.pdf>] [15]
 
-LaTeX Warning: Reference `eq:border-conditions' on page 17 undefined on input line 97.
+LaTeX Warning: Reference `fig:concentration' on page 16 undefined on input line 93.
 
-[17]
+
+LaTeX Warning: Reference `fig:firstorderphi' on page 16 undefined on input line 93.
+
+
+LaTeX Warning: Reference `eq:border-conditions' on page 16 undefined on input line 97.
+
+[16] [17]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
- [18] [19]
-Package epstopdf Info: Source file: <./img/concentration-num.eps>
-(epstopdf)                    date: 2018-04-25 22:53:49
-(epstopdf)                    size: 50622 bytes
-(epstopdf)             Output file: <./img/concentration-num-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:55
-(epstopdf)                    size: 26131 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/concentration-num-eps-converted-to.pdf ./img/concentration-num.eps>
-(epstopdf)             \includegraphics on input line 171.
+ [18]
+Package epstopdf Info: Source file: <./img/results-numeric.eps>
+(epstopdf)                    date: 2018-11-13 10:25:32
+(epstopdf)                    size: 199708 bytes
+(epstopdf)             Output file: <./img/results-numeric-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-13 10:26:06
+(epstopdf)                    size: 123888 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/results-numeric-eps-converted-to.pdf ./img/results-numeric.eps>
+(epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
-<./img/concentration-num-eps-converted-to.pdf, id=379, 462.72874pt x 346.29375pt>
-File: ./img/concentration-num-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/concentration-num-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/concentration-num-eps-converted-to.pdf  used on input line 171.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
-Package epstopdf Info: Source file: <./img/Efield-numeric.eps>
-(epstopdf)                    date: 2018-04-25 22:53:49
-(epstopdf)                    size: 29762 bytes
-(epstopdf)             Output file: <./img/Efield-numeric-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:30:59
-(epstopdf)                    size: 16982 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/Efield-numeric-eps-converted-to.pdf ./img/Efield-numeric.eps>
-(epstopdf)             \includegraphics on input line 181.
+<./img/results-numeric-eps-converted-to.pdf, id=329, 1445.4pt x 1156.32pt>
+File: ./img/results-numeric-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/results-numeric-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/results-numeric-eps-converted-to.pdf  used on input line 170.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+
+
+LaTeX Warning: Reference `fig:numerical-phi' on page 19 undefined on input line 180.
+
+
+LaTeX Warning: Reference `fig:numerical-E' on page 19 undefined on input line 180.
+
+[19 <./img/results-numeric-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `fig:numerical_c' on page 20 undefined on input line 184.
+
+[20]
+
+Package caption Warning: \label without proper reference on input line 23.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:comparison' on page 21 undefined on input line 198.
+
+Package epstopdf Info: Source file: <./img/comparison0.eps>
+(epstopdf)                    date: 2018-11-13 10:31:15
+(epstopdf)                    size: 198563 bytes
+(epstopdf)             Output file: <./img/comparison0-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-13 10:31:21
+(epstopdf)                    size: 126249 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/comparison0-eps-converted-to.pdf ./img/comparison0.eps>
+(epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
-<./img/Efield-numeric-eps-converted-to.pdf, id=380, 462.72874pt x 346.29375pt>
-File: ./img/Efield-numeric-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/Efield-numeric-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/Efield-numeric-eps-converted-to.pdf  used on input line 181.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
-Package epstopdf Info: Source file: <./img/potential-num.eps>
-(epstopdf)                    date: 2018-04-25 23:01:09
-(epstopdf)                    size: 30575 bytes
-(epstopdf)             Output file: <./img/potential-num-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:56
-(epstopdf)                    size: 18700 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/potential-num-eps-converted-to.pdf ./img/potential-num.eps>
-(epstopdf)             \includegraphics on input line 192.
+<./img/comparison0-eps-converted-to.pdf, id=401, 1445.4pt x 1156.32pt>
+File: ./img/comparison0-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/comparison0-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/comparison0-eps-converted-to.pdf  used on input line 205.
+(pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
+Package epstopdf Info: Source file: <./img/comparison1.eps>
+(epstopdf)                    date: 2018-11-13 10:31:16
+(epstopdf)                    size: 199353 bytes
+(epstopdf)             Output file: <./img/comparison1-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-13 10:31:21
+(epstopdf)                    size: 132031 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/comparison1-eps-converted-to.pdf ./img/comparison1.eps>
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
-<./img/potential-num-eps-converted-to.pdf, id=381, 462.72874pt x 346.29375pt>
-File: ./img/potential-num-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/potential-num-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/potential-num-eps-converted-to.pdf  used on input line 192.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[20 <./img/concentration-num-eps-converted-to.pdf> <./img/Efield-numeric-eps-converted-to.pdf>] [21 <./img/potential-num-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <./img/concentration-results.eps>
-(epstopdf)                    date: 2018-04-25 22:21:46
-(epstopdf)                    size: 55659 bytes
-(epstopdf)             Output file: <./img/concentration-results-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:57
-(epstopdf)                    size: 27635 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/concentration-results-eps-converted-to.pdf ./img/concentration-results.eps>
-(epstopdf)             \includegraphics on input line 214.
+<./img/comparison1-eps-converted-to.pdf, id=402, 1445.4pt x 1156.32pt>
+File: ./img/comparison1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/comparison1-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/comparison1-eps-converted-to.pdf  used on input line 211.
+(pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
+Package epstopdf Info: Source file: <./img/comparison2.eps>
+(epstopdf)                    date: 2018-11-13 10:31:17
+(epstopdf)                    size: 199337 bytes
+(epstopdf)             Output file: <./img/comparison2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-13 10:31:22
+(epstopdf)                    size: 133360 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/comparison2-eps-converted-to.pdf ./img/comparison2.eps>
+(epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
-<./img/concentration-results-eps-converted-to.pdf, id=543, 462.72874pt x 346.29375pt>
-File: ./img/concentration-results-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/concentration-results-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/concentration-results-eps-converted-to.pdf  used on input line 214.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
-
-
-LaTeX Warning: Reference `' on page 22 undefined on input line 220.
-
-Package epstopdf Info: Source file: <./img/potential-results.eps>
-(epstopdf)                    date: 2018-04-25 22:21:47
-(epstopdf)                    size: 34061 bytes
-(epstopdf)             Output file: <./img/potential-results-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:57
-(epstopdf)                    size: 20158 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/potential-results-eps-converted-to.pdf ./img/potential-results.eps>
-(epstopdf)             \includegraphics on input line 225.
-Package epstopdf Info: Output file is already uptodate.
-<./img/potential-results-eps-converted-to.pdf, id=544, 462.72874pt x 346.29375pt>
-File: ./img/potential-results-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/potential-results-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/potential-results-eps-converted-to.pdf  used on input line 225.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
-
-LaTeX Warning: Reference `sec:analytic-result' on page 22 undefined on input line 226.
-
-
-LaTeX Warning: Reference `sec:analytic-result' on page 22 undefined on input line 226.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package epstopdf Info: Source file: <./img/efield-results.eps>
-(epstopdf)                    date: 2018-04-25 22:21:47
-(epstopdf)                    size: 32488 bytes
-(epstopdf)             Output file: <./img/efield-results-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-04-25 23:03:58
-(epstopdf)                    size: 18841 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/efield-results-eps-converted-to.pdf ./img/efield-results.eps>
-(epstopdf)             \includegraphics on input line 233.
-Package epstopdf Info: Output file is already uptodate.
-<./img/efield-results-eps-converted-to.pdf, id=545, 462.72874pt x 346.29375pt>
-File: ./img/efield-results-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/efield-results-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/efield-results-eps-converted-to.pdf  used on input line 233.
-(pdftex.def)             Requested size: 283.22162pt x 211.95749pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) [22 <./img/concentration-results-eps-converted-to.pdf>] [23 <./img/potential-results-eps-converted-to.pdf> <./img/efield-results-eps-converted-to.pdf>]
+<./img/comparison2-eps-converted-to.pdf, id=403, 1445.4pt x 1156.32pt>
+File: ./img/comparison2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/comparison2-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/comparison2-eps-converted-to.pdf  used on input line 217.
+(pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
+) [21 <./img/comparison0-eps-converted-to.pdf> <./img/comparison1-eps-converted-to.pdf> <./img/comparison2-eps-converted-to.pdf>]
 Chapter 3.
-(./chapters/ch03/3-dynamic-solution-analytic.tex [24
+[22
 
-] [25]) (./chapters/ch03/3-dynamic-solution-numeric.tex) [26] (/Users/creative-work/Desktop/aux/thesis/thesis/.texpadtmp/main.bbl
+]
+\openout2 = `chapters/ch03/3-dynamic-solution-analytic.aux'.
+
+ (./chapters/ch03/3-dynamic-solution-analytic.tex [23
+
+] [24]
+
+LaTeX Warning: Reference `eq:general-expresion-rho' on page 25 undefined on input line 128.
+
+[25]
+Package epstopdf Info: Source file: <./img/concentration-diffusiononly.eps>
+(epstopdf)                    date: 2018-11-15 15:18:48
+(epstopdf)                    size: 47737 bytes
+(epstopdf)             Output file: <./img/concentration-diffusiononly-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-20 09:11:38
+(epstopdf)                    size: 30590 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusiononly-eps-converted-to.pdf ./img/concentration-diffusiononly.eps>
+(epstopdf)             \includegraphics on input line 204.
+Package epstopdf Info: Output file is already uptodate.
+<./img/concentration-diffusiononly-eps-converted-to.pdf, id=638, 1445.4pt x 1156.32pt>
+File: ./img/concentration-diffusiononly-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/concentration-diffusiononly-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/concentration-diffusiononly-eps-converted-to.pdf  used on input line 204.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+) [26] [27 <./img/concentration-diffusiononly-eps-converted-to.pdf>]
+\openout2 = `chapters/ch03/diffusion-only-numeric.aux'.
+
+ (./chapters/ch03/diffusion-only-numeric.tex [28
+
+
+]
+
+LaTeX Warning: Reference `eq:initial-condition' on page 29 undefined on input line 93.
+
+Package epstopdf Info: Source file: <./img/concentration-diffusiononly-comparison.eps>
+(epstopdf)                    date: 2018-11-20 09:05:31
+(epstopdf)                    size: 51537 bytes
+(epstopdf)             Output file: <./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-20 09:31:35
+(epstopdf)                    size: 28663 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusiononly-comparison-eps-converted-to.pdf ./img/concentration-diffusiononly-comparison.eps>
+(epstopdf)             \includegraphics on input line 108.
+Package epstopdf Info: Output file is already uptodate.
+<./img/concentration-diffusiononly-comparison-eps-converted-to.pdf, id=712, 1445.4pt x 1156.32pt>
+File: ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf  used on input line 108.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+) [29] [30 <./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>] (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [27
+) [31
 
-] (/Users/creative-work/Desktop/aux/thesis/thesis/.texpadtmp/main.aux)
+
+] (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.aux (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/3-dynamic-solution-analytic.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-only-numeric.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -614,18 +810,18 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4255 strings out of 492649
- 66761 string characters out of 6129622
- 142894 words of memory out of 5000000
- 8025 multiletter control sequences out of 15000+600000
+ 7860 strings out of 492649
+ 136030 string characters out of 6129622
+ 366324 words of memory out of 5000000
+ 11540 multiletter control sequences out of 15000+600000
  14346 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,13n,40p,904b,444s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/creative-work/Desktop/aux/thesis/thesis/.texpadtmp/main.pdf (28 pages, 547350 bytes).
+ 42i,16n,41p,904b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.pdf" (32 pages, 1084612 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
+ 829 PDF objects out of 1000 (max. 8388607)
+ 245 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
