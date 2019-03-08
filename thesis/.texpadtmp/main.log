@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 NOV 2018 09:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  11 JAN 2019 12:27
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -348,39 +348,246 @@ Package: authblk 2001/02/27 1.3 (PWD)
 \c@Maxaffil=\count148
 \c@authors=\count149
 \c@affil=\count150
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 332.
-Package: cite 2015/02/27  v 5.5
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/mwe/mwe.sty
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count151
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count152
+\c@listtotal=\count153
+\c@listcount=\count154
+\c@liststart=\count155
+\c@liststop=\count156
+\c@citecount=\count157
+\c@citetotal=\count158
+\c@multicitecount=\count159
+\c@multicitetotal=\count160
+\c@instcount=\count161
+\c@maxnames=\count162
+\c@minnames=\count163
+\c@maxitems=\count164
+\c@minitems=\count165
+\c@citecounter=\count166
+\c@savedcitecounter=\count167
+\c@uniquelist=\count168
+\c@uniquename=\count169
+\c@refsection=\count170
+\c@refsegment=\count171
+\c@maxextratitle=\count172
+\c@maxextratitleyear=\count173
+\c@maxextradate=\count174
+\c@maxextraalpha=\count175
+\c@abbrvpenalty=\count176
+\c@highnamepenalty=\count177
+\c@lownamepenalty=\count178
+\c@maxparens=\count179
+\c@parenlevel=\count180
+\blx@tempcnta=\count181
+\blx@tempcntb=\count182
+\blx@tempcntc=\count183
+\blx@maxsection=\count184
+\blx@maxsegment@0=\count185
+\blx@notetype=\count186
+\blx@parenlevel@text=\count187
+\blx@parenlevel@foot=\count188
+\blx@sectionciteorder@0=\count189
+\labelnumberwidth=\skip55
+\labelalphawidth=\skip56
+\biblabelsep=\skip57
+\bibitemsep=\skip58
+\bibnamesep=\skip59
+\bibinitsep=\skip60
+\bibparsep=\skip61
+\bibhang=\skip62
+\blx@bcfin=\read3
+\blx@bcfout=\write6
+\c@mincomprange=\count190
+\c@maxcomprange=\count191
+\c@mincompwidth=\count192
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count193
+\c@savedafterword=\count194
+\c@annotator=\count195
+\c@savedannotator=\count196
+\c@author=\count197
+\c@savedauthor=\count198
+\c@bookauthor=\count199
+\c@savedbookauthor=\count266
+\c@commentator=\count267
+\c@savedcommentator=\count268
+\c@editor=\count269
+\c@savededitor=\count270
+\c@editora=\count271
+\c@savededitora=\count272
+\c@editorb=\count273
+\c@savededitorb=\count274
+\c@editorc=\count275
+\c@savededitorc=\count276
+\c@foreword=\count277
+\c@savedforeword=\count278
+\c@holder=\count279
+\c@savedholder=\count280
+\c@introduction=\count281
+\c@savedintroduction=\count282
+\c@namea=\count283
+\c@savednamea=\count284
+\c@nameb=\count285
+\c@savednameb=\count286
+\c@namec=\count287
+\c@savednamec=\count288
+\c@translator=\count289
+\c@savedtranslator=\count290
+\c@shortauthor=\count291
+\c@savedshortauthor=\count292
+\c@shorteditor=\count293
+\c@savedshorteditor=\count294
+\c@labelname=\count295
+\c@savedlabelname=\count296
+\c@institution=\count297
+\c@savedinstitution=\count298
+\c@lista=\count299
+\c@savedlista=\count300
+\c@listb=\count301
+\c@savedlistb=\count302
+\c@listc=\count303
+\c@savedlistc=\count304
+\c@listd=\count305
+\c@savedlistd=\count306
+\c@liste=\count307
+\c@savedliste=\count308
+\c@listf=\count309
+\c@savedlistf=\count310
+\c@location=\count311
+\c@savedlocation=\count312
+\c@organization=\count313
+\c@savedorganization=\count314
+\c@origlocation=\count315
+\c@savedoriglocation=\count316
+\c@origpublisher=\count317
+\c@savedorigpublisher=\count318
+\c@publisher=\count319
+\c@savedpublisher=\count320
+\c@language=\count321
+\c@savedlanguage=\count322
+\c@origlanguage=\count323
+\c@savedoriglanguage=\count324
+\c@pageref=\count325
+\c@savedpageref=\count326
+\shorthandwidth=\skip63
+\shortjournalwidth=\skip64
+\shortserieswidth=\skip65
+\shorttitlewidth=\skip66
+\shortauthorwidth=\skip67
+\shorteditorwidth=\skip68
+\locallabelnumberwidth=\skip69
+\locallabelalphawidth=\skip70
+\localshorthandwidth=\skip71
+\localshortjournalwidth=\skip72
+\localshortserieswidth=\skip73
+\localshorttitlewidth=\skip74
+\localshortauthorwidth=\skip75
+\localshorteditorwidth=\skip76
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+\c@textcitecount=\count327
+\c@textcitetotal=\count328
+\c@textcitemaxnames=\count329
+\c@biburlnumpenalty=\count330
+\c@biburlucpenalty=\count331
+\c@biburllcpenalty=\count332
+\c@smartand=\count333
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count334
+\c@bbx:relatedtotal=\count335
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count151
+\c@lips@count=\count336
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
  (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count152
-\c@Blindtext=\count153
-\c@blind@countparstart=\count154
-\blind@countxx=\count155
-\blindtext@numBlindtext=\count156
-\blind@countyy=\count157
-\c@blindlist=\count158
-\c@blindlistlevel=\count159
-\c@blindlist@level=\count160
-\blind@listitem=\count161
-\c@blind@listcount=\count162
-\c@blind@levelcount=\count163
-\blind@mathformula=\count164
-\blind@Mathformula=\count165
-\c@blind@randomcount=\count166
-\c@blind@randommax=\count167
-\c@blind@pangramcount=\count168
-\c@blind@pangrammax=\count169
-)) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+\c@blindtext=\count337
+\c@Blindtext=\count338
+\c@blind@countparstart=\count339
+\blind@countxx=\count340
+\blindtext@numBlindtext=\count341
+\blind@countyy=\count342
+\c@blindlist=\count343
+\c@blindlistlevel=\count344
+\c@blindlist@level=\count345
+\blind@listitem=\count346
+\c@blind@listcount=\count347
+\c@blind@levelcount=\count348
+\blind@mathformula=\count349
+\blind@Mathformula=\count350
+\c@blind@randomcount=\count351
+\c@blind@randommax=\count352
+\c@blind@pangramcount=\count353
+\c@blind@pangrammax=\count354
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
@@ -400,6 +607,13 @@ runsystem(which pygmentize && touch main.aex)...executed.
 
 runsystem(rm main.aex)...executed.
 
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
+)
+\@quotelevel=\count355
+\@quotereset=\count356
  (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.aux
 
 LaTeX Warning: Label `eq:pot0' multiply defined.
@@ -451,39 +665,57 @@ LaTeX Warning: Label `eq:diffusion-1d' multiply defined.
 LaTeX Warning: Label `bc-delta' multiply defined.
 
 
-LaTeX Warning: Label `fig:sub1' multiply defined.
+LaTeX Warning: Label `eq:solution-diffusion' multiply defined.
 
 ) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-only-numeric.aux
 
 LaTeX Warning: Label `eq:diffusion' multiply defined.
 
+) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-reaction-numeric.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-reaction-analytic.aux
+
+LaTeX Warning: Label `eq:solution-diffusion' multiply defined.
+
+) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-reaction-concentration-dependent.aux
+
+LaTeX Warning: Label `eq:dynamic-system' multiply defined.
+
+
+LaTeX Warning: Label `eq:dynamic-system' multiply defined.
+
+
+LaTeX Warning: Label `fig:diffusion-reaction-comparison' multiply defined.
+
+) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-w-concentration-dependent-reaction.aux
+
+LaTeX Warning: Label `fig:diffusion-reaction-comparison' multiply defined.
+
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count170
+\scratchcounter=\count357
 \scratchdimen=\dimen156
 \scratchbox=\box64
-\nofMPsegments=\count171
-\nofMParguments=\count172
+\nofMPsegments=\count358
+\nofMParguments=\count359
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count173
+\MPscratchCnt=\count360
 \MPscratchDim=\dimen157
-\MPnumerator=\count174
-\makeMPintoPDFobject=\count175
+\MPnumerator=\count361
+\makeMPintoPDFobject=\count362
 \everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -536,17 +768,39 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-[1
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout6 = `main-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' found.
+(/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.bbl)
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
+ [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.toc)
-\tf@toc=\write6
-\openout6 = `main.toc'.
+\tf@toc=\write7
+\openout7 = `main.toc'.
 
  [1
 
 ]
 Chapter 1.
-(./chapters/ch02/0-diffusion-reaction-system.tex) [2
+(./chapters/ch02/0-diffusion-reaction-system.tex
+
+LaTeX Warning: Citation 'Dolde2011' on page 2 undefined on input line 9.
+
+
+Overfull \hbox (38.29517pt too wide) in paragraph at lines 8--11
+\OT1/cmr/m/n/12 Where $\OML/cmm/m/it/12 C[]$ \OT1/cmr/m/n/12 is the con-cen-tra-tion of each species and $\OML/cmm/m/it/12 N[]$ \OT1/cmr/m/n/12 is the dif-fu-sive flux for each species.[[]]
+ []
+
+) [2
 
 ] [3]
 Chapter 2.
@@ -656,9 +910,6 @@ LaTeX Warning: Reference `fig:concentration' on page 16 undefined on input line 
 
 LaTeX Warning: Reference `fig:firstorderphi' on page 16 undefined on input line 93.
 
-
-LaTeX Warning: Reference `eq:border-conditions' on page 16 undefined on input line 97.
-
 [16] [17]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 146.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
@@ -668,11 +919,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
  [18]
 Package epstopdf Info: Source file: <./img/results-numeric.eps>
-(epstopdf)                    date: 2018-11-13 10:25:32
-(epstopdf)                    size: 199708 bytes
+(epstopdf)                    date: 2019-01-10 15:44:56
+(epstopdf)                    size: 94063 bytes
 (epstopdf)             Output file: <./img/results-numeric-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-13 10:26:06
-(epstopdf)                    size: 123888 bytes
+(epstopdf)                    date: 2019-01-10 16:16:51
+(epstopdf)                    size: 51406 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/results-numeric-eps-converted-to.pdf ./img/results-numeric.eps>
 (epstopdf)             \includegraphics on input line 170.
 Package epstopdf Info: Output file is already uptodate.
@@ -701,11 +952,11 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:comparison' on page 21 undefined on input line 198.
 
 Package epstopdf Info: Source file: <./img/comparison0.eps>
-(epstopdf)                    date: 2018-11-13 10:31:15
-(epstopdf)                    size: 198563 bytes
+(epstopdf)                    date: 2019-01-10 16:50:59
+(epstopdf)                    size: 94677 bytes
 (epstopdf)             Output file: <./img/comparison0-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-13 10:31:21
-(epstopdf)                    size: 126249 bytes
+(epstopdf)                    date: 2019-01-10 16:52:32
+(epstopdf)                    size: 54441 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison0-eps-converted-to.pdf ./img/comparison0.eps>
 (epstopdf)             \includegraphics on input line 205.
 Package epstopdf Info: Output file is already uptodate.
@@ -715,11 +966,11 @@ File: ./img/comparison0-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/comparison0-eps-converted-to.pdf  used on input line 205.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/comparison1.eps>
-(epstopdf)                    date: 2018-11-13 10:31:16
-(epstopdf)                    size: 199353 bytes
+(epstopdf)                    date: 2019-01-10 16:51:00
+(epstopdf)                    size: 93368 bytes
 (epstopdf)             Output file: <./img/comparison1-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-13 10:31:21
-(epstopdf)                    size: 132031 bytes
+(epstopdf)                    date: 2019-01-10 16:52:33
+(epstopdf)                    size: 55810 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison1-eps-converted-to.pdf ./img/comparison1.eps>
 (epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
@@ -729,11 +980,11 @@ File: ./img/comparison1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/comparison1-eps-converted-to.pdf  used on input line 211.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/comparison2.eps>
-(epstopdf)                    date: 2018-11-13 10:31:17
-(epstopdf)                    size: 199337 bytes
+(epstopdf)                    date: 2019-01-10 16:51:01
+(epstopdf)                    size: 94391 bytes
 (epstopdf)             Output file: <./img/comparison2-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-13 10:31:22
-(epstopdf)                    size: 133360 bytes
+(epstopdf)                    date: 2019-01-10 16:52:33
+(epstopdf)                    size: 56971 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison2-eps-converted-to.pdf ./img/comparison2.eps>
 (epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
@@ -753,75 +1004,145 @@ Chapter 3.
 
 ] [24]
 
-LaTeX Warning: Reference `eq:general-expresion-rho' on page 25 undefined on input line 128.
+LaTeX Warning: Reference `eq:general-expresion-rho' on page 25 undefined on input line 139.
 
-[25]
-Package epstopdf Info: Source file: <./img/concentration-diffusiononly.eps>
-(epstopdf)                    date: 2018-11-15 15:18:48
-(epstopdf)                    size: 47737 bytes
-(epstopdf)             Output file: <./img/concentration-diffusiononly-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-20 09:11:38
-(epstopdf)                    size: 30590 bytes
-(epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusiononly-eps-converted-to.pdf ./img/concentration-diffusiononly.eps>
-(epstopdf)             \includegraphics on input line 204.
-Package epstopdf Info: Output file is already uptodate.
-<./img/concentration-diffusiononly-eps-converted-to.pdf, id=638, 1445.4pt x 1156.32pt>
-File: ./img/concentration-diffusiononly-eps-converted-to.pdf Graphic file (type pdf)
-<use ./img/concentration-diffusiononly-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/concentration-diffusiononly-eps-converted-to.pdf  used on input line 204.
-(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
-) [26] [27 <./img/concentration-diffusiononly-eps-converted-to.pdf>]
+[25]) [26]
 \openout2 = `chapters/ch03/diffusion-only-numeric.aux'.
 
- (./chapters/ch03/diffusion-only-numeric.tex [28
+ (./chapters/ch03/diffusion-only-numeric.tex [27
 
 
 ]
 
-LaTeX Warning: Reference `eq:initial-condition' on page 29 undefined on input line 93.
+LaTeX Warning: Reference `eq:initial-condition' on page 28 undefined on input line 105.
 
 Package epstopdf Info: Source file: <./img/concentration-diffusiononly-comparison.eps>
-(epstopdf)                    date: 2018-11-20 09:05:31
-(epstopdf)                    size: 51537 bytes
+(epstopdf)                    date: 2018-12-18 18:49:02
+(epstopdf)                    size: 100139 bytes
 (epstopdf)             Output file: <./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-20 09:31:35
-(epstopdf)                    size: 28663 bytes
+(epstopdf)                    date: 2018-12-18 18:50:01
+(epstopdf)                    size: 78968 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusiononly-comparison-eps-converted-to.pdf ./img/concentration-diffusiononly-comparison.eps>
-(epstopdf)             \includegraphics on input line 108.
+(epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
-<./img/concentration-diffusiononly-comparison-eps-converted-to.pdf, id=712, 1445.4pt x 1156.32pt>
+<./img/concentration-diffusiononly-comparison-eps-converted-to.pdf, id=654, 1445.4pt x 1156.32pt>
 File: ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>
-Package pdftex.def Info: ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf  used on input line 108.
+Package pdftex.def Info: ./img/concentration-diffusiononly-comparison-eps-converted-to.pdf  used on input line 120.
 (pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
-) [29] [30 <./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>] (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.bbl
+[28]) [29 <./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>]
+\openout2 = `chapters/ch03/diffusion-reaction-numeric.aux'.
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-) [31
+ (./chapters/ch03/diffusion-reaction-numeric.tex) [30
 
 
-] (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.aux (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/3-dynamic-solution-analytic.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-only-numeric.aux))
+]
+\openout2 = `chapters/ch03/diffusion-reaction-analytic.aux'.
+
+ (./chapters/ch03/diffusion-reaction-analytic.tex
+
+LaTeX Warning: Reference `eq:diffusion-only' on page 31 undefined on input line 30.
+
+
+LaTeX Warning: Reference `eq:border-conditions-reaction-diffusion' on page 31 undefined on input line 36.
+
+[31
+
+
+] [32] [33]
+Package epstopdf Info: Source file: <./img/diffusion-reaction-comparison.eps>
+(epstopdf)                    date: 2019-01-08 15:37:49
+(epstopdf)                    size: 70440 bytes
+(epstopdf)             Output file: <./img/diffusion-reaction-comparison-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-08 15:37:55
+(epstopdf)                    size: 42682 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/diffusion-reaction-comparison-eps-converted-to.pdf ./img/diffusion-reaction-comparison.eps>
+(epstopdf)             \includegraphics on input line 124.
+Package epstopdf Info: Output file is already uptodate.
+<./img/diffusion-reaction-comparison-eps-converted-to.pdf, id=746, 1445.4pt x 1156.32pt>
+File: ./img/diffusion-reaction-comparison-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/diffusion-reaction-comparison-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/diffusion-reaction-comparison-eps-converted-to.pdf  used on input line 124.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+) [34 <./img/diffusion-reaction-comparison-eps-converted-to.pdf>]
+\openout2 = `chapters/ch03/diffusion-reaction-concentration-dependent.aux'.
+
+ (./chapters/ch03/diffusion-reaction-concentration-dependent.tex [35
+
+
+] [36] [37]
+
+LaTeX Warning: Reference `apendix:cossin-orthogonality' on page 38 undefined on input line 209.
+
+[38]
+Package epstopdf Info: Source file: <./img/concentration-diffusion-reaction-comparison.eps>
+(epstopdf)                    date: 2019-01-10 17:07:47
+(epstopdf)                    size: 63668 bytes
+(epstopdf)             Output file: <./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 11:54:23
+(epstopdf)                    size: 39042 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf ./img/concentration-diffusion-reaction-comparison.eps>
+(epstopdf)             \includegraphics on input line 278.
+Package epstopdf Info: Output file is already uptodate.
+<./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf, id=840, 1445.4pt x 1156.32pt>
+File: ./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf  used on input line 278.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+) [39] [40 <./img/concentration-diffusion-reaction-comparison-eps-converted-to.pdf>]
+\openout2 = `chapters/ch03/diffusion-w-concentration-dependent-reaction.aux'.
+
+ (./chapters/ch03/diffusion-w-concentration-dependent-reaction.tex [41
+
+
+] [42]
+Package epstopdf Info: Source file: <./img/forced-current-dynamic.eps>
+(epstopdf)                    date: 2018-12-18 18:49:42
+(epstopdf)                    size: 98157 bytes
+(epstopdf)             Output file: <./img/forced-current-dynamic-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-12-18 18:50:01
+(epstopdf)                    size: 79431 bytes
+(epstopdf)             Command: <epstopdf --outfile=./img/forced-current-dynamic-eps-converted-to.pdf ./img/forced-current-dynamic.eps>
+(epstopdf)             \includegraphics on input line 172.
+Package epstopdf Info: Output file is already uptodate.
+<./img/forced-current-dynamic-eps-converted-to.pdf, id=927, 1445.4pt x 1156.32pt>
+File: ./img/forced-current-dynamic-eps-converted-to.pdf Graphic file (type pdf)
+<use ./img/forced-current-dynamic-eps-converted-to.pdf>
+Package pdftex.def Info: ./img/forced-current-dynamic-eps-converted-to.pdf  used on input line 172.
+(pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
+ [43]) [44 <./img/forced-current-dynamic-eps-converted-to.pdf>]
+
+LaTeX Warning: Empty bibliography on input line 80.
+
+(/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.aux (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/3-dynamic-solution-analytic.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-only-numeric.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-reaction-numeric.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-reaction-analytic.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-reaction-concentration-dependent.aux) (/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/chapters/ch03/diffusion-w-concentration-dependent-reaction.aux))
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 7860 strings out of 492649
- 136030 string characters out of 6129622
- 366324 words of memory out of 5000000
- 11540 multiletter control sequences out of 15000+600000
+ 13989 strings out of 492649
+ 256102 string characters out of 6129622
+ 667376 words of memory out of 5000000
+ 17589 multiletter control sequences out of 15000+600000
  14346 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,16n,41p,904b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,16n,41p,904b,1061s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.pdf" (32 pages, 1084612 bytes).
+Output written on "/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/.texpadtmp/main.pdf" (45 pages, 990671 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 245 compressed objects within 3 object streams
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 279 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

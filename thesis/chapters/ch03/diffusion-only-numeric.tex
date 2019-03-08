@@ -1,11 +1,15 @@
-\section{Numeric Solution To The Diffusion Only Equation}
+\subsection{Numeric Solution To The Diffusion Only Equation}
 
 
-As a first approach to the problem, we will use an implicit scheme to find the numerical solution. This means that, in approaching the finite difference method, we will compute the spacial derivative at time step $n+1$. 
+\par As a first approach to the problem, we will use an implicit scheme to find the numerical solution. This means that, in approaching the finite difference method, we will compute the spacial derivative at time step $n+1$. 
 Just as in the analytic case, we define
 \begin{align}
-	\rho(x,t) = C(x,t) - C_b
+	\rho(x,t) = \frac{C(x,t) - C_b}{C_b},
 \end{align}
+
+which will make the numerical computations converge faster.
+
+
 
 Consider the one dimensional diffusion equation
 
@@ -18,10 +22,18 @@ We will define $x = \delta \xi$ where $\delta$ is the width of the laminar flow 
 
 \begin{align}
 \frac{\partial \rho}{\partial t} = \frac{D}{\delta^2} \frac{\partial^2 \rho}{\partial \xi^2},\\
-\frac{\partial \rho}{\partial \tau} =  D \frac{\partial^2 \rho}{\partial \xi^2},
+\frac{\partial \rho}{\partial \tau} = \frac{\partial^2 \rho}{\partial \xi^2},
 \end{align}
 
-where we have defined $\tau = t/\delta^2$
+where we have defined $\tau = Dt/\delta^2$, which follows the modified border and initial conditions,
+
+\begin{align}
+	\rho(\xi = 1, \tau) = 0, \\
+	D \frac{\partial \rho}{\partial \xi} (\xi = 0, \tau) = 0,\\
+	\rho(\xi, \tau = 0) = -1.
+\end{align}
+
+
 We will discretize the derivative as follows,
 
 \begin{align}

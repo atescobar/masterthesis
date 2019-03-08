@@ -1,12 +1,11 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 def C_an(xi, tau):
     # note that tau = D t / xb ** 2, where t is the time
     Cb = 100
     total = 0
-    tolMax  = 1e-3* np.ones(len(xi))
+    tolMax  = 1e-10 
     tolMin = tolMax*1e-2
     m = 0
     cond = True
@@ -19,15 +18,16 @@ def C_an(xi, tau):
         m = m + 1
         
         if (m > 1):
-            contrib = np.abs(actual)/np.abs(previo)
-            for i in range(0, len(xi)):
-                if ( contrib[i] > tolMin[i]):
-                    cond = True
-                if ( contrib[i] < tolMax[i]):
+            contrib = (actual)/previo
+            for i in range(0, len(xi)-1):
+#                if ( np.abs(contrib[i]) > tolMin):
+#                    cond = True
+                if ( np.abs(max(contrib)) < tolMax):
+                    
                     cond = False
                         
         previo = actual
-    print("Series truncation at n = " + str(m) + " with average local error " + str(contrib.sum()/len(contrib) * 100) + "%")
+    print("Series truncation at n = " + str(m) + " with maximnum local error " + str(np.amax(np.abs(contrib))) + "%")
     return  Cb - ( (4 * Cb / np.pi ) * total ) 
 
 

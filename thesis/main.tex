@@ -12,12 +12,14 @@
 \usepackage{multicol}
 \usepackage{authblk}
 \usepackage{subcaption}
-\usepackage{cite}
+\usepackage{biblatex}
+%\usepackage{cite}
 \usepackage{mwe}
+\usepackage{relsize}
 \usepackage[font={small,it}]{caption}
 \graphicspath{{./img/}}
 
-
+\addbibresource{bibfilename.bib}
 %user-defined commands
 
 \newcommand{\qty}[1]
@@ -33,6 +35,16 @@
 \newcommand{\qtyc}[1]
 {
 	\left{{#1}\right}
+}
+
+\newcommand{\ssum}
+{
+	\mathlarger{\sum}
+}
+
+\newcommand{\sssum}
+{
+	\mathlarger{\mathlarger{\sum}}
 }
 \font\myfont=cmr12 at 16pt
 
@@ -60,8 +72,12 @@
 \include{chapters/ch03/3-dynamic-solution-analytic}
 %\input{chapters/ch03/3-dynamic-solution.tex}
 \include{chapters/ch03/diffusion-only-numeric}
+\include{chapters/ch03/diffusion-reaction-numeric}
+\include{chapters/ch03/diffusion-reaction-analytic}
+\include{chapters/ch03/diffusion-reaction-concentration-dependent}
+\include{chapters/ch03/diffusion-w-concentration-dependent-reaction}
 \newpage
-\bibliography{mybib}{}
-\bibliographystyle{plain}
+\printbibliography
+%\bibliographystyle{plain}
 
 \end{document}
