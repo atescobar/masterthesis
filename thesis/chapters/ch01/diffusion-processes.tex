@@ -1,0 +1,263 @@
+\section{Diffusion Processes}
+
+
+\subsection{Historical Note}
+
+\par Quantitative analysis of transport phenomena where not entirely described up until 1828 with Thomas Graham's experiments on diffusion in gases and liquids \cite{cussler}. Later that century in 1855, Adolf Fick codified the experiments of Graham in what we now know as Fick's Laws. The First Law of Fick's states that the one dimensional flux of a species $i$(that is, the particles per unit time that move through a certain area) is deifined as \cite{cussler}
+
+\begin{align}
+\label{eq:fick-fluxes}
+	J_i = A j_i = -A\mathcal{D}_i\frac{\partial c_i}{\partial z} 
+\end{align}
+
+This is knonw as Fick's fisrt law. Fick was inspired to draw this conclusion from Fourier's work in heat and by the findings of Graham \cite{fick}.
+
+
+\subsection{Derivation Of Fick's Law}
+
+In order to derive Fick's Law for fluxes, we consired diffusion through a thin layer. We want to account for the accumulation of solute within the membrane of Fig. \ref{fig:cussler_thin_layer}. The accumulation should be equal to the rate of diffusion coming into the membrane at $z$ minus the rate at which solute is leaving the membrane at $z+\Delta z$. The sign of the flow is accounted by the fact that particles diffuse from higher concentrations to lower concentrations (from left to right in this case). Therefore,
+
+\begin{align}
+	\qty{\textnormal{Solute accumulation in volume }A\Delta z} =& \\&\qty{\textnormal{Rate of diffusion at } z } - \qty{\textnormal{Rate of diffusion at } z+\Delta z}
+\end{align}
+
+
+Accumulation is by definition the rate of change of the total mass contained in the sample volume $V = A\Delta z$. Therefore
+
+\begin{align}
+	\label{eq:derivation-fick-1}
+	\frac{\partial \qty{c_1 A\Delta z}}{\partial t} = \qty{J_1 - J_2}
+\end{align}
+
+Where $J_1$ and $J_2$ are the Fick fluxes at $z$ and $z+\Delta z$. Replacing \ref{eq:fick-fluxes} into \ref{eq:derivation-fick-1} and assuming the cross sectional area $A$ is constant
+
+\begin{align}
+	\frac{\partial c_1}{\partial t} = \frac{\qty{j_1 - j_2}}{\Delta z},
+	\frac{\partial c_1}{\partial t} = -\mathcal{D}\frac{\qty{\frac{\Delta c_1}{\Delta z} - \frac{\Delta c_2}{\Delta z}}}{\Delta z}.
+\end{align}
+
+As we take $\Delta z \rightarrow 0$ the last equation reduces to
+
+\begin{align}
+\label{eq:second-ficks-law}
+	\frac{\partial c_1}{\partial t} = -\mathcal{D}\frac{\partial^2 c}{\partial z}.
+\end{align}
+
+Equation \ref{eq:second-ficks-law} is known as Fick's second law, which as as a solution the error function
+
+
+\begin{align}
+	\label{eq:solution-fick}
+	n(x,t) = \frac{2n_0}{\sqrt{\pi}}\int_0^x e^{-\frac{x^2}{4\mathcal{D}t}}
+\end{align}
+
+
+\begin{figure}[h!]
+\centering
+	\includegraphics[width=0.5\textwidth]{diffusion_thin_membrane}
+	\caption{Diffusion through a thin layer (plot extracted from reference \cite{cussler})}
+\label{fig:cussler_thin_layer}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+\subsection{Diffusion Coefficients}
+
+In 1905 Albert Einstein showed that the diffusion of molecules is due to collisions between the suspended particles and the random molecular motion of the medium in which they are suspended \cite{einstein}. 
+
+To understand the physical nature of the diffusion coefficient, one can imagine the setup in which brownian motion was first observed. Let a pollen particle float on water. By close observation with a microscope one finds that the particle starts to move erratically around the center. Nowadays this problem can be studied under the theoretical framework of diffusion of polymers \cite{bird}.
+
+Using arguments from thermodynamics and kinetic theory of gases, Einstein calculated the conditions under which the suspender pollen particle would reach equilibrium states, by minimizing Helmholtz free energy. He found that, if a complementary stochastic force $K$ acts upon a system of $\nu$ particles per unit volume, then at equilibrium
+
+\begin{align}
+	-K\nu +\frac{RT}{N}\frac{\partial \nu}{\partial x} = 0.
+\end{align} 
+
+Recognizing that osmotic pressure is $p = RT \nu /N$ we get
+
+\begin{align}
+\label{eq:einstein-result}
+	K\nu - \frac{\partial p}{\partial x},
+\end{align}
+
+which shows that equilibrium with force $K$ is bought by osmotic pressure \cite{einstein}. 
+
+With these considerations, we can conclude that the amount of flux produced by the stochastic force $K$ applied to perfectly spherical particles of radius R is
+
+\begin{align}
+	j_(x) = -\frac{\nu K}{6\pi u R},
+\end{align}
+
+where u is the viscosity of the fluid. From Fick's law the the total flux is given by
+
+\begin{align}
+	j(x) = -\mathcal{D}\frac{\partial \nu}{\partial x} = - \frac{\nu K}{6\pi u R},
+\end{align}
+
+From Eq. \ref{eq:einstein-result} we get
+
+\begin{align}
+\frac{\nu K}{6\pi u R} = \mathcal{D}\frac{N}{RT}\nu K,
+\end{align}
+
+Finally, for spherical colloids of radious $R$
+
+\begin{align}
+	\mathcal{D} = \frac{RT}{6N\pi u R}.
+\end{align}
+
+
+This is known as the Stokes-Einstein equation and it gives us a physical understanding of how the coefficients fluctuate with temperature and particle size. It is known that this is acurrate to only 20\%, but is still the standard to compute diffusivity coefficients (\cite{cussler}, page 127).
+
+
+
+
+
+
+
+
+
+\subsection{Langevin Equation}
+
+Based on Einstien's \cite{einstein} Langevin proposed the motion equations for the polymers in suspention \cite{langevin_translation}. He proposed that, based on the equipartition of kinetic energy among the degrees of freedom of a particular system, the average speed of the particles in the system should be
+
+\begin{align}
+	\frac{1}{2}m\bar{v}^2 = \frac{RT}{2N}.
+\end{align}
+
+If the particles concidered are big enough (that is, much larger than the average distance between molecules in the fluid) then the particle is subjected to a viscous resistance proportional to the speed of the particle itself
+
+\begin{align}
+	\label{eq:friction}
+	F_r(x) = -6\pi\mu a \bar{v}
+\end{align}
+
+This however, is an approximation \cite{langevin_original}. Due to impacts of the fluid's constitutive particles the action of the particle oscillates about the value \ref{eq:friction}. Thus, the motion equation of the particle suspended in liquid is
+
+\begin{align}
+\label{eq:langevin}
+	m\frac{d v}{dt} = -6\pi\mu a v(t) + K(t),
+\end{align}
+
+where K is a complementary force induce by the random movement of the particles composing the fluid. This is known as the Langevin equation. 
+
+
+To gain physical insight of this equation, Langevin \cite{langenvin} set out to find the variance of the displacement ($\Delta_x^2$) of the particle suspended in liquid. 
+
+The following method is what he used to find $\Delta_x^2$. Multiply by x and write
+\begin{align}
+	\frac{d}{dt}x^2 = 2x\frac{dx}{dt}\\	
+	\frac{d^2}{dt^2}x^2 = 2\qty{x\frac{d^2x}{dt^2}+\qty{\frac{dx}{dt}}^2}
+\end{align}
+
+
+we get the equation
+
+\begin{align}
+\label{eq:langevin}
+	\frac{m}{2}\qty{\frac{d^2x^2}{dt^2} - 2\qty{\frac{dx}{dt}}^2} = -3\pi\mu a \frac{d x^2}{dt} + K(t)x
+\end{align}
+
+averaging out the later equation, noticing that $<Kx> = 0$ due to irregularity of the complementary forces $K$ (kicks from the liquid particles come from every direction) and considering the fact that
+
+\begin{align}
+	m\qty{\frac{d \bar{x}}{dt}}^2 = \frac{RT}{N}
+\end{align}
+
+Equation \ref{eq:langevin-derivation-3}
+
+\begin{align}
+	\frac{m}{2}\frac{d^2\bar{x^2}}{dt^2} + 3\pi\mu a \frac{d \bar{x^2}}{dt} = \frac{RT}{N}.
+\end{align}
+
+Replacing $z = d\bar{x^2}/dt$ we get
+
+\begin{align}
+	\frac{m}{2}\frac{dz}{dt}(z) + 3\pi\mu a z(t) = \frac{RT}{N}.
+\end{align}
+
+This equation can be solved for $z$
+
+\begin{align}
+	\label{eq:sol-to-langevin}
+	z(t) = \frac{RT}{N}\frac{1}{3\pi\mu a} + Ce^{-\frac{6\pi\mu a}{m}t}.
+\end{align}
+
+Note from \ref{eq:sol-to-langevin} that the system reaches a steady regime for large $t$. In this regime, we can solve
+
+\begin{align}
+	z = \frac{d \bar{x^2}}{dt} =  \frac{RT}{N}\frac{1}{3\pi\mu a},
+\end{align}
+
+which gives us
+
+\begin{align}
+	\bar{\Delta_x^2} = \bar{x^2} - \bar{x_0^2} =  \frac{RT}{N}\frac{\delta t}{3\pi\mu a},
+\end{align}
+
+which is the famous result from Langevin \cite{langevin_original}.
+
+\cite{deen}
+
+
+\subsection{Diffusion Of Electrolyte}
+
+In electrolyte diffusion, other forces must be taken into account in order to provide an accurate model. This is because of two main things: One, diffusion of electrolytes is diffusion of at least two types of particles which ionize when disolved in water. Secondly, these charged particles react to possible external electric fields and the electric field produced by the electrolytes themselves.
+
+We know that the flux is given by Fick's law, but this law does not account for the interactions with an electric field. A typical model for the flux of charged particles is
+
+\begin{align}
+	j= -\mathcal{D}\qty{\nabla c + \frac{c \mathcal{F}}{RT}\nabla \phi},
+\end{align}
+
+which, using Fick's law yield
+
+
+\begin{align}
+\label{eq:nernst-planck}
+	\frac{\partial c}{\partial t}= \nabla \cdot D\qty{\nabla c + \frac{c \mathcal{F}}{RT}\nabla \phi},
+\end{align}
+
+
+This is called the Nernst-Planck Equation.
+
+Although Eq. \ref{eq:nernst-planck} accounts for how the diffusion process involves electrical forces in the presence of electrolytes, we haven't accounted as to how the electric field changes due to the presence of electrolytes. 
+We start from the Poisson Equation which tells us that
+
+\begin{align}
+	\nabla^2 \phi = -\frac{\rho}{\epsilon},
+\end{align}
+
+where $\rho$ is the charge distribution. By definition, the charge distribution should be the amount of charge per unit volume, therefore
+
+\begin{align}
+	\rho(x,t) = \frac{F}\sum_{s=\pm} z_sc_s,
+\end{align}
+
+where $c_s$ is the concentration of each species, $z_s$ is the valence of each species and $\mathcal{F} = N_ae$ is the Faraday constant which is a measure of charge per mol of substance. Therefore, the Poisson equation takes the form
+
+\begin{align}
+	\label{eq:poisson-electrolyte}
+	\nabla^2 \phi = \frac{F}\sum_{s=\pm} z_sc_s.
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

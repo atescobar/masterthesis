@@ -12,14 +12,15 @@
 \usepackage{multicol}
 \usepackage{authblk}
 \usepackage{subcaption}
-\usepackage{biblatex}
-%\usepackage{cite}
+\usepackage[backend=biber, style=nature]{biblatex}  
+
 \usepackage{mwe}
 \usepackage{relsize}
 \usepackage[font={small,it}]{caption}
 \graphicspath{{./img/}}
 
-\addbibresource{bibfilename.bib}
+\bibliography{bibfilename.bib}
+
 %user-defined commands
 
 \newcommand{\qty}[1]
@@ -61,7 +62,14 @@
 \tableofcontents
 
 \chapter{Diffusion Of Electrolytes In Solution}
+\input{chapters/ch01/diffusion-processes.tex}
+\input{chapters/ch01/electrorefinery.tex}
+\input{chapters/ch01/langmuir-absorptio.tex}
 \input{chapters/ch02/0-diffusion-reaction-system.tex}
+
+
+\chapter{Review Of Numerical Methods For ODE And PDE Solving}
+\input{chapters/ch01/numerical-methods.tex}
 
 
 \chapter{Steady State Solution}
@@ -69,15 +77,23 @@
 \input{chapters/ch02/2-numeric-solution.tex}
 
 \chapter{Dynamic Solution}
-\include{chapters/ch03/3-dynamic-solution-analytic}
-%\input{chapters/ch03/3-dynamic-solution.tex}
-\include{chapters/ch03/diffusion-only-numeric}
-\include{chapters/ch03/diffusion-reaction-numeric}
-\include{chapters/ch03/diffusion-reaction-analytic}
-\include{chapters/ch03/diffusion-reaction-concentration-dependent}
-\include{chapters/ch03/diffusion-w-concentration-dependent-reaction}
+\input{chapters/ch03/3-dynamic-solution-analytic.tex}
+\input{chapters/ch03/diffusion-only-numeric.tex}
+\input{chapters/ch03/diffusion-reaction-numeric.tex}
+\input{chapters/ch03/diffusion-reaction-analytic.tex}
+\input{chapters/ch03/diffusion-reaction-concentration-dependent.tex}
+\input{chapters/ch03/diffusion-w-concentration-dependent-reaction.tex}
+\input{chapters/ch03/complete-dynamic-problem.tex}
+\input{chapters/ch03/forced-current-dynamic-solution.tex}
+
+\chapter{Results and analysis}
+\input{chapters/ch04/results_ss.tex}
+\input{chapters/ch04/results.tex}
+\input{chapters/ch04/results-forced.tex}
+
+
 \newpage
 \printbibliography
-%\bibliographystyle{plain}
+
 
 \end{document}

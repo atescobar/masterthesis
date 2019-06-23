@@ -1,0 +1,132 @@
+\section{Concentration Dependent Boundary Condition}
+\subsection{Time evolution}
+
+In this chapter we discus the results obtained by the dynamic algorithm. We study different parameter regimes and the behaviour of the electric potential and electric field.
+
+We are interested in studying the time evolution of the system from initial conditions. Figure \ref{fig:ef1} shows the time evolution of the system for a time window of $t = 4.48 ns$
+
+
+
+
+\begin{figure}[htbp]
+\centering
+\textbf{Electric Field In The Diffusion Problem With Nernst Interaction.}\par\medskip
+\begin{subfigure}{.5\linewidth}
+\centering
+\includegraphics[width=\textwidth]{complete-diffusion-nernstE0.eps}
+\caption{}
+\label{fig:ef1}
+\end{subfigure}%
+\begin{subfigure}{.5\linewidth}
+\centering
+\includegraphics[width =\textwidth]{complete-diffusion-nernstE1.eps}
+\caption{}
+\label{fig:ef2}
+\end{subfigure}\\[1ex]
+\begin{subfigure}{\linewidth}
+\centering
+\includegraphics[width =0.5\textwidth]{complete-diffusion-nernstE2.eps}
+\caption{}
+\label{fig:ef3}
+\end{subfigure}
+\caption{Electric field and concentration of $Cu^{+2}$ (green dots) and $SO_4^{-2}$ (blue dots) at (a) $t = 0.448 ns$, (b) $t = 2.24 ns$ and (c) $t = 4.44 ns$}.
+\label{fig:test}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\textbf{Electric Potential In The Diffusion Problem With Nernst Interaction.}\par\medskip
+\begin{subfigure}{.5\linewidth}
+\centering
+\includegraphics[width=\textwidth]{complete-diffusion-nernstphi0.eps}
+\caption{}
+\label{fig:ef1}
+\end{subfigure}%
+\begin{subfigure}{.5\linewidth}
+\centering
+\includegraphics[width =\textwidth]{complete-diffusion-nernstphi1.eps}
+\caption{}
+\label{fig:ef2}
+\end{subfigure}\\[1ex]
+\begin{subfigure}{\linewidth}
+\centering
+\includegraphics[width =0.5\textwidth]{complete-diffusion-nernstphi2.eps}
+\caption{}
+\label{fig:ef3}
+\end{subfigure}
+\caption{Electric potential in volts and molar concentration of $Cu^{+2}$ (green dots) and $SO_4^{-2}$ (blue dots) at (a) $t = 0.448 ns$, (b) $t = 2.24 ns$ and (c) $t = 4.44 ns$}
+\label{fig:test}
+\end{figure}
+
+
+\newpage
+\subsection{Electric field at the surface of the electrode}
+
+A feature of interest is the electric field at the surface. As measurements by a solid state device would be done by implanting the device on the surface, we are interested in how would the electric field vary as the model's parameters fluctuate. Particularly, we are interested in how the electric field varies with voltage and with the bulk concentration.
+
+\begin{figure}[htbp]
+\centering
+\textbf{Electric field at the surface.}\par\medskip
+\begin{subfigure}{.5\linewidth}
+\centering
+\includegraphics[width=\textwidth]{surfaceEfield_Cb.eps}
+\caption{}
+\label{fig:ef1}
+\end{subfigure}%
+\begin{subfigure}{.5\linewidth}
+\centering
+\includegraphics[width =\textwidth]{surfaceEfield_v.eps}
+\caption{}
+\label{fig:ef2}
+\end{subfigure}\\[1ex]
+\caption{(a) Electric field at the surface as a function of the molar concentration of the original salt. Dependence occurs through the model parameter $\kappa$ called the ionic force \ref{eq:ionic-force} (b) Electric field at the surface $x=0$ of the electrode as a function of the voltage at the plate, which is a boundary condition to the Poisson equation \ref{eq:system}}
+\label{fig:test}
+\end{figure}
+
+
+
+
+\newpage
+\subsection{Grounded electrode limit}
+
+In the case of $V_0 = \Psi_0 = 0$ we get a purely diffusive process, as expected. Figure can compare figure \ref{fig:analytic-results} to figure \ref{fig:nernts-no-field}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{complete-no-electric-field.eps}
+\caption{In the no-electrode limit we take $V_0=0$ in order to see the behavior diffusive-only limit. The electric field is zero throughout the system as an initial condition. The blue dots show the electric field due te the screening of the electrolyte in solution. }
+\label{fig:nernts-no-field}
+\end{figure}
+
+
+\newpage
+\subsection{Electric Field Fluctuation As A Function Of Time}
+
+
+A quantity of great interest is the fluctuation of the electric field with respect to the steady state solution. Particularly, we are interested in studying such fluctuations at the interface with the electrode. Such fluctuations are defined as
+
+\begin{align}
+	\delta E(t) = E(x=0, t) - E_{SS}(x=0), 
+\end{align}
+
+where 
+
+\begin{align}
+	E_{SS}(x) = \lim_{t\rightarrow\infty} E(x,t).
+\end{align}
+
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{surfaceDeltaE.eps}
+\caption{Electric field fluctuations at the electrode.}
+\label{fig:nernts-no-field}
+\end{figure}
+
+
+\newpage
+
+
+

@@ -1,0 +1,61 @@
+\section{Langmuir Adsorption Model}
+
+Adsorption is a process of adding a particular substance to the surfaces of a solid. This is different than absorption where the substance is actually absorbed into the solid.
+
+Consider the following scenario: we have a substance $B_{(l)}$ in liquid state and $B_{(s)}$ in solid state. The total amount of $B$ substance is
+
+\begin{align}
+	VC_B = QC_{(l)} + S C_{(s)}
+\end{align}
+
+Since the interaction can only be at the surface, then $V = Q$. Thus,
+
+\begin{align}
+	C_{(s)} = \frac{QC_B - QC_{(l)}}{S}
+\end{align}
+
+Which yields the amount of substance that is adsorbed to the surface. 
+
+Adsorption depends on the amount of available sites for substance $B$ to attach itself into. The general equation for the reaction is
+
+\begin{align}
+	C_{(l)} + \left[\text{Open Sites}\right] \rightleftharpoons C_{(s)}
+\end{align} 
+
+Therefore the equilibrium constant for this reaction is
+
+\begin{align}
+	K_{eq} = \frac{[C_{(s)}]}{[C_{(l)}][\text{Open Sites}]}
+\end{align}
+
+Let $S_T$ be the total number of sites available for this process. The number of total available sites at a given point will be $S_T -C_{(s)}$. Therefore
+
+\begin{align}
+	K_{eq} = \frac{[C_{(s)}]}{[C_{(l)}][S_T -C_{(s)}]}
+\end{align}
+
+Solving for $C_{(s)}$
+
+\begin{align}
+	[C_{(s)}] = \frac{K_{eq}[S_T][C_{(l)}]}{1+K_{eq}[C_{(l)}]}
+\end{align} 
+
+To calculate the equilibrium constant of the reaction, we can use the Gibb's free energy, which is
+
+\begin{align}
+	\Delta G^0 = -RT \log\qty{K_{eq}}, \\
+	\Delta G^0 = -zF V_0,
+\end{align}
+
+where $V_0$ is the electrolytic cell's potential and $z$ is the electrolyte's valence. The equilibrium constant can be found to be
+
+\begin{align}
+	K_{eq} = \exp\qty{\frac{zF}{RT}V_0}.
+\end{align}
+
+Therefore, by knowing the concentration of sites of attachment for $B$ we obtain the adsorption model known as the Langmuir isotherm (it is called an isotherm because the equilibrium constant also depend on temperature) \cite{langmuir}.
+
+
+
+
+

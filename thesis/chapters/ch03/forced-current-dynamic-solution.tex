@@ -1,0 +1,28 @@
+\section{Forced Current Setup}
+
+In the previous section we used a concentration dependent boundary condition. That means that the current is a consequence of the chemical reaction at the interface. In this section we would like force the current. The flux at the interface is defined as
+
+\begin{align}
+	\label{eq:forced-current-boundary}
+    J_+(x = 0) &= -\mathcal{D}_+\qty{\frac{\partial C_+}{\partial x} - C_+ \frac{z\mathcal{F}}{RT}\frac{\partial\phi}{\partial x}}\bigg|_{x= 0}= R,\\
+    J_-(x = 0) &= -\mathcal{D}_-\qty{\frac{\partial C_-}{\partial x} + C_- \frac{z\mathcal{F}}{RT}\nabla\phi} \bigg|_{x= 0} = 0,\\
+\end{align}
+
+since only the positive electrolyte reacts with the electrode. The chemical reaction can be written in terms of the concentration as
+
+\begin{align}
+	R = -k_f C(t, x=0) = \frac{i_0}{\mathcal{F}},
+\end{align}
+
+where $k_f$ is the ......, $i_0$ is the current density (current by unit area) and $\mathcal{F}=N_A e$ the Faraday constant.
+
+Discretizing boundary condition \ref{eq:forced-current-boundary} and letting $C_s = C_b\rho_s$ we get
+
+\begin{align}
+	\rho_+^{n,k}=\frac{\rho_+^{n,k+1}-R\Delta \xi/\mathcal{D_+}Cb}{1+\qty{\psi^{n,k+1}-\psi^{n,k}}},\\
+	\rho_-^{n,k}=\frac{\rho_-^{n,k+1}}{1-\qty{\psi^{n,k+1}-\psi^{n,k}}},
+\end{align}
+
+surfaceDeltaE
+
+forced-current-nernst

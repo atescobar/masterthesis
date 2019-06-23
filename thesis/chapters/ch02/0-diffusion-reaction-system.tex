@@ -1,6 +1,6 @@
-\section{System of equations}
+\section{Diffusion Of Electrolytes In Electro-refining Context}
 
-The system of equations we need to solve is 
+We know that electro-refining  apperas to be
 \begin{eqnarray}
 \frac{\partial C_+}{\partial t}+\nabla\cdot \mathbf{N}_+ = 0 \\
 \frac{\partial C_-}{\partial t}+\nabla\cdot \mathbf{N}_- = 0 \\
@@ -15,8 +15,8 @@ $$\mathbf{N}_-= -D_-\left(\nabla C_-(x) +\frac{z_- F}{RT}C_-(x)\nabla\phi(x)\rig
 Therefore, the diffusion equation with electric field interaction incorporated is \cite{Dolde2011}
 
 \begin{eqnarray}
-\frac{\partial C_+}{\partial t}+\nabla\cdot\left[ -D_+\left(\nabla C_+(x) +\frac{z F}{RT}C_+(x)\nabla\phi(x)\right)\right]= 0 \\
-\frac{\partial C_-}{\partial t}+\nabla\cdot\left[ -D_-\left(\nabla C_-(x) -\frac{z F}{RT}C_-(x)\nabla\phi(x)\right)\right] = 0 
+\frac{\partial C_+}{\partial t}=\nabla\cdot\left[ \mathcal{D}_+\left(\nabla C_+(x) +\frac{z F}{RT}C_+(x)\nabla\phi(x)\right)\right]= 0 \\
+\frac{\partial C_-}{\partial t}=\nabla\cdot\left[ \mathcal{D}_-\left(\nabla C_-(x) -\frac{z F}{RT}C_-(x)\nabla\phi(x)\right)\right] = 0 
 \end{eqnarray}
 
 where $z = |z_+|=|z_-|$ is the valence of the electrolyte, $D_{\pm}$ are the diffusion coefficients for each chemical species and $F = 96485.33\,C\,mol^{-1}$ is Faraday's constant.
@@ -32,4 +32,5 @@ This chemical reaction yields the following border condition for the flux
 \left.\mathbf{N}_{-}\cdot\hat{n}\right|_{Surface} &=& 0.
 \label{eq_bc1}
 \end{eqnarray}
+
 with $A$ being the total area of the surface, $I_{0}$ the total electric current and $\hat{n}$ the unit normal of the surface.

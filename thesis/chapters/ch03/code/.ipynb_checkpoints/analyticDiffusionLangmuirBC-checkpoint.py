@@ -1,6 +1,7 @@
 import numpy as np
 from bisection import findRoot
 
+
 def C_an(xi, tau, LAMBDA_, params, tol = 1e-12):
     def cot(x):
         return np.cos(x)/np.sin(x)
@@ -17,7 +18,7 @@ def C_an(xi, tau, LAMBDA_, params, tol = 1e-12):
     total = np.zeros(len(xi))
     
     Cb = params['bulkConcentration']
-    D = params['diffusionCoefficient']
+    D = params['diffusionCoefficientCu']
     d = params['laminarFlowRegion']
     kf = params['reactionRate']
     
@@ -41,7 +42,7 @@ def findLambdas(params, N = 1000):
 
     # note that tau = D t / xb ** 2, where t is the time
     Cb = params['bulkConcentration']
-    D = params['diffusionCoefficient']
+    D = params['diffusionCoefficientCu']
     d = params['laminarFlowRegion']
     kf = params['reactionRate']
     cond = True

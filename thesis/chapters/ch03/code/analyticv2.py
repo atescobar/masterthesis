@@ -1,9 +1,9 @@
 import numpy as np
 
 
-def C_an(xi, tau):
+def C_an(xi, tau, params):
     # note that tau = D t / xb ** 2, where t is the time
-    Cb = 100
+    Cb = params['bulkConcentration']
     total = 0
     tolMax  = 1e-10 
     tolMin = tolMax*1e-2
