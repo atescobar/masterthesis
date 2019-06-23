@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 JUN 2019 02:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  23 JUN 2019 16:22
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -984,10 +984,10 @@ Package pdftex.def Info: ./img/leveque_errors_plotting.png  used on input line 2
 Chapter 3.
 (./chapters/ch02/1-analytic-solution.tex
 Package epstopdf Info: Source file: <./img/comparison-phi.eps>
-(epstopdf)                    date: 2018-11-12 11:28:50
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 500405 bytes
 (epstopdf)             Output file: <./img/comparison-phi-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-11-12 11:28:50
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 84896 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison-phi-eps-converted-to.pdf ./img/comparison-phi.eps>
 (epstopdf)             \includegraphics on input line 25.
@@ -1011,10 +1011,10 @@ Package pdftex.def Info: ./img/geometry.png  used on input line 63.
 (pdftex.def)             Requested size: 236.01561pt x 147.51118pt.
  [23 <./img/geometry.png>] [24] [25] [26] [27]
 Package epstopdf Info: Source file: <./img/sigma-voltage.eps>
-(epstopdf)                    date: 2019-06-16 20:27:35
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 32638 bytes
 (epstopdf)             Output file: <./img/sigma-voltage-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 20:28:21
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 15545 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/sigma-voltage-eps-converted-to.pdf ./img/sigma-voltage.eps>
 (epstopdf)             \includegraphics on input line 319.
@@ -1025,10 +1025,10 @@ File: ./img/sigma-voltage-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/sigma-voltage-eps-converted-to.pdf  used on input line 319.
 (pdftex.def)             Requested size: 188.8096pt x 151.03264pt.
 Package epstopdf Info: Source file: <./img/voltage-sigma.eps>
-(epstopdf)                    date: 2019-06-16 20:27:35
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 31043 bytes
 (epstopdf)             Output file: <./img/voltage-sigma-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 20:28:21
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 14995 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/voltage-sigma-eps-converted-to.pdf ./img/voltage-sigma.eps>
 (epstopdf)             \includegraphics on input line 325.
@@ -1039,10 +1039,10 @@ File: ./img/voltage-sigma-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/voltage-sigma-eps-converted-to.pdf  used on input line 325.
 (pdftex.def)             Requested size: 188.8096pt x 151.03264pt.
 Package epstopdf Info: Source file: <./img/sigma-concentration.eps>
-(epstopdf)                    date: 2019-06-16 20:27:36
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 34696 bytes
 (epstopdf)             Output file: <./img/sigma-concentration-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 20:28:21
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 17021 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/sigma-concentration-eps-converted-to.pdf ./img/sigma-concentration.eps>
 (epstopdf)             \includegraphics on input line 337.
@@ -1053,10 +1053,10 @@ File: ./img/sigma-concentration-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/sigma-concentration-eps-converted-to.pdf  used on input line 337.
 (pdftex.def)             Requested size: 188.8096pt x 151.03264pt.
 Package epstopdf Info: Source file: <./img/voltage-concentration.eps>
-(epstopdf)                    date: 2019-06-16 20:27:36
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 34135 bytes
 (epstopdf)             Output file: <./img/voltage-concentration-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 20:28:21
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 16161 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/voltage-concentration-eps-converted-to.pdf ./img/voltage-concentration.eps>
 (epstopdf)             \includegraphics on input line 343.
@@ -1068,10 +1068,10 @@ Package pdftex.def Info: ./img/voltage-concentration-eps-converted-to.pdf  used 
 (pdftex.def)             Requested size: 188.8096pt x 151.03264pt.
  [28 <./img/sigma-voltage-eps-converted-to.pdf> <./img/voltage-sigma-eps-converted-to.pdf>] [29 <./img/sigma-concentration-eps-converted-to.pdf> <./img/voltage-concentration-eps-converted-to.pdf>] [30]
 Package epstopdf Info: Source file: <./img/analytic-results.eps>
-(epstopdf)                    date: 2019-06-16 20:30:34
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 204634 bytes
 (epstopdf)             Output file: <./img/analytic-results-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:06
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 129026 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/analytic-results-eps-converted-to.pdf ./img/analytic-results.eps>
 (epstopdf)             \includegraphics on input line 462.
@@ -1087,10 +1087,10 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ) (./chapters/ch02/2-numeric-solution.tex [31] [32 <./img/analytic-results-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./img/results-numeric.eps>
-(epstopdf)                    date: 2019-06-16 20:29:52
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 108072 bytes
 (epstopdf)             Output file: <./img/results-numeric-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:06
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 56725 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/results-numeric-eps-converted-to.pdf ./img/results-numeric.eps>
 (epstopdf)             \includegraphics on input line 41.
@@ -1124,10 +1124,10 @@ LaTeX Warning: Reference `eq:initial-condition' on page 40 undefined on input li
 
 [40]
 Package epstopdf Info: Source file: <./img/concentration-diffusiononly-comparison.eps>
-(epstopdf)                    date: 2019-06-16 22:26:32
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 92828 bytes
 (epstopdf)             Output file: <./img/concentration-diffusiononly-comparison-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:08
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 75374 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusiononly-comparison-eps-converted-to.pdf ./img/concentration-diffusiononly-comparison.eps>
 (epstopdf)             \includegraphics on input line 120.
@@ -1146,10 +1146,10 @@ LaTeX Warning: Reference `eq:border-conditions-reaction-diffusion' on page 43 un
 
 [43] [44] [45]
 Package epstopdf Info: Source file: <./img/diffusion-reaction-comparison.eps>
-(epstopdf)                    date: 2019-06-16 21:21:56
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 68385 bytes
 (epstopdf)             Output file: <./img/diffusion-reaction-comparison-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:08
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 41313 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/diffusion-reaction-comparison-eps-converted-to.pdf ./img/diffusion-reaction-comparison.eps>
 (epstopdf)             \includegraphics on input line 124.
@@ -1165,10 +1165,10 @@ LaTeX Warning: Reference `apendix:cossin-orthogonality' on page 50 undefined on 
 
 [50]
 Package epstopdf Info: Source file: <./img/concentration-diffusion-reaction-robin-comparison.eps>
-(epstopdf)                    date: 2019-06-16 22:34:27
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 69124 bytes
 (epstopdf)             Output file: <./img/concentration-diffusion-reaction-robin-comparison-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:09
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 41141 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/concentration-diffusion-reaction-robin-comparison-eps-converted-to.pdf ./img/concentration-diffusion-reaction-robin-comparison.eps>
 (epstopdf)             \includegraphics on input line 285.
@@ -1180,11 +1180,11 @@ Package pdftex.def Info: ./img/concentration-diffusion-reaction-robin-comparison
 (pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
 ) (./chapters/ch03/diffusion-w-concentration-dependent-reaction.tex [51] [52 <./img/concentration-diffusion-reaction-robin-comparison-eps-converted-to.pdf>] [53] [54]
 Package epstopdf Info: Source file: <./img/forced-current-dynamic.eps>
-(epstopdf)                    date: 2019-06-16 21:58:15
-(epstopdf)                    size: 63512 bytes
+(epstopdf)                    date: 2019-06-23 16:22:01
+(epstopdf)                    size: 63194 bytes
 (epstopdf)             Output file: <./img/forced-current-dynamic-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:09
-(epstopdf)                    size: 34377 bytes
+(epstopdf)                    date: 2019-06-23 16:22:10
+(epstopdf)                    size: 37538 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-dynamic-eps-converted-to.pdf ./img/forced-current-dynamic.eps>
 (epstopdf)             \includegraphics on input line 172.
 Package epstopdf Info: Output file is already uptodate.
@@ -1204,11 +1204,11 @@ Overfull \hbox (98.0529pt too wide) detected at line 161
  []
 
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernst.eps>
-(epstopdf)                    date: 2019-06-16 22:26:51
-(epstopdf)                    size: 63314 bytes
+(epstopdf)                    date: 2019-06-23 16:12:37
+(epstopdf)                    size: 63309 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernst-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:09
-(epstopdf)                    size: 41354 bytes
+(epstopdf)                    date: 2019-06-23 16:15:25
+(epstopdf)                    size: 41370 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernst-eps-converted-to.pdf ./img/complete-diffusion-nernst.eps>
 (epstopdf)             \includegraphics on input line 197.
 Package epstopdf Info: Output file is already uptodate.
@@ -1232,10 +1232,10 @@ See the caption package documentation for explanation.
 LaTeX Warning: Reference `fig:comparison' on page 63 undefined on input line 5.
 
 Package epstopdf Info: Source file: <./img/comparison0.eps>
-(epstopdf)                    date: 2019-06-16 20:30:12
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 105149 bytes
 (epstopdf)             Output file: <./img/comparison0-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:06
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 53705 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison0-eps-converted-to.pdf ./img/comparison0.eps>
 (epstopdf)             \includegraphics on input line 12.
@@ -1246,10 +1246,10 @@ File: ./img/comparison0-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/comparison0-eps-converted-to.pdf  used on input line 12.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/comparison1.eps>
-(epstopdf)                    date: 2019-06-16 20:30:13
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 101535 bytes
 (epstopdf)             Output file: <./img/comparison1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:07
+(epstopdf)                    date: 2019-06-23 13:19:30
 (epstopdf)                    size: 53795 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison1-eps-converted-to.pdf ./img/comparison1.eps>
 (epstopdf)             \includegraphics on input line 18.
@@ -1260,10 +1260,10 @@ File: ./img/comparison1-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./img/comparison1-eps-converted-to.pdf  used on input line 18.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/comparison2.eps>
-(epstopdf)                    date: 2019-06-16 20:30:15
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 101546 bytes
 (epstopdf)             Output file: <./img/comparison2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 23:17:07
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 54186 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/comparison2-eps-converted-to.pdf ./img/comparison2.eps>
 (epstopdf)             \includegraphics on input line 24.
@@ -1277,11 +1277,11 @@ Package pdftex.def Info: ./img/comparison2-eps-converted-to.pdf  used on input l
 
 ] [64 <./img/comparison0-eps-converted-to.pdf> <./img/comparison1-eps-converted-to.pdf> <./img/comparison2-eps-converted-to.pdf>]) (./chapters/ch04/results.tex
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernstE0.eps>
-(epstopdf)                    date: 2019-06-17 08:59:48
-(epstopdf)                    size: 44439 bytes
+(epstopdf)                    date: 2019-06-23 15:45:22
+(epstopdf)                    size: 46637 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernstE0-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 21:13:51
-(epstopdf)                    size: 22958 bytes
+(epstopdf)                    date: 2019-06-23 16:08:10
+(epstopdf)                    size: 28521 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernstE0-eps-converted-to.pdf ./img/complete-diffusion-nernstE0.eps>
 (epstopdf)             \includegraphics on input line 16.
 Package epstopdf Info: Output file is already uptodate.
@@ -1291,11 +1291,11 @@ File: ./img/complete-diffusion-nernstE0-eps-converted-to.pdf Graphic file (type 
 Package pdftex.def Info: ./img/complete-diffusion-nernstE0-eps-converted-to.pdf  used on input line 16.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernstE1.eps>
-(epstopdf)                    date: 2019-06-17 08:59:49
-(epstopdf)                    size: 43058 bytes
+(epstopdf)                    date: 2019-06-23 15:45:23
+(epstopdf)                    size: 47564 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernstE1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 21:13:51
-(epstopdf)                    size: 26528 bytes
+(epstopdf)                    date: 2019-06-23 16:08:10
+(epstopdf)                    size: 28862 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernstE1-eps-converted-to.pdf ./img/complete-diffusion-nernstE1.eps>
 (epstopdf)             \includegraphics on input line 22.
 Package epstopdf Info: Output file is already uptodate.
@@ -1305,11 +1305,11 @@ File: ./img/complete-diffusion-nernstE1-eps-converted-to.pdf Graphic file (type 
 Package pdftex.def Info: ./img/complete-diffusion-nernstE1-eps-converted-to.pdf  used on input line 22.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernstE2.eps>
-(epstopdf)                    date: 2019-06-17 08:59:49
-(epstopdf)                    size: 42930 bytes
+(epstopdf)                    date: 2019-06-23 15:45:23
+(epstopdf)                    size: 46281 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernstE2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 21:13:51
-(epstopdf)                    size: 25333 bytes
+(epstopdf)                    date: 2019-06-23 16:08:11
+(epstopdf)                    size: 28237 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernstE2-eps-converted-to.pdf ./img/complete-diffusion-nernstE2.eps>
 (epstopdf)             \includegraphics on input line 28.
 Package epstopdf Info: Output file is already uptodate.
@@ -1319,11 +1319,11 @@ File: ./img/complete-diffusion-nernstE2-eps-converted-to.pdf Graphic file (type 
 Package pdftex.def Info: ./img/complete-diffusion-nernstE2-eps-converted-to.pdf  used on input line 28.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernstphi0.eps>
-(epstopdf)                    date: 2019-06-17 08:59:51
-(epstopdf)                    size: 43328 bytes
+(epstopdf)                    date: 2019-06-23 15:45:25
+(epstopdf)                    size: 45355 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernstphi0-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 21:13:51
-(epstopdf)                    size: 22938 bytes
+(epstopdf)                    date: 2019-06-23 16:08:11
+(epstopdf)                    size: 26365 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernstphi0-eps-converted-to.pdf ./img/complete-diffusion-nernstphi0.eps>
 (epstopdf)             \includegraphics on input line 41.
 Package epstopdf Info: Output file is already uptodate.
@@ -1333,11 +1333,11 @@ File: ./img/complete-diffusion-nernstphi0-eps-converted-to.pdf Graphic file (typ
 Package pdftex.def Info: ./img/complete-diffusion-nernstphi0-eps-converted-to.pdf  used on input line 41.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernstphi1.eps>
-(epstopdf)                    date: 2019-06-17 08:59:52
-(epstopdf)                    size: 43406 bytes
+(epstopdf)                    date: 2019-06-23 15:45:26
+(epstopdf)                    size: 45595 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernstphi1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 21:13:51
-(epstopdf)                    size: 24961 bytes
+(epstopdf)                    date: 2019-06-23 16:08:11
+(epstopdf)                    size: 26678 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernstphi1-eps-converted-to.pdf ./img/complete-diffusion-nernstphi1.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
@@ -1347,11 +1347,11 @@ File: ./img/complete-diffusion-nernstphi1-eps-converted-to.pdf Graphic file (typ
 Package pdftex.def Info: ./img/complete-diffusion-nernstphi1-eps-converted-to.pdf  used on input line 47.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/complete-diffusion-nernstphi2.eps>
-(epstopdf)                    date: 2019-06-17 08:59:53
-(epstopdf)                    size: 44025 bytes
+(epstopdf)                    date: 2019-06-23 15:45:26
+(epstopdf)                    size: 45528 bytes
 (epstopdf)             Output file: <./img/complete-diffusion-nernstphi2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 21:13:51
-(epstopdf)                    size: 25345 bytes
+(epstopdf)                    date: 2019-06-23 16:08:11
+(epstopdf)                    size: 26538 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-diffusion-nernstphi2-eps-converted-to.pdf ./img/complete-diffusion-nernstphi2.eps>
 (epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
@@ -1362,29 +1362,29 @@ Package pdftex.def Info: ./img/complete-diffusion-nernstphi2-eps-converted-to.pd
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
  [65 <./img/complete-diffusion-nernstE0-eps-converted-to.pdf> <./img/complete-diffusion-nernstE1-eps-converted-to.pdf> <./img/complete-diffusion-nernstE2-eps-converted-to.pdf>] [66 <./img/complete-diffusion-nernstphi0-eps-converted-to.pdf> <./img/complete-diffusion-nernstphi1-eps-converted-to.pdf> <./img/complete-diffusion-nernstphi2-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./img/surfaceEfield_Cb.eps>
-(epstopdf)                    date: 2019-06-16 23:23:38
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 46525 bytes
 (epstopdf)             Output file: <./img/surfaceEfield_Cb-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 00:04:13
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 26747 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/surfaceEfield_Cb-eps-converted-to.pdf ./img/surfaceEfield_Cb.eps>
 (epstopdf)             \includegraphics on input line 72.
 Package epstopdf Info: Output file is already uptodate.
-<./img/surfaceEfield_Cb-eps-converted-to.pdf, id=1468, 1445.4pt x 1156.32pt>
+<./img/surfaceEfield_Cb-eps-converted-to.pdf, id=1501, 1445.4pt x 1156.32pt>
 File: ./img/surfaceEfield_Cb-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/surfaceEfield_Cb-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/surfaceEfield_Cb-eps-converted-to.pdf  used on input line 72.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/surfaceEfield_v.eps>
-(epstopdf)                    date: 2019-06-16 23:23:39
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 47750 bytes
 (epstopdf)             Output file: <./img/surfaceEfield_v-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 00:04:14
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 26174 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/surfaceEfield_v-eps-converted-to.pdf ./img/surfaceEfield_v.eps>
 (epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
-<./img/surfaceEfield_v-eps-converted-to.pdf, id=1469, 1445.4pt x 1156.32pt>
+<./img/surfaceEfield_v-eps-converted-to.pdf, id=1502, 1445.4pt x 1156.32pt>
 File: ./img/surfaceEfield_v-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/surfaceEfield_v-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/surfaceEfield_v-eps-converted-to.pdf  used on input line 78.
@@ -1398,115 +1398,115 @@ LaTeX Warning: Reference `eq:ionic-force' on page 67 undefined on input line 82.
 
 [67 <./img/surfaceEfield_Cb-eps-converted-to.pdf> <./img/surfaceEfield_v-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./img/complete-no-electric-field.eps>
-(epstopdf)                    date: 2019-06-08 01:08:25
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 64091 bytes
 (epstopdf)             Output file: <./img/complete-no-electric-field-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-16 14:23:30
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 41835 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/complete-no-electric-field-eps-converted-to.pdf ./img/complete-no-electric-field.eps>
 (epstopdf)             \includegraphics on input line 97.
 Package epstopdf Info: Output file is already uptodate.
-<./img/complete-no-electric-field-eps-converted-to.pdf, id=1627, 1445.4pt x 1156.32pt>
+<./img/complete-no-electric-field-eps-converted-to.pdf, id=1659, 1445.4pt x 1156.32pt>
 File: ./img/complete-no-electric-field-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/complete-no-electric-field-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/complete-no-electric-field-eps-converted-to.pdf  used on input line 97.
 (pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
  [68 <./img/complete-no-electric-field-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <./img/surfaceDeltaE.eps>
-(epstopdf)                    date: 2019-06-16 23:25:05
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 34150 bytes
 (epstopdf)             Output file: <./img/surfaceDeltaE-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-17 00:04:14
+(epstopdf)                    date: 2019-06-23 13:19:31
 (epstopdf)                    size: 17595 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/surfaceDeltaE-eps-converted-to.pdf ./img/surfaceDeltaE.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
-<./img/surfaceDeltaE-eps-converted-to.pdf, id=1711, 1445.4pt x 1156.32pt>
+<./img/surfaceDeltaE-eps-converted-to.pdf, id=1743, 1445.4pt x 1156.32pt>
 File: ./img/surfaceDeltaE-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/surfaceDeltaE-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/surfaceDeltaE-eps-converted-to.pdf  used on input line 123.
 (pdftex.def)             Requested size: 472.03123pt x 377.61688pt.
  [69 <./img/surfaceDeltaE-eps-converted-to.pdf>]) (./chapters/ch04/results-forced.tex
 Package epstopdf Info: Source file: <./img/forced-current-nernstE0.eps>
-(epstopdf)                    date: 2019-06-01 12:56:06
-(epstopdf)                    size: 46019 bytes
+(epstopdf)                    date: 2019-06-23 16:14:35
+(epstopdf)                    size: 47709 bytes
 (epstopdf)             Output file: <./img/forced-current-nernstE0-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-05 22:14:00
-(epstopdf)                    size: 24752 bytes
+(epstopdf)                    date: 2019-06-23 16:15:26
+(epstopdf)                    size: 24665 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-nernstE0-eps-converted-to.pdf ./img/forced-current-nernstE0.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
-<./img/forced-current-nernstE0-eps-converted-to.pdf, id=1763, 1445.4pt x 1156.32pt>
+<./img/forced-current-nernstE0-eps-converted-to.pdf, id=1795, 1445.4pt x 1156.32pt>
 File: ./img/forced-current-nernstE0-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/forced-current-nernstE0-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/forced-current-nernstE0-eps-converted-to.pdf  used on input line 12.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/forced-current-nernstE1.eps>
-(epstopdf)                    date: 2019-06-01 12:56:07
-(epstopdf)                    size: 40231 bytes
+(epstopdf)                    date: 2019-06-23 16:14:36
+(epstopdf)                    size: 46019 bytes
 (epstopdf)             Output file: <./img/forced-current-nernstE1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-05 22:14:00
-(epstopdf)                    size: 20885 bytes
+(epstopdf)                    date: 2019-06-23 16:15:26
+(epstopdf)                    size: 28247 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-nernstE1-eps-converted-to.pdf ./img/forced-current-nernstE1.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
-<./img/forced-current-nernstE1-eps-converted-to.pdf, id=1764, 1445.4pt x 1156.32pt>
+<./img/forced-current-nernstE1-eps-converted-to.pdf, id=1796, 1445.4pt x 1156.32pt>
 File: ./img/forced-current-nernstE1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/forced-current-nernstE1-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/forced-current-nernstE1-eps-converted-to.pdf  used on input line 18.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/forced-current-nernstE2.eps>
-(epstopdf)                    date: 2019-06-01 12:56:07
-(epstopdf)                    size: 40363 bytes
+(epstopdf)                    date: 2019-06-23 16:14:37
+(epstopdf)                    size: 45174 bytes
 (epstopdf)             Output file: <./img/forced-current-nernstE2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-05 22:14:00
-(epstopdf)                    size: 20884 bytes
+(epstopdf)                    date: 2019-06-23 16:15:26
+(epstopdf)                    size: 27592 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-nernstE2-eps-converted-to.pdf ./img/forced-current-nernstE2.eps>
 (epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
-<./img/forced-current-nernstE2-eps-converted-to.pdf, id=1765, 1445.4pt x 1156.32pt>
+<./img/forced-current-nernstE2-eps-converted-to.pdf, id=1797, 1445.4pt x 1156.32pt>
 File: ./img/forced-current-nernstE2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/forced-current-nernstE2-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/forced-current-nernstE2-eps-converted-to.pdf  used on input line 24.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/forced-current-nernstphi0.eps>
-(epstopdf)                    date: 2019-06-01 12:56:08
-(epstopdf)                    size: 45836 bytes
+(epstopdf)                    date: 2019-06-23 16:14:38
+(epstopdf)                    size: 46158 bytes
 (epstopdf)             Output file: <./img/forced-current-nernstphi0-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-05 22:14:00
-(epstopdf)                    size: 25449 bytes
+(epstopdf)                    date: 2019-06-23 16:15:26
+(epstopdf)                    size: 24209 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-nernstphi0-eps-converted-to.pdf ./img/forced-current-nernstphi0.eps>
 (epstopdf)             \includegraphics on input line 37.
 Package epstopdf Info: Output file is already uptodate.
-<./img/forced-current-nernstphi0-eps-converted-to.pdf, id=1766, 1445.4pt x 1156.32pt>
+<./img/forced-current-nernstphi0-eps-converted-to.pdf, id=1798, 1445.4pt x 1156.32pt>
 File: ./img/forced-current-nernstphi0-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/forced-current-nernstphi0-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/forced-current-nernstphi0-eps-converted-to.pdf  used on input line 37.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/forced-current-nernstphi1.eps>
-(epstopdf)                    date: 2019-06-01 12:56:09
-(epstopdf)                    size: 41691 bytes
+(epstopdf)                    date: 2019-06-23 16:14:39
+(epstopdf)                    size: 46077 bytes
 (epstopdf)             Output file: <./img/forced-current-nernstphi1-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-05 22:14:01
-(epstopdf)                    size: 21125 bytes
+(epstopdf)                    date: 2019-06-23 16:15:27
+(epstopdf)                    size: 26211 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-nernstphi1-eps-converted-to.pdf ./img/forced-current-nernstphi1.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
-<./img/forced-current-nernstphi1-eps-converted-to.pdf, id=1767, 1445.4pt x 1156.32pt>
+<./img/forced-current-nernstphi1-eps-converted-to.pdf, id=1799, 1445.4pt x 1156.32pt>
 File: ./img/forced-current-nernstphi1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/forced-current-nernstphi1-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/forced-current-nernstphi1-eps-converted-to.pdf  used on input line 43.
 (pdftex.def)             Requested size: 236.01561pt x 188.80844pt.
 Package epstopdf Info: Source file: <./img/forced-current-nernstphi2.eps>
-(epstopdf)                    date: 2019-06-01 12:56:10
-(epstopdf)                    size: 41823 bytes
+(epstopdf)                    date: 2019-06-23 16:14:40
+(epstopdf)                    size: 45975 bytes
 (epstopdf)             Output file: <./img/forced-current-nernstphi2-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-06-05 22:14:01
-(epstopdf)                    size: 21123 bytes
+(epstopdf)                    date: 2019-06-23 16:15:27
+(epstopdf)                    size: 26093 bytes
 (epstopdf)             Command: <epstopdf --outfile=./img/forced-current-nernstphi2-eps-converted-to.pdf ./img/forced-current-nernstphi2.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
-<./img/forced-current-nernstphi2-eps-converted-to.pdf, id=1768, 1445.4pt x 1156.32pt>
+<./img/forced-current-nernstphi2-eps-converted-to.pdf, id=1800, 1445.4pt x 1156.32pt>
 File: ./img/forced-current-nernstphi2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./img/forced-current-nernstphi2-eps-converted-to.pdf>
 Package pdftex.def Info: ./img/forced-current-nernstphi2-eps-converted-to.pdf  used on input line 49.
@@ -1538,10 +1538,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  43i,17n,57p,904b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (73 pages, 1462541 bytes).
+Output written on main.pdf (73 pages, 1500066 bytes).
 PDF statistics:
- 2189 PDF objects out of 2487 (max. 8388607)
- 453 compressed objects within 5 object streams
+ 2224 PDF objects out of 2487 (max. 8388607)
+ 485 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

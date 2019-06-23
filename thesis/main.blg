@@ -1,22 +1,22 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is '/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/main.blg'
-[56] biber-darwin:313> INFO - === Sun Jun 23, 2019, 02:09:30
-[99] Biber.pm:371> INFO - Reading '/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/main.bcf'
-[212] Biber.pm:857> INFO - Found 13 citekeys in bib section 0
-[229] Biber.pm:3976> INFO - Processing section 0
-[247] Biber.pm:4136> INFO - Looking for bibtex format file 'bibfilename.bib' for section 0
-[249] bibtex.pm:1500> INFO - LaTeX decoding ...
-[268] bibtex.pm:1316> INFO - Found BibTeX data source 'bibfilename.bib'
-[270] Utils.pm:193> WARN - Duplicate entry key: 'schlesinger' in file 'bibfilename.bib', skipping ...
-[271] Utils.pm:193> WARN - Duplicate entry key: 'fick' in file 'bibfilename.bib', skipping ...
-[300] Utils.pm:193> WARN - Name "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" has too many commas: skipping name
-[308] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/2x/q2k7nkl97_q828ffy60gntn00000gp/T/2R4SFGo9W2/bibfilename.bib_14810.utf8, line 149, warning: 59 characters of junk seen at toplevel
-[309] Utils.pm:193> WARN - I didn't find a database entry for 'langenvin' (section 0)
-[309] Utils.pm:193> WARN - I didn't find a database entry for 'Dolde2011' (section 0)
-[326] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[326] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[326] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[326] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[344] bbl.pm:617> INFO - Writing '/Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/main.bbl' with encoding 'UTF-8'
-[353] bbl.pm:720> INFO - Output to /Users/creative-work/Dropbox/Projects/Current/Magnetic Field Detector/Agustin_Escobar/thesis/thesis/main.bbl
-[354] Biber.pm:110> INFO - WARNINGS: 6
+[0] Config.pm:305> INFO - Logfile is '/Users/creative-work/github/masterthesis/thesis/main.blg'
+[50] biber-darwin:313> INFO - === Sun Jun 23, 2019, 16:22:14
+[93] Biber.pm:371> INFO - Reading '/Users/creative-work/github/masterthesis/thesis/main.bcf'
+[191] Biber.pm:857> INFO - Found 13 citekeys in bib section 0
+[214] Biber.pm:3976> INFO - Processing section 0
+[233] Biber.pm:4136> INFO - Looking for bibtex format file 'bibfilename.bib' for section 0
+[234] bibtex.pm:1500> INFO - LaTeX decoding ...
+[255] bibtex.pm:1316> INFO - Found BibTeX data source 'bibfilename.bib'
+[258] Utils.pm:193> WARN - Duplicate entry key: 'schlesinger' in file 'bibfilename.bib', skipping ...
+[259] Utils.pm:193> WARN - Duplicate entry key: 'fick' in file 'bibfilename.bib', skipping ...
+[285] Utils.pm:193> WARN - Name "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" has too many commas: skipping name
+[293] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/2x/q2k7nkl97_q828ffy60gntn00000gp/T/vd4yrdAvz3/bibfilename.bib_18076.utf8, line 149, warning: 59 characters of junk seen at toplevel
+[294] Utils.pm:193> WARN - I didn't find a database entry for 'langenvin' (section 0)
+[294] Utils.pm:193> WARN - I didn't find a database entry for 'Dolde2011' (section 0)
+[310] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[310] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[310] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[310] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[325] bbl.pm:617> INFO - Writing '/Users/creative-work/github/masterthesis/thesis/main.bbl' with encoding 'UTF-8'
+[333] bbl.pm:720> INFO - Output to /Users/creative-work/github/masterthesis/thesis/main.bbl
+[333] Biber.pm:110> INFO - WARNINGS: 6

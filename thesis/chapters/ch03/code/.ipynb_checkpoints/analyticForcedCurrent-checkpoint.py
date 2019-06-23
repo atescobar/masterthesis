@@ -1,9 +1,8 @@
 import numpy as np
 
 
-def C_an(xi, tau):
+def C_an(xi, tau, Cb):
     # note that tau = D t / xb ** 2, where t is the time
-    Cb = 100
     F = 96485.3415
     kf = 1e1
     i0 = 150
