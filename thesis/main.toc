@@ -6,7 +6,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.1}Historical Note}{3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Derivation Of Fick's Law}{3}
+\contentsline {subsection}{\numberline {1.1.2}Derivation Of Fick's Second Law}{3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.3}Diffusion Coefficients}{4}
 \defcounter {refsection}{0}\relax 
@@ -48,62 +48,58 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.3}Zero order solution to Poisson's equation for the electrolyte solution}{25}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Charge Density At The Interface}{27}
+\contentsline {section}{\numberline {3.4}Charge Density At The Interface}{28}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.5}Solution to the concentration at first order in the current $I_0$}{28}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.6}Potential to first order in the current}{30}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Numerical Analysis}{31}
+\contentsline {section}{\numberline {3.7}Numerical Analysis}{32}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Results}{32}
+\contentsline {section}{\numberline {3.8}Results}{33}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Dynamic Solution}{35}
+\contentsline {chapter}{\numberline {4}Dynamic Solution}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Diffusion Only}{35}
+\contentsline {section}{\numberline {4.1}Diffusion Only}{36}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Analytic Solution To The Diffusion-Only Problem}{36}
+\contentsline {subsection}{\numberline {4.1.1}Analytic Solution To The Diffusion-Only Problem}{37}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Numeric Solution To The Diffusion Only Equation}{39}
+\contentsline {subsection}{\numberline {4.1.2}Numeric Solution To The Diffusion Only Equation}{40}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Numeric Solution To The Diffusion Equation With Reaction At The Interface}{42}
+\contentsline {subsection}{\numberline {4.1.3}Numeric Solution To The Diffusion Equation With Reaction At The Interface}{43}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Analytic Solution To The Diffusion Equation With Reaction At The Interface}{43}
+\contentsline {subsection}{\numberline {4.1.4}Analytic Solution To The Diffusion Equation With Reaction At The Interface}{44}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Concentration Dependent Reaction}{46}
+\contentsline {section}{\numberline {4.2}Concentration Dependent Reaction}{47}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Steady State}{47}
+\contentsline {subsection}{\numberline {4.2.1}Steady State}{48}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Dynamic Solution}{48}
+\contentsline {subsection}{\numberline {4.2.2}Dynamic Solution}{49}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Diffusion-Reaction Equation With Forced Current through the system.}{51}
+\contentsline {section}{\numberline {4.3}Diffusion-Reaction Equation With Forced Current through the system.}{52}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Steady State Solution}{53}
+\contentsline {subsection}{\numberline {4.3.1}Steady State Solution}{54}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Dynamic Solution}{54}
+\contentsline {subsection}{\numberline {4.3.2}Dynamic Solution}{55}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Diffusion-Reaction Equation With Nernst Convection Term.}{57}
+\contentsline {section}{\numberline {4.4}Diffusion-Reaction Equation With Nernst Convection Term.}{58}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Discrete equations}{58}
+\contentsline {subsection}{\numberline {4.4.1}Discrete equations}{59}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Matrix equations}{59}
+\contentsline {subsection}{\numberline {4.4.2}Matrix equations}{60}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Forced Current Setup}{62}
+\contentsline {section}{\numberline {4.5}Forced Current Setup}{63}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results and analysis}{63}
+\contentsline {chapter}{\numberline {5}Results and analysis}{64}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Comparing Numeric An Analytic Results In Steady State Regime}{63}
+\contentsline {section}{\numberline {5.1}Comparing Numeric An Analytic Results In Steady State Regime}{64}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Concentration Dependent Boundary Condition}{65}
+\contentsline {section}{\numberline {5.2}Concentration Dependent Boundary Condition}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.1}Time evolution}{65}
+\contentsline {subsection}{\numberline {5.2.1}Time evolution}{66}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.2}Electric field at the surface of the electrode}{67}
+\contentsline {subsection}{\numberline {5.2.2}Electric field at the surface of the electrode}{68}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.3}Grounded electrode limit}{68}
+\contentsline {subsection}{\numberline {5.2.3}Grounded electrode limit}{69}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.2.4}Electric Field Fluctuation As A Function Of Time}{69}
-\defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Forced System Setup}{70}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.3.1}Time Evolution}{70}
+\contentsline {subsection}{\numberline {5.2.4}Electric Field Fluctuation As A Function Of Time}{70}

@@ -96,6 +96,7 @@ Truncating the series at first order in $r$, we obtain the following system of e
 and to first order in the current
 
 \begin{eqnarray}
+\label{eq:first-order-system}
 \frac{\partial C^{(1)}_+}{\partial x}-\frac{zF}{RT}\qty{C^{(1)}_+(x)\frac{\partial \phi^{(0)}}{\partial x}+C^{(0)}_+(x)\frac{\partial \phi^{(1)}}{\partial x}} &=& -1,\\
 \label{eq:concentration-diff-first1}
 \frac{\partial C^{(1)}_-}{\partial x}+\frac{zF}{RT}\qty{C^{(1)}_-(x)\frac{\partial \phi^{(0)}}{\partial x}+C^{(0)}_-(x)\frac{\partial \phi^{(1)}}{\partial x}}&=& 0,\\
@@ -103,18 +104,6 @@ and to first order in the current
 \frac{\partial^2  \phi^{(1)}}{\partial x^2} &=& -\frac{1}{\epsilon}\sum_{s= \pm} szF C^{(1)}_{s}(x).
 \label{eq:concentration-diff-first3}
 \end{eqnarray}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -269,6 +258,24 @@ $$.$$
 
 The minus sign in the previous definition is due to the fact that $\bar{V}_0 < 0$ for our case.
 
+
+\begin{figure}[htbp!]
+\centering
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{steady-state-poisson-boltzmanphi.eps}
+  \caption{}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.4\textwidth}
+  \centering
+  \includegraphics[width=\linewidth]{steady-state-poisson-boltzmanE.eps}
+  \caption{}
+  \label{fig:sub2}
+\end{subfigure}
+\caption{\textbf{(a)} Analytic solution of system \ref{eq:zero-order}.\textbf{(b)} Same solution but showing the electric field.}
+\label{fig:test}
+\end{figure}
 
 
 
