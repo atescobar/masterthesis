@@ -261,6 +261,7 @@ The minus sign in the previous definition is due to the fact that $\bar{V}_0 < 0
 
 \begin{figure}[htbp!]
 \centering
+\title{\bf{Solution Of The Steady State Nernst Equation\\ Without Reaction}}
 \begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{steady-state-poisson-boltzmanphi.eps}
@@ -273,7 +274,7 @@ The minus sign in the previous definition is due to the fact that $\bar{V}_0 < 0
   \caption{}
   \label{fig:sub2}
 \end{subfigure}
-\caption{\textbf{(a)} Analytic solution of system \ref{eq:zero-order}.\textbf{(b)} Same solution but showing the electric field.}
+\caption{\textbf{(a)} Analytic solution of system \ref{eq:zero-order} for the electric potential and concentrations.\textbf{(b)} Same solution but showing the electric field and concentrations.}
 \label{fig:test}
 \end{figure}
 
@@ -309,18 +310,19 @@ We thus obtain the surface charge in terms of the voltage at the interface
 which using Eq. \ref{eq:expz0} can be written as
 
 \begin{align}
-	\sigma(V_0) = -\frac{2 \epsilon \kappa}{\beta q} \frac{\tanh\qty{\frac{q\beta V_0}{4}}}{\tanh\qty{\frac{q\beta V_0}{4}}-1}
+	\sigma(V_0) = -\frac{2 \epsilon \kappa}{\beta q} \frac{\tanh\qty{\frac{q\beta V_0}{4}}}{\tanh\qty{\frac{q\beta V_0}{4}}-1}.
 \end{align}
 
 This equation can be solved for $V_0$ in terms of the surface charge density $\sigma$
 
 \begin{align}
-	V_0 = \tanh^{-1}\qty{-\frac{8\epsilon\kappa}{(q \beta)^2 \sigma} \qty{1 \pm \frac{1}{2}\sqrt{1+\frac{\beta^2 q^2\sigma^2}{\epsilon^2\kappa^2}}}}
+	V_0 = \tanh^{-1}\qty{-\frac{8\epsilon\kappa}{(q \beta)^2 \sigma} \qty{1 \pm \frac{1}{2}\sqrt{1+\frac{\beta^2 q^2\sigma^2}{\epsilon^2\kappa^2}}}}.
 \end{align}
 
 
 \begin{figure}[htbp!]
 \centering
+\title{Surface Charge Density And Voltage In Terms of eachother}
 \begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{sigma-voltage.eps}
@@ -333,12 +335,14 @@ This equation can be solved for $V_0$ in terms of the surface charge density $\s
   \caption{}
   \label{fig:sub2}
 \end{subfigure}
-\caption{\textbf{(a)} Surface charge density in terms of the potential border condition. \textbf{(b)} Inverse of (a)}
+\caption{\textbf{(a)} Surface charge density in terms of the voltage at the interface. \textbf{(b)} Inverse of (a): Voltage in terms of the surface charge density}
 \label{fig:test}
 \end{figure}
 
+
 \begin{figure}[htbp!]
 \centering
+\title{Surface Charge Density And Voltage In Terms Of The Bulk Concentration}
 \begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{sigma-concentration.eps}
@@ -356,7 +360,7 @@ This equation can be solved for $V_0$ in terms of the surface charge density $\s
 \end{figure}
 
 
-
+\newpage
 
 \section{Solution to the concentration at first order in the current $I_0$}
 
@@ -371,18 +375,18 @@ Now we solve Equation \ref{eq:system} at first order in the current $I_0$. From 
 since the gradient of the correction to the potential should be negligible compared to the gradient of the zero order contribution. This will be shown later in a numerical analysis. With this approximation, the system to first order in $r$ becomes
 
 \begin{eqnarray}
-\frac{\partial C^{(1)}_+}{\partial \xi}-C^{(1)}_+(\xi)\frac{\partial \Phi^{(0)}}{\partial \xi} &=& -\frac{1}{\kappa} \\
+\frac{\partial C^{(1)}_+}{\partial \xi}-C^{(1)}_+(\xi)\frac{\partial \Phi^{(0)}}{\partial \xi} &=& -\frac{1}{\kappa}, \\
 \label{eq:concentration-diff-first4}
-\frac{\partial C^{(1)}_-}{\partial \xi}+C^{(1)}_-(\xi)\frac{\partial \Phi^{(0)}}{\partial \xi} &=& 0 \\
+\frac{\partial C^{(1)}_-}{\partial \xi}+C^{(1)}_-(\xi)\frac{\partial \Phi^{(0)}}{\partial \xi} &=& 0, \\
 \label{eq:concentration-diff-first5}
-\frac{\partial^2  \phi^{(1)}}{\partial \xi^2} &=& -(C^{(1)}_{+}(\xi)-C^{(1)}_{-}(\xi))
+\frac{\partial^2  \phi^{(1)}}{\partial \xi^2} &=& -(C^{(1)}_{+}(\xi)-C^{(1)}_{-}(\xi)).
 \label{eq:concentration-diff-first6}
 \end{eqnarray}
 
 
 In Eq. \ref{eq:concentration-diff-first4}, we obtain
 
-$$\frac{\partial C^{(1)}_+}{\partial \xi}-C^{(1)}_+\frac{\partial \Phi^{(0)}}{\partial \xi} = -\frac{1}{\kappa}$$
+$$\frac{\partial C^{(1)}_+}{\partial \xi}-C^{(1)}_+\frac{\partial \Phi^{(0)}}{\partial \xi} = -\frac{1}{\kappa}.$$
 
 Using an integrating factor of the form
 $$\mu(\xi)=e^{-\int_{\kappa\delta}^\xi \frac{zF}{RT}\frac{d\phi^{(0)}}{d\xi'}d\xi'}=e^{- (\Phi^{(0)}(\xi)-\phi_b)} = e^{-\Phi^{(0)}(\xi)}$$
@@ -393,7 +397,7 @@ $$\frac{d}{d\xi}\left(C^{(1)}_+(\xi)\mu(\xi) \right)=-\frac{\mu(\xi)}{\kappa},$$
 
 where $z=|z_\pm|$. Integrating over $x$ and considering that $C^{(1)}_+(\xi)\mu(\xi)\big|_{\xi \rightarrow \infty} = C^{(1)}_{+,b} = 0$ due to border conditions, we get
 
-$$C^{(1)}_+(\xi) =\frac{1}{\kappa\mu(\xi)}\int_{0}^{\xi}\mu(\xi')d\xi'$$
+$$C^{(1)}_+(\xi) =\frac{1}{\kappa\mu(\xi)}\int_{0}^{\xi}\mu(\xi')d\xi'.$$
 
 Eq. \ref{eq:concentration-diff-first5} can be integrated by separation of variables, and the solution is 
 
@@ -404,8 +408,8 @@ Since our border condition yields $ C^{(1)}_{b,-} = 0$, the contribution to firs
 Computing the integral, we find to first order in the current the following solutions for the concentrations.
 
 \begin{eqnarray}
-C^{(1)}_+(\xi) &=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}}\\
-C^{(1)}_-(\xi) &=& 0
+C^{(1)}_+(\xi) &=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}},\\
+C^{(1)}_-(\xi) &=& 0.
 \label{eq:firstordersol}
 \end{eqnarray}
 
@@ -422,14 +426,14 @@ Expanding, we have
 
 \begin{eqnarray}\nonumber
 \frac{\partial^2  \Phi^{(1)}}{\partial \xi^2} &=& -C^{(1)}_{+}(\xi)\\
-&=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}}
+&=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}}.
 \end{eqnarray}
 
 
 Integrating twice and using the fact that $\Psi'^{(1)} = 0$, $\Psi^{(1)} = 0$ we obtain
 
 \begin{eqnarray}
-\Phi'^{(1)}(\xi) = \frac{1}{\kappa} \qty{A + B\xi + C\xi^2 + D \tanh{\frac{\xi-\xi_0}{2}}+E\xi\tanh{\frac{\xi-\xi_0}{2}}} 
+\Phi'^{(1)}(\xi) = \frac{1}{\kappa} \qty{A + B\xi + C\xi^2 + D \tanh{\frac{\xi-\xi_0}{2}}+E\xi\tanh{\frac{\xi-\xi_0}{2}}} .
 \end{eqnarray}
 
 
@@ -437,7 +441,7 @@ And
 
 \begin{eqnarray}
 \Phi^{(1)}(\xi) = -\frac{1}{\kappa} (A(\xi_\delta - \xi) + \frac{B}{2}(\xi_\delta^2-\xi^2) + \frac{C}{3}(\xi_\delta^3 - \xi^3) + \\
-D\log\bigg|\frac{\cosh{\frac{\xi_\delta-\xi}{2}}}{\cosh{\frac{\xi-\xi}{2}}}\bigg| + E \qty{\xi_\delta\log|\cosh\qty{\frac{\xi_\delta-\xi_0}{2}}-\xi\log|\cosh\qty{\frac{\xi-\xi_0}{2}}}-EI_\delta(\xi)
+D\log\bigg|\frac{\cosh{\frac{\xi_\delta-\xi}{2}}}{\cosh{\frac{\xi-\xi}{2}}}\bigg| + E \qty{\xi_\delta\log|\cosh\qty{\frac{\xi_\delta-\xi_0}{2}}-\xi\log|\cosh\qty{\frac{\xi-\xi_0}{2}}}-EI_\delta(\xi),
 \end{eqnarray}
 
 

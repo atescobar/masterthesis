@@ -7,7 +7,7 @@
 
 \begin{align}
 \label{eq:fick-fluxes}
-	J_i = A j_i = -A\mathcal{D}_i\frac{\partial c_i}{\partial z} 
+	J_i = A j_i = -A\mathcal{D}_i\frac{\partial c_i}{\partial z}.
 \end{align}
 
 This is knonw as Fick's fisrt law. Fick was inspired to draw this conclusion from Fourier's work in heat and by the findings of Graham \cite{fick}.
@@ -18,7 +18,8 @@ This is knonw as Fick's fisrt law. Fick was inspired to draw this conclusion fro
 In order to derive Fick's Law for fluxes, we consired diffusion through a thin layer. We want to account for the accumulation of solute within the membrane of Fig. \ref{fig:cussler_thin_layer}. The accumulation should be equal to the rate of diffusion coming into the membrane at $z$ minus the rate at which solute is leaving the membrane at $z+\Delta z$. The sign of the flow is accounted by the fact that particles diffuse from higher concentrations to lower concentrations (from left to right in this case). Therefore,
 
 \begin{align}
-	\qty{\textnormal{Solute accumulation in volume }A\Delta z} =& \\&\qty{\textnormal{Rate of diffusion at } z } - \qty{\textnormal{Rate of diffusion at } z+\Delta z}
+	\qty{\textnormal{Solute accumulation in volume }A\Delta z} =& \qty{\textnormal{Rate of diffusion at } z } \nonumber\\
+	&- \qty{\textnormal{Rate of diffusion at } z+\Delta z}.\nonumber
 \end{align}
 
 
@@ -26,13 +27,13 @@ Accumulation is by definition the rate of change of the total mass contained in 
 
 \begin{align}
 	\label{eq:derivation-fick-1}
-	\frac{\partial \qty{c_1 A\Delta z}}{\partial t} = \qty{J_1 - J_2}
+	\frac{\partial \qty{c_1 A\Delta z}}{\partial t} = \qty{J_1 - J_2}.
 \end{align}
 
 Where $J_1$ and $J_2$ are the Fick fluxes at $z$ and $z+\Delta z$. Replacing \ref{eq:fick-fluxes} into \ref{eq:derivation-fick-1} and assuming the cross sectional area $A$ is constant
 
 \begin{align}
-	\frac{\partial c_1}{\partial t} = \frac{\qty{j_1 - j_2}}{\Delta z},
+	\frac{\partial c_1}{\partial t} = \frac{\qty{j_1 - j_2}}{\Delta z},\\
 	\frac{\partial c_1}{\partial t} = -\mathcal{D}\frac{\qty{\frac{\Delta c_1}{\Delta z} - \frac{\Delta c_2}{\Delta z}}}{\Delta z}.
 \end{align}
 
@@ -40,17 +41,8 @@ As we take $\Delta z \rightarrow 0$ the last equation reduces to
 
 \begin{align}
 \label{eq:second-ficks-law}
-	\frac{\partial c_1}{\partial t} = -\mathcal{D}\frac{\partial^2 c}{\partial z}.
+	\frac{\partial c_1}{\partial t} = \mathcal{D}\frac{\partial^2 c}{\partial z^2}.
 \end{align}
-
-Equation \ref{eq:second-ficks-law} is known as Fick's second law, which as as a solution the error function
-
-
-\begin{align}
-	\label{eq:solution-fick}
-	n(x,t) = \frac{2n_0}{\sqrt{\pi}}\int_0^x e^{-\frac{x^2}{4\mathcal{D}t}}
-\end{align}
-
 
 \begin{figure}[h!]
 \centering
@@ -62,6 +54,18 @@ Equation \ref{eq:second-ficks-law} is known as Fick's second law, which as as a 
 
 
 
+A particularly interesting solution to equation \ref{eq:second-ficks-law} is that of an initial condition where we have a peak concentration at $x=0$ (such as a drop of substance falling into the underlying fluid at $x=0$). Such inital condition can be stated as
+
+\begin{align}
+	c(x,0) = n_0 \delta(x).
+\end{align}
+
+The solution to Ficks law is then
+
+\begin{align}
+	\label{eq:solution-fick}
+	n(x,t) = \frac{2n_0}{\sqrt{\pi}}\int_0^x e^{-\frac{x^2}{4\mathcal{D}t}}.
+\end{align}
 
 
 
@@ -136,7 +140,7 @@ If the particles concidered are big enough (that is, much larger than the averag
 
 \begin{align}
 	\label{eq:friction}
-	F_r(x) = -6\pi\mu a \bar{v}
+	F_r(x) = -6\pi\mu a \bar{v}.
 \end{align}
 
 This however, is an approximation \cite{langevin_original}. Due to impacts of the fluid's constitutive particles the action of the particle oscillates about the value \ref{eq:friction}. Thus, the motion equation of the particle suspended in liquid is
@@ -149,12 +153,12 @@ This however, is an approximation \cite{langevin_original}. Due to impacts of th
 where K is a complementary force induce by the random movement of the particles composing the fluid. This is known as the Langevin equation. 
 
 
-To gain physical insight of this equation, Langevin \cite{langenvin} set out to find the variance of the displacement ($\Delta_x^2$) of the particle suspended in liquid. 
+To gain physical insight of this equation, Langevin \cite{langevin_original} set out to find the variance of the displacement ($\Delta_x^2$) of the particle suspended in liquid. 
 
 The following method is what he used to find $\Delta_x^2$. Multiply by x and write
 \begin{align}
-	\frac{d}{dt}x^2 = 2x\frac{dx}{dt}\\	
-	\frac{d^2}{dt^2}x^2 = 2\qty{x\frac{d^2x}{dt^2}+\qty{\frac{dx}{dt}}^2}
+	\frac{d}{dt}x^2 = 2x\frac{dx}{dt},\\	
+	\frac{d^2}{dt^2}x^2 = 2\qty{x\frac{d^2x}{dt^2}+\qty{\frac{dx},{dt}}^2}
 \end{align}
 
 
@@ -162,16 +166,16 @@ we get the equation
 
 \begin{align}
 \label{eq:langevin}
-	\frac{m}{2}\qty{\frac{d^2x^2}{dt^2} - 2\qty{\frac{dx}{dt}}^2} = -3\pi\mu a \frac{d x^2}{dt} + K(t)x
+	\frac{m}{2}\qty{\frac{d^2x^2}{dt^2} - 2\qty{\frac{dx}{dt}}^2} = -3\pi\mu a \frac{d x^2}{dt} + K(t)x.
 \end{align}
 
-averaging out the later equation, noticing that $<Kx> = 0$ due to irregularity of the complementary forces $K$ (kicks from the liquid particles come from every direction) and considering the fact that
+Averaging out the later equation, noticing that $<Kx> = 0$ due to irregularity of the complementary forces $K$ (kicks from the liquid particles come from every direction) and considering the fact that
 
 \begin{align}
-	m\qty{\frac{d \bar{x}}{dt}}^2 = \frac{RT}{N}
+	m\qty{\frac{d \bar{x}}{dt}}^2 = \frac{RT}{N}.
 \end{align}
 
-Equation \ref{eq:langevin-derivation-3}
+Equation \ref{eq:langevin} yields
 
 \begin{align}
 	\frac{m}{2}\frac{d^2\bar{x^2}}{dt^2} + 3\pi\mu a \frac{d \bar{x^2}}{dt} = \frac{RT}{N}.
@@ -204,7 +208,14 @@ which gives us
 
 which is the famous result from Langevin \cite{langevin_original}.
 
-\cite{deen}
+
+
+
+
+
+
+
+
 
 
 \subsection{Diffusion Of Electrolyte}

@@ -1,0 +1,50 @@
+\BOOKMARK [0][-]{chapter.1}{Diffusion Of Electrolytes In Solution}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Diffusion Processes}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Historical Note}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Derivation Of Fick's Second Law}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Diffusion Coefficients}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Langevin Equation}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.5}{Diffusion Of Electrolyte}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.6}{Copper Electro-refining Process}{section.1.1}% 8
+\BOOKMARK [1][-]{section.1.2}{Langmuir Adsorption Model}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{Diffusion Of Electrolytes In Electro-refining Context}{chapter.1}% 10
+\BOOKMARK [0][-]{chapter.2}{Review Of Numerical Methods For ODE And PDE Solving}{}% 11
+\BOOKMARK [1][-]{section.2.1}{Runge-Kutta Method}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.2}{The Shooting Method}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Ridder's Method}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Finite Difference Methods}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Error In Finite Difference Methods}{section.2.4}% 16
+\BOOKMARK [1][-]{section.2.5}{Applying Finite Difference Methods to PDEs}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.5.1}{Boundary Conditions}{section.2.5}% 18
+\BOOKMARK [2][-]{subsection.2.5.2}{Cauchy boundary conditions}{section.2.5}% 19
+\BOOKMARK [2][-]{subsection.2.5.3}{Robin boundary conditions}{section.2.5}% 20
+\BOOKMARK [0][-]{chapter.3}{Steady State Solution}{}% 21
+\BOOKMARK [1][-]{section.3.1}{Linearization of the Poisson Equation}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Steady State Solution To The Diffusion-Reaction Problem}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.3}{Zero order solution to Poisson's equation for the electrolyte solution}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.4}{Charge Density At The Interface}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.5}{Solution to the concentration at first order in the current I0}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.6}{Potential to first order in the current}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.7}{Numerical Analysis}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.8}{Results}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Dynamic Solution}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Diffusion Only}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.1.1}{Analytic Solution To The Diffusion-Only Problem}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.2}{Numeric Solution To The Diffusion Only Equation}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.3}{Numeric Solution To The Diffusion Equation With Reaction At The Interface}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.4}{Analytic Solution To The Diffusion Equation With Reaction At The Interface}{section.4.1}% 35
+\BOOKMARK [1][-]{section.4.2}{Concentration Dependent Reaction}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{Steady State}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.2}{Dynamic Solution}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{Diffusion-Reaction Equation With Forced Current through the system.}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.3.1}{Steady State Solution}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.2}{Dynamic Solution}{section.4.3}% 41
+\BOOKMARK [1][-]{section.4.4}{Diffusion-Reaction Equation With Nernst Convection Term.}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.4.1}{Discrete equations}{section.4.4}% 43
+\BOOKMARK [2][-]{subsection.4.4.2}{Matrix equations}{section.4.4}% 44
+\BOOKMARK [0][-]{chapter.5}{Results and analysis}{}% 45
+\BOOKMARK [1][-]{section.5.1}{Concentration Dependent Boundary Condition}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.1.1}{Time evolution}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.2}{Electric field at the surface of the electrode}{section.5.1}% 48
+\BOOKMARK [2][-]{subsection.5.1.3}{Grounded electrode limit}{section.5.1}% 49
+\BOOKMARK [2][-]{subsection.5.1.4}{Electric Field Fluctuation As A Function Of Time}{section.5.1}% 50

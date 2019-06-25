@@ -20,8 +20,8 @@ def C_an(xi, tau, LAMBDA_, params, tol = 1e-12):
     Cb = params['bulkConcentration']
     D = params['diffusionCoefficientCu']
     d = params['laminarFlowRegion']
-    kf = params['reactionRate']
-    
+    kf = params['reactionRate']*1e-2
+    i0 = params['reactionRate']*1e-2
     ## Summing contributions
     for i in range(0,len(LAMBDA_)):
         a = LAMBDA_[i]

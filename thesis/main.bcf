@@ -1988,19 +1988,19 @@
     <bcf:citekey order="10">einstein</bcf:citekey>
     <bcf:citekey order="11">langevin_translation</bcf:citekey>
     <bcf:citekey order="12">langevin_original</bcf:citekey>
-    <bcf:citekey order="13">langenvin</bcf:citekey>
+    <bcf:citekey order="13">langevin_original</bcf:citekey>
     <bcf:citekey order="14">langevin_original</bcf:citekey>
-    <bcf:citekey order="15">deen</bcf:citekey>
+    <bcf:citekey order="15">schlesinger</bcf:citekey>
     <bcf:citekey order="16">schlesinger</bcf:citekey>
     <bcf:citekey order="17">schlesinger</bcf:citekey>
     <bcf:citekey order="18">schlesinger</bcf:citekey>
-    <bcf:citekey order="19">schlesinger</bcf:citekey>
-    <bcf:citekey order="20">langmuir</bcf:citekey>
-    <bcf:citekey order="21">Dolde2011</bcf:citekey>
-    <bcf:citekey order="22">kiusalaas</bcf:citekey>
+    <bcf:citekey order="19">langmuir</bcf:citekey>
+    <bcf:citekey order="20">Dolde2011</bcf:citekey>
+    <bcf:citekey order="21">kiusalaas</bcf:citekey>
+    <bcf:citekey order="22">leveque_ch1</bcf:citekey>
     <bcf:citekey order="23">leveque_ch1</bcf:citekey>
     <bcf:citekey order="24">leveque_ch1</bcf:citekey>
-    <bcf:citekey order="25">leveque_ch1</bcf:citekey>
+    <bcf:citekey order="25">langmuir</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

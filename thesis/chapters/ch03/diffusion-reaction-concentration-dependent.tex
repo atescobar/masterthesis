@@ -7,15 +7,15 @@
 		J_{x=0} = -D\frac{\partial C}{\partial x}\big|_{x=0} = -R,
 	\end{align}
 	
-	where $R$ is given by the Langmuir absorption model
+	where $R$ is given by the Langmuir absorption model \cite{langmuir}
 	
 	\begin{align}
-		R = \frac{k C(0, t)}{K + C(0, t)},
+		R = \frac{k_fC(0, t)}{1 + K_{eq}C(0, t)},
 	\end{align} 
 	
-	where $k$ is  ....  and $K$ ... .
+	where $k_f$ is a constant proportional to the number of available sites in the solid surface and  and $K_{eq}$ is the equilibrium constant of the reduction of copper reaction at the interface.
 	
-	If $C << K$, we can expand this into what is known as the Freundlich formula,
+	If $K_{eq} << k_f$, we can expand this into what is known as the Freundlich formula,
 	
 	\begin{align}
 		R \approx k_f C(0, t),
@@ -37,14 +37,14 @@
 	
 		
 	\begin{align}
-		\frac{\partial C}{\partial t} = D \frac{\partial^2 C}{\partial x^2}
+		\frac{\partial C}{\partial t} = D \frac{\partial^2 C}{\partial x^2},
 		\label{eq:dynamic-system}
 	\end{align}
 	
 	\begin{align}
-		C(x = \delta, t) =& C_b\\
-		\frac{\partial C}{\partial x}\big|_{x=0} -\frac{k_f}{D}C(0^+,t) =& 0\\
-		C(x, t=0) =& 0
+		C(x = \delta, t) =& C_b,\\
+		\frac{\partial C}{\partial x}\big|_{x=0} -\frac{k_f}{D}C(0^+,t) =& 0,\\
+		C(x, t=0) =& 0.
 		\label{eq:border-conditions-dynamic}
 	\end{align}
 
@@ -57,27 +57,27 @@
 	First, we will solve the steady state solution of this equation,
 	
 	\begin{align}
-		\frac{\partial C_{SS}}{\partial t} = D \frac{\partial^2 C_{SS}}{\partial x^2} = 0
+		\frac{\partial C_{SS}}{\partial t} = D \frac{\partial^2 C_{SS}}{\partial x^2} = 0,
 		\label{eq:steady-state}
 	\end{align}
 	
 	\begin{align}
-		C(\delta, t) =& C_b\\
-		\frac{\partial C}{\partial x}\big|_{x=0} -\frac{k_f}{D}C(0^+,t) =& 0\\
+		C(\delta, t) =& C_b,\\
+		\frac{\partial C}{\partial x}\big|_{x=0} -\frac{k_f}{D}C(0^+,t) =& 0.\\
 		\label{eq:border-conditions}
 	\end{align}
 	
 	From \ref{eq:steady-state}, we get
 	
 	\begin{align}
-		C_{SS}(x) = A x + B
+		C_{SS}(x) = A x + B.
 	\end{align}
 
 
 Boundary conditions \ref{eq:border-conditions} yield
 
 \begin{align}
-	A\delta + B = C_b\\
+	A\delta + B = C_b,\\
 	A-\frac{k_f}{D} B = 0.
 \end{align}
 
@@ -91,7 +91,7 @@ From which we get
 Therefore,
 
 \begin{align}
-	C_{ss} = \frac{C_b}{1+\frac{k_f\delta}{D}} \qty{\frac{k_fx}{D} + 1}
+	C_{ss} = \frac{C_b}{1+\frac{k_f\delta}{D}} \qty{\frac{k_fx}{D} + 1}.
 	\label{eq:steady-state-sol}
 \end{align}
 
@@ -101,7 +101,7 @@ Therefore,
 Know we consider the complete system \ref{eq:dynamic-system}. To solve this system we define the dimensionless fluctuations with respect to the steady state as
 
 \begin{align}
-	\rho(x, t) = \frac{C(x,t) - C_{SS}(x)}{C_b}
+	\rho(x, t) = \frac{C(x,t) - C_{SS}(x)}{C_b},
 \end{align}
 
 
@@ -110,9 +110,9 @@ which hold the following boundary conditions, which are derived from \ref{eq:bor
 
 
 \begin{align}
-			\rho(\delta, t) =& 0\\
-		\frac{\partial \rho}{\partial x}\big|_{x=0} -\frac{k_f}{D}\rho(0^+,t) =& 0\\
-		\rho(x, t=0) =& -\frac{C_{SS}(x)}{C_b}
+			\rho(\delta, t) =& 0,\\
+		\frac{\partial \rho}{\partial x}\big|_{x=0} -\frac{k_f}{D}\rho(0^+,t) =& 0,\\
+		\rho(x, t=0) =& -\frac{C_{SS}(x)}{C_b}.
 \end{align}
 
 
@@ -126,14 +126,14 @@ First, we will change variables
 The dimensionless system is
 
 \begin{align}
-		\frac{\partial \rho}{\partial \tau} = \frac{\partial^2 \rho}{\partial \xi^2}
+		\frac{\partial \rho}{\partial \tau} = \frac{\partial^2 \rho}{\partial \xi^2},
 		\label{eq:dynamic-system}
 	\end{align}
 
 \begin{align}
-			\rho(\xi = 1, \tau) =& 0\\
-		\frac{\partial \rho}{\partial \xi}\big|_{\xi=0} -\frac{k_f\delta}{D}\rho(0^+,\tau) =& 0\\
-		\rho(x, t=0) =& -\frac{C_{SS}(x)}{C_b}
+			\rho(\xi = 1, \tau) =& 0,\\
+		\frac{\partial \rho}{\partial \xi}\big|_{\xi=0} -\frac{k_f\delta}{D}\rho(0^+,\tau) =& 0,\\
+		\rho(x, t=0) =& -\frac{C_{SS}(x)}{C_b}.
 \end{align}
 
 
@@ -156,20 +156,20 @@ Note that boundary conditions can be rearrange as
 
 
 \begin{align}
-			F(\xi=1) =& 0\\
-		\qty{\frac{d F(\xi)}{d \xi}\bigg|_{\xi=0} -\frac{k_f\delta}{D}F(0^+)} =& 0
+			F(\xi=1) =& 0,\\
+		\qty{\frac{d F(\xi)}{d \xi}\bigg|_{\xi=0} -\frac{k_f\delta}{D}F(0^+)} =& 0.
 \end{align}
 
 
 The solution to equation \ref{eq:G-equation} is
 
 \begin{align}
-	G(\tau) = G(0)e^{-\lambda^2 \tau}
+	G(\tau) = G(0)e^{-\lambda^2 \tau}.
 \end{align}
 
 A particular solution to equation \ref{eq:F-equation} is
 \begin{align}
-	F(\xi) = A_\lambda \cos(\lambda \xi) + B_\lambda \sin(\lambda\xi)
+	F(\xi) = A_\lambda \cos(\lambda \xi) + B_\lambda \sin(\lambda\xi).
 \end{align}
 
 Boundary conditions yield
@@ -190,19 +190,19 @@ From these we obtain that the eigenvalues of the Sturm-Liouville problem $\lambd
 The general solution is then,
 
 \begin{align}
-	\rho(\xi,\tau) = \sum_\lambda G(0)e^{-\lambda^2 \tau}\qty{ A_\lambda \cos(\lambda\xi) + B_\lambda \sin(\lambda\xi)}
+	\rho(\xi,\tau) = \sum_\lambda G(0)e^{-\lambda^2 \tau}\qty{ A_\lambda \cos(\lambda\xi) + B_\lambda \sin(\lambda\xi)}.
 \end{align}
 
 From \ref{eq:border-eq} we get
 
 \begin{align}
-	\rho(\xi,\tau) = \sum_\lambda A_\lambda e^{-\lambda^2 \tau}\qty{  \cos(\lambda\xi) + \frac{k_f \delta}{D\lambda} \sin(\lambda\xi)}
+	\rho(\xi,\tau) = \sum_\lambda A_\lambda e^{-\lambda^2 \tau}\qty{  \cos(\lambda\xi) + \frac{k_f \delta}{D\lambda} \sin(\lambda\xi)},
 \end{align}
 
 or equivalently
 
 \begin{align}
-	\rho(\xi,\tau) = \sum_\lambda A_\lambda e^{-\lambda^2 \tau}\qty{  \cos(\lambda\xi) - \cot(\lambda)\sin(\lambda\xi)}
+	\rho(\xi,\tau) = \sum_\lambda A_\lambda e^{-\lambda^2 \tau}\qty{  \cos(\lambda\xi) - \cot(\lambda)\sin(\lambda\xi)}.
 \end{align}
 
 In appendix \ref{apendix:cossin-orthogonality} we show that the functions 
@@ -222,7 +222,7 @@ Thus, the Fourier coefficients can be obtained from the initial condition,
  
 
 \begin{align}
-	\rho(\xi,\tau = 0) = \sum_\lambda A_\lambda \qty{  \cos(\lambda\xi) - \cot(\lambda)\sin(\lambda\xi)} = -\frac{C_{SS}(\xi)}{C_b}
+	\rho(\xi,\tau = 0) = \sum_\lambda A_\lambda \qty{  \cos(\lambda\xi) - \cot(\lambda)\sin(\lambda\xi)} = -\frac{C_{SS}(\xi)}{C_b}.
 \end{align}
 
 
@@ -245,9 +245,9 @@ A_{\lambda} &= \frac{2\lambda}{\qty{\cot\qty{\lambda} -  \lambda \csc^2\qty{\lam
   
 The integral $I$ can be computed to yield (using equation \ref{eq:lambda-equation})
 \begin{align}
-I &= \int_0^1 \qty{\frac{1+\frac{k_f\delta}{D}\xi}{1+\frac{k_f\delta}{D}}}\qty{\cos(\lambda \xi) - \cot(\lambda) \sin(\lambda\xi)}d\xi,\\
+I &= \int_0^1 \qty{\frac{1+\frac{k_f\delta}{D}\xi}{1+\frac{k_f\delta}{D}}}\qty{\cos(\lambda \xi) - \cot(\lambda) \sin(\lambda\xi)}d\xi\\
 &= \int_0^1 \qty{\frac{1-\lambda \cot(\lambda)\xi}{1-\lambda \cot(\lambda)}}\qty{\cos(\lambda \xi) - \cot(\lambda) \sin(\lambda\xi)}d\xi,\\
-&= \frac{1}{\lambda\sin\qty{\lambda}}	
+&= \frac{1}{\lambda\sin\qty{\lambda}}.
 \end{align}
 
  we obtain,
@@ -255,24 +255,24 @@ I &= \int_0^1 \qty{\frac{1+\frac{k_f\delta}{D}\xi}{1+\frac{k_f\delta}{D}}}\qty{\
 
 
 \begin{align}
-A_{\lambda} = \frac{2\lambda}{\lambda \sin(\lambda)\qty{\cot\qty{\lambda} -  \lambda \csc^2\qty{\lambda}}}
+A_{\lambda} = \frac{2\lambda}{\lambda \sin(\lambda)\qty{\cot\qty{\lambda} -  \lambda \csc^2\qty{\lambda}}},
 \end{align}
 
 or equivalently
 \begin{align}
-A_{\lambda} = \frac{2 \sin\qty{\lambda}}{\sin\qty{\lambda}\cos\qty{\lambda}-\lambda}
+A_{\lambda} = \frac{2 \sin\qty{\lambda}}{\sin\qty{\lambda}\cos\qty{\lambda}-\lambda}.
 \end{align}
 
 Therefore the general solution for this case is
 
 \begin{align}
-	\rho(\xi,\tau) = \sum_\lambda  \frac{2\sin(\lambda)e^{-\lambda^2\tau}}{\sin(\lambda)\cos(\lambda)-\lambda}\qty{\cos{(\lambda\xi)} - \cot\qty{\lambda}\sin\qty{\lambda\xi}}
+	\rho(\xi,\tau) = \sum_\lambda  \frac{2\sin(\lambda)e^{-\lambda^2\tau}}{\sin(\lambda)\cos(\lambda)-\lambda}\qty{\cos{(\lambda\xi)} - \cot\qty{\lambda}\sin\qty{\lambda\xi}}.
 \end{align}
 
 With 
 
 \begin{align}
-	\tan(\lambda) = -\frac{D\lambda}{k_f\delta}
+	\tan(\lambda) = -\frac{D\lambda}{k_f\delta}.
 \end{align}
 
 
@@ -283,6 +283,6 @@ With
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{concentration-diffusion-reaction-robin-comparison}
-\caption{}
+\caption{In this model, the boundary conditions are physically sensible as the depend on charge carriers to arrive at the interface to produce current. At small $t$ there is no current as copper ions have not reached the surface at $x-0$ and it increases linearly with concentration as time goes on.}
 \label{fig:diffusion-reaction-comparison}
 \end{figure}

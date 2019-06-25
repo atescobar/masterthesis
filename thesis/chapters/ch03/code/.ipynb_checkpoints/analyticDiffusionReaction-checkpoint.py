@@ -1,10 +1,13 @@
 import numpy as np
+import json
 
-
+with open('model_parameters.json', 'r') as file:
+    params = json.loads(file.read())
+    
 def C_an(xi, tau, r):
     # note that tau = D t / xb ** 2, where t is the time
-    Cb = 100
-    D = 1.07e-9#Diffusion Coefficient
+    Cb = params['bulkConcentration']
+    D = params['diffusionCoefficientCu']#Diffusion Coefficient
     d = 1e-9 #Laminar flow sheet
     totalA = 0
     totalB = 0

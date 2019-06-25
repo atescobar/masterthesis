@@ -12,12 +12,12 @@ The complete dynamic system is given by
 Boundary conditions are fixed by the flux at the interface and boundary conditions at the bulk.
 
 \begin{align}
-    J_+(x = 0) &= -\mathcal{D}_+\qty{\frac{\partial C_+}{\partial x} - C_+ \frac{z\mathcal{F}}{RT}\frac{\partial\phi}{\partial x}}\bigg|_{x= 0}= -k_f C_+(x = 0, t)\\
-    J_-(x = 0) &= -\mathcal{D}_-\qty{\frac{\partial C_-}{\partial x} + C_- \frac{z\mathcal{F}}{RT}\nabla\phi} \bigg|_{x= 0} = 0\\
-    C_+(\delta) = C_b\\
-    C_-(\delta) = C_b\\
-    \phi(x = 0) &= V_0\\
-    \phi(x = \delta) &= 0
+    J_+(x = 0) &= -\mathcal{D}_+\qty{\frac{\partial C_+}{\partial x} - C_+ \frac{z\mathcal{F}}{RT}\frac{\partial\phi}{\partial x}}\bigg|_{x= 0}= -k_f C_+(x = 0, t),\\
+    J_-(x = 0) &= -\mathcal{D}_-\qty{\frac{\partial C_-}{\partial x} + C_- \frac{z\mathcal{F}}{RT}\nabla\phi} \bigg|_{x= 0} = 0,\\
+    C_+(\delta) = C_b,\\
+    C_-(\delta) = C_b,\\
+    \phi(x = 0) &= V_0,\\
+    \phi(x = \delta) &= 0.
 \end{align}
 
 Initial conditions are given by
@@ -31,7 +31,7 @@ Let
 
 \begin{align}
 	\Psi(x, t) = \frac{z\mathcal{F}}{RT}\phi(x, t), \\
-	\rho_s(x, t) = \frac{C_s(x, t)}{C_b}
+	\rho_s(x, t) = \frac{C_s(x, t)}{C_b},
 \end{align}
 
 be the adimentional potential and adimentional concentration where $s=\pm$ and 

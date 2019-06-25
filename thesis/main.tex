@@ -19,6 +19,15 @@
 \usepackage[font={small,it}]{caption}
 \graphicspath{{./img/}}
 
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+
 \bibliography{bibfilename.bib}
 
 %user-defined commands
@@ -84,10 +93,10 @@
 \input{chapters/ch03/diffusion-reaction-concentration-dependent.tex}
 \input{chapters/ch03/diffusion-w-concentration-dependent-reaction.tex}
 \input{chapters/ch03/complete-dynamic-problem.tex}
-\input{chapters/ch03/forced-current-dynamic-solution.tex}
+%\input{chapters/ch03/forced-current-dynamic-solution.tex}
 
 \chapter{Results and analysis}
-\input{chapters/ch04/results_ss.tex}
+%\input{chapters/ch04/results_ss.tex}
 \input{chapters/ch04/results.tex}
 %\input{chapters/ch04/results-forced.tex}
 

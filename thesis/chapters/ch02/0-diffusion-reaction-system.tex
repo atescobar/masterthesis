@@ -2,21 +2,21 @@
 
 We know that electro-refining  apperas to be
 \begin{eqnarray}
-\frac{\partial C_+}{\partial t}+\nabla\cdot \mathbf{N}_+ = 0 \\
-\frac{\partial C_-}{\partial t}+\nabla\cdot \mathbf{N}_- = 0 \\
-\nabla^2\phi(x)=-\frac{\rho(x)}{\epsilon}
+\frac{\partial C_+}{\partial t}+\nabla\cdot \mathbf{N}_+ = 0, \\
+\frac{\partial C_-}{\partial t}+\nabla\cdot \mathbf{N}_- = 0, \\
+\nabla^2\phi(x)=-\frac{\rho(x)}{\epsilon}.
 \end{eqnarray}
 Where $C_s$ is the concentration of each species and $N_s$ is the diffusive flux for each species.
 In our model, the flux is defined as
 
-$$\mathbf{N}_+= -D_+\left(\nabla C_+(x) +\frac{z_+ F}{RT}C_+(x)\nabla\phi(x)\right)$$
-$$\mathbf{N}_-= -D_-\left(\nabla C_-(x) +\frac{z_- F}{RT}C_-(x)\nabla\phi(x)\right)$$
+$$\mathbf{N}_+= -D_+\left(\nabla C_+(x) +\frac{z_+ F}{RT}C_+(x)\nabla\phi(x)\right)$$,
+$$\mathbf{N}_-= -D_-\left(\nabla C_-(x) +\frac{z_- F}{RT}C_-(x)\nabla\phi(x)\right)$$.
 
 Therefore, the diffusion equation with electric field interaction incorporated is \cite{Dolde2011}
 
 \begin{eqnarray}
-\frac{\partial C_+}{\partial t}=\nabla\cdot\left[ \mathcal{D}_+\left(\nabla C_+(x) +\frac{z F}{RT}C_+(x)\nabla\phi(x)\right)\right]= 0 \\
-\frac{\partial C_-}{\partial t}=\nabla\cdot\left[ \mathcal{D}_-\left(\nabla C_-(x) -\frac{z F}{RT}C_-(x)\nabla\phi(x)\right)\right] = 0 
+\frac{\partial C_+}{\partial t}=\nabla\cdot\left[ \mathcal{D}_+\left(\nabla C_+(x) +\frac{z F}{RT}C_+(x)\nabla\phi(x)\right)\right]= 0, \\
+\frac{\partial C_-}{\partial t}=\nabla\cdot\left[ \mathcal{D}_-\left(\nabla C_-(x) -\frac{z F}{RT}C_-(x)\nabla\phi(x)\right)\right] = 0.
 \end{eqnarray}
 
 where $z = |z_+|=|z_-|$ is the valence of the electrolyte, $D_{\pm}$ are the diffusion coefficients for each chemical species and $F = 96485.33\,C\,mol^{-1}$ is Faraday's constant.
@@ -28,7 +28,7 @@ Cu^{+2} + 2 e^{-} \rightarrow Cu^{0}.
 
 This chemical reaction yields the following border condition for the flux
 \begin{eqnarray}
-\left.\mathbf{N}_{+}\cdot\hat{n}\right|_{Surface} &=& \frac{I_{0}}{z_{+}FA}\nonumber\\
+\left.\mathbf{N}_{+}\cdot\hat{n}\right|_{Surface} &=& \frac{I_{0}}{z_{+}FA},\nonumber\\
 \left.\mathbf{N}_{-}\cdot\hat{n}\right|_{Surface} &=& 0.
 \label{eq_bc1}
 \end{eqnarray}

@@ -215,29 +215,29 @@
       \verb https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brownien
       \endverb
     \endentry
-    \entry{deen}{book}{}
+    \entry{schlesinger}{book}{}
       \name{author}{1}{}{%
-        {{hash=16d06fc1d440592cab5856564cfaa9e3}{%
-           family={Deen},
-           familyi={D\bibinitperiod},
-           given={William\bibnamedelima M.},
-           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=48731aedb266d2a982b09d616bbcbb6c}{%
+           family={Schlesinger},
+           familyi={S\bibinitperiod},
+           given={Mark\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {Oxford University Press}%
+        {ELSEVIER}%
       }
-      \strng{namehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{fullhash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{bibnamehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{authorbibnamehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{authornamehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{authorfullhash}{16d06fc1d440592cab5856564cfaa9e3}
+      \strng{namehash}{48731aedb266d2a982b09d616bbcbb6c}
+      \strng{fullhash}{48731aedb266d2a982b09d616bbcbb6c}
+      \strng{bibnamehash}{48731aedb266d2a982b09d616bbcbb6c}
+      \strng{authorbibnamehash}{48731aedb266d2a982b09d616bbcbb6c}
+      \strng{authornamehash}{48731aedb266d2a982b09d616bbcbb6c}
+      \strng{authorfullhash}{48731aedb266d2a982b09d616bbcbb6c}
       \field{sortinit}{1}
       \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Analysis Of Transport Phenomena}
-      \field{year}{1998}
+      \field{title}{Extractive Metallurgy Of Copper}
+      \field{year}{2011}
     \endentry
     \entry{langmuir}{article}{}
       \name{author}{1}{}{%
@@ -253,8 +253,8 @@
       \strng{authorbibnamehash}{e7d22a8c99140f9e1a0a08c12643914f}
       \strng{authornamehash}{e7d22a8c99140f9e1a0a08c12643914f}
       \strng{authorfullhash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of the American Chemical Society}
@@ -324,7 +324,6 @@
     \endentry
   \enddatalist
   \missing{Dolde2011}
-  \missing{langenvin}
 \endrefsection
 \endinput
 

@@ -1,3 +1,4 @@
+\newpage
 \section{Diffusion-Reaction Equation With Forced Current through the system.}
 
 We consider the same system as above
@@ -116,7 +117,7 @@ Border conditions yield
 where $n$ is an integer number. We let $A_n = G(0) A_\lambda$ and the general solution for $\rho$ is
 
 \begin{align}
-	\rho(\xi, \tau) = \sum_n A_n e^{-n^2\pi^2 \tau}\sin(n\pi \xi)
+	\rho(\xi, \tau) = \sum_n A_n e^{-n^2\pi^2 \tau}\sin(n\pi \xi).
 \end{align}
 
 
@@ -143,7 +144,7 @@ Using \ref{eq:jnm}, we can compute the value of $A_n$ using the initial conditio
 or equivalently,
 
 \begin{align}
-	A_n = -\frac{2}{C_b} \int_0^1 C_{SS}(\xi)\sin(n\pi\xi) d\xi
+	A_n = -\frac{2}{C_b} \int_0^1 C_{SS}(\xi)\sin(n\pi\xi) d\xi.
 \end{align}
 
 Computing the integral and using \ref{eq:steady-state} we get
@@ -153,24 +154,24 @@ Computing the integral and using \ref{eq:steady-state} we get
 \end{align}
 
 
-Therefore,
+From which $\rho$ can be written as,
 
 \begin{align}
-	\rho(\xi, \tau) = \sum_n \frac{2}{n\pi C_b} \qty{(-1)^n C_b- \frac{i_0}{k_f\mathcal{F}}} e^{-n^2\pi^2\tau}\sin(n\pi\xi)
+	\rho(\xi, \tau) = \sum_n \frac{2}{n\pi C_b} \qty{(-1)^n C_b- \frac{i_0}{k_f\mathcal{F}}} e^{-n^2\pi^2\tau}\sin(n\pi\xi).
 \end{align}
 
 
 Therefore,
 
 \begin{align}
-	C(\xi, \tau) = \frac{i_0}{\mathcal{F}k_f} +\qty{C_b - \frac{i_0}{\mathcal{F}k_f}}\xi +\frac{2}{\pi}\sum_n \qty{(-1)^n C_b- \frac{i_0}{k_f\mathcal{F}}} \frac{e^{-n^2\pi^2\tau}}{n}\sin(n\pi\xi)
+	C(\xi, \tau) = \frac{i_0}{\mathcal{F}k_f} +\qty{C_b - \frac{i_0}{\mathcal{F}k_f}}\xi +\frac{2}{\pi}\sum_n \qty{(-1)^n C_b- \frac{i_0}{k_f\mathcal{F}}} \frac{e^{-n^2\pi^2\tau}}{n}\sin(n\pi\xi).
 \end{align}
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{forced-current-dynamic.eps}
-\caption{}
+\caption{Comparison between numerical an analytical results. The numerical method  (dotted line) behaves as expected, following the analytical solution.}
 \label{fig:diffusion-reaction-comparison}
 \end{figure}
 
