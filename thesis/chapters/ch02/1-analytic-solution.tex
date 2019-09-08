@@ -1,23 +1,50 @@
+\label{ch:2}
 \section{Linearization of the Poisson Equation}
 
-As a first approach to solving the equilibrium system (that is, system when there is no current at all), we can simplify the Poisson-Boltzmann Equation by linearizing the Boltzmann term in the Debye-Huckle theory to first order in the potential
+As a first approach to solving the system at equilibrium (that is, system when there is no current at all), we can simplify the Poisson-Boltzmann Equation by linearizing the Boltzmann term in the Debye-Huckel theory to first order in the potential.
 The Poisson-Boltzmann equation is
 
-$$-\frac{d^2\phi(x)}{dx^2}  =\frac{1}{\epsilon}\sum_s z_s F C_{b,s} e^{\frac{z_s F \phi(x)}{RT}},$$
+\begin{align}
+\label{eq:system0}
+-\frac{d^2\phi(x)}{dx^2}  =\frac{1}{\epsilon}\sum_s z_s F C_{b,s} e^{\frac{z_s F \phi(x)}{RT}},
+\end{align}
 which by expanding the exponential for $\left|\frac{z_s F \phi(x)}{RT}\right| < 1$ we get
-$$-\frac{d^2\phi(x)}{dx^2} =\frac{1}{\epsilon}\sum_s z_s F C_s \left(1-\frac{z_s F \phi(x)}{RT}\right)$$
 
-Due to electro-neutrality in the bulk solution, the first term in the right hand side is zero. Therefore, 
-$$\frac{d^2\phi(x)}{dx^2} =\kappa^2 \phi(x)$$
+\begin{align}
+	-\frac{d^2\phi(x)}{dx^2} =\frac{1}{\epsilon}\sum_s z_s F C_s \left(1-\frac{z_s F \phi(x)}{RT}\right)
+\end{align}
+
+Due to electro-neutrality in the bulk solution, the first term in the right hand side is zero (the solution was not charge to begin with and therefore it needs to remain, at equilibrium, that way). 
+
+\begin{align}
+	\frac{1}{\epsilon}\sum_s z_s F C_s  = 0	
+\end{align}
+
+
+Therefore, 
+\begin{align}
+	-\frac{d^2\phi(x)}{dx^2} =\frac{1}{\epsilon}\sum_s z_s F C_s \left(\frac{z_s F \phi(x)}{RT}\right)	
+\end{align}
+
+
+and
+
+\begin{align}
+	\frac{d^2\phi(x)}{dx^2} =\kappa^2 \phi(x)
+\end{align}
 
 where we have defined 
-$$\kappa = \sqrt{\frac{\sum_s C_{b,s} z_s^2 F^2}{\epsilon RT}}$$
-
+\begin{align}
+	\kappa = \sqrt{\frac{\sum_s C_{b,s} z_s^2 F^2}{\epsilon RT}}
+\end{align}
 Given the boundary conditions $\phi(0) = V_0$, and considering the reference zero at $\phi(\delta) = \phi_b = 0$, the solution is trivially found to be
 
-$$\phi(x) = V_0 e^{-\kappa x},$$
+\begin{align}
+	\phi(x) = V_0 e^{-\kappa x},
+\end{align}
+	
 
-This gives the potential in a static situation, in which the electrolytes move to an equilibrium position and the configuration as a hole is static. 
+This gives the potential in a static situation, in which the electrolytes move to an equilibrium position and the configuration as a whole is static. 
 
 \begin{figure}[h!]
 \label{fig:comparison}
@@ -26,7 +53,7 @@ This gives the potential in a static situation, in which the electrolytes move t
  \caption{Comparison of the linearized PB solution with the analytical solution. The region in red is the error committed in this approximation}
 \end{figure}
 
-This results gives a good physical sense of how the potential should look like in a context of electrolyte solutions at equilibrium. We are interested in the dynamics of the system, though, so it makes sense to try to incorporate the current into Eq. \ref{eq:system}. In the next section we shall incorporate the current flowing through the interface as a border condition of Eq. \ref{eq:system}.
+This results gives a good physical sense of how the potential should look like in a context of electrolyte solutions at equilibrium. We are interested in the dynamics of the system, though, so it makes sense to try to incorporate the current into Eq. \ref{eq:system0}. In the next section we shall incorporate the current flowing through the interface as a boundary condition of Eq. \ref{eq:system}.
 
 \section{Steady State Solution To The Diffusion-Reaction Problem}
 
@@ -47,8 +74,8 @@ Therefore, we have
 $$N_+ = A_1$$
 $$N_- = A_2$$
 
-where $A_1$ and $A_2$ are constants determined by border conditions. Since the anion does not interact with the interface, we get after Eq.(\ref{eq_bc1})
-$N_- = 0$. On the other hand, the flux due to the cation reaction with the interface ($Cu^{+2}\rightarrow Cu^{0}$) gives the boundary condition for $N_+$,
+where $A_1$ and $A_2$ are constants determined by boundary conditions. Since the anion does not interact with the interface, we get after Eq.(\ref{eq_bc1})
+$N_- = 0$. On the other hand, the flux due to the cation reaction with the interface ($Cu^{+2}\rightarrow Cu^{0}$) gives the boundary condition
 
 $$N_+ = \frac{I_0}{Az_+F}$$
 
@@ -68,7 +95,8 @@ $$N_+(x) = \frac{I_0}{Aze}$$
 
 According to Fig. \ref{fig:geometry}, for an interface area large compared to the laminar flux region we get the following equations 
 
-\begin{eqnarray}\label{eq:system}
+\begin{eqnarray}
+\label{eq:system}
 \frac{\partial C_+}{\partial x}-\frac{z F}{RT}C_+\frac{\partial \phi}{\partial x} &=& -\frac{I_0}{D_+Az_+ F}\label{eq:eq1} \\
 \frac{\partial C_-}{\partial x}+\frac{z F}{RT}C_-\frac{\partial \phi}{\partial x} &=& 0 \label{eq:eq2}\\
 \frac{\partial^2 \phi}{\partial x^2} &=& -\frac{1}{\epsilon} \sum_{s=\pm}z_s F C_s(x)\label{eq:eq3}
@@ -79,7 +107,9 @@ where A is the area of the interface electrode.
 To solve this system of partial differential equations, we will expand the concentration and the potential as a series in powers of $r = \frac{I_0}{D_+Az_+ F}$. We have
 
 \begin{eqnarray}
+\label{eq:perturbation-theory}
 C_s(x) = \sum_{n=0}^{\infty}r^n C_s^{(n)}(x)\\
+\label{eq:perturbation-theory2}
 \phi(x) = \sum_{n=0}^{\infty}r^n \phi^{(n)}(x)
 \end{eqnarray}
 
@@ -106,7 +136,7 @@ and to first order in the current
 \end{eqnarray}
 
 
-
+In the following sections, system \ref{eq:concentration-diff-zero1} thorugh through \ref{eq:concentration-diff-zero1} and system \ref{eq:concentration-diff-first1} through \ref{eq:concentration-diff-first1} are solved independently. Once contributions are obtained, the solution to first order is given by equations \ref{eq:perturbation-theory} and \ref{eq:perturbation-theory2}
 
 
 
@@ -119,7 +149,10 @@ and to first order in the current
 
 We want to work with the dimensionless potential 
 
-$$\Phi(x) = \frac{zF}{RT}\phi(x).$$
+\begin{align}
+	\label{eq:dimensionless-potential}
+	\Phi(x) = \frac{zF}{RT}\phi(x).
+\end{align}
 
 The zero order system can thus be written as
 
@@ -152,7 +185,7 @@ C^{(0)}_s(\delta) = C_{b,s}e^{\frac{zF}{RT}\phi_b}=C_{b,s}.
 \label{eq:zero-order-sol-c}
 \end{equation}
 
-Consider the bulk values of the concentration, $C_{s,b}$. In the bulk, the solution should be electrically neutral due to conservation of charge. Therefore, for a two electrolyte salt at the bulk
+Consider the bulk values of the concentration, $C_{b,s}$. In the bulk, the solution should be electrically neutral due to charge conservation. Therefore, for a two electrolyte salt at the bulk
 
 \begin{equation}
 \label{eq:electroneutrality}
@@ -168,8 +201,6 @@ C_{b,+}Fz-C_{b,-}Fz=0\\
 \label{eq:electroneutrality2}
 \end{eqnarray}
 
-$$C_{b,+}Fz-C_{b,-}Fz=0$$
-$$\rightarrow \frac{C_{b,+}}{C_{b,-}}=1$$
 
 In the case of a symmetric salt, $q_s=-q_{-s}$ (since in our notation $s=\pm$). Poisson's equation can be written (to zero order in the current) as
 
@@ -193,7 +224,7 @@ $$\kappa^2  = \frac{(zF)^2C_b}{RT\epsilon}$$
 \frac{\partial^2 \Phi^{(0)}}{\partial x^2} = 2\kappa \sinh{\left(\Phi^{(0)}(x)\right)}
 \end{equation}
 
-We want to change variables to the dimensionless quantity $\kappa x$,
+We want to change variables to the dimensionless quantity $xi$ defined by,
 
 $$x \rightarrow \xi = \kappa x$$
  $$d \xi  = \kappa d x $$
@@ -207,10 +238,10 @@ Thus, we write,
 Multiplying by  $\Phi'^{(0)}$ and integrating the equation over the interval $[\xi, \delta]$ we get,
  
 \begin{align}
-\Phi^{(0)}(\kappa \delta)'^2  -\Phi^{(0)}(\xi)'^2   = 2(cosh(\phi(\kappa \delta))-cosh(\phi(\xi)))
+\Phi^{(0)}(\kappa \delta)'^2  -\Phi^{(0)}(\xi)'^2   = 2(\cosh(\phi(\kappa \delta))-\cosh(\phi(\xi)))
 \end{align}
 
-The border condition for the potential yields, 
+The boundary condition for the potential yields, 
 
 $$\Phi^{(0)}(\xi)' \rightarrow 0.$$
 
@@ -218,13 +249,13 @@ Therefore
 
 \begin{align}
 \Phi^{(0)}(\xi)'^2   &= 2(\cosh(\phi(\xi))-1),\\
-&= 4sinh^2(\phi(\xi)), \\
+&= 4\sinh^2(\phi(\xi)), \\
 \rightarrow \Phi^{(0)} &= \pm 2\sinh(\phi(\xi).
 \label{eq:phiprime}
 \end{align}
 
 
-The border conditions for the potential are $\Phi^{(0)}(0) = \bar{V}_0<0$ and $\Phi^{(0)}(\kappa \delta) = 0$, the slope of $\Phi^{(0)}$ must be positive and decreasing. This yields the positive solution to equation \ref{eq:phiprime}
+The boundary conditions for the potential are $\Phi^{(0)}(0) = \bar{V}_0<0$ and $\Phi^{(0)}(\kappa \delta) = 0$, the slope of $\Phi^{(0)}$ must be positive and decreasing. This yields the positive solution to equation \ref{eq:phiprime}
 \begin{align}
 \Phi^{(0)} &=  2\sqrt{\sinh(\phi(\xi))}.
 \end{align}
@@ -239,7 +270,7 @@ This is a separable equation which can be integrated directly, yielding
 	\rightarrow \frac{1-e^{\Phi^{(0)}/2}}{1+e^{\Phi^{(0)}/2}}= Ae^{-\xi}.
 \end{align}
 
-It can be found using the border condition $\Phi^{(0)}(0) = \bar{V}_0$
+It can be found using the boundary condition $\Phi^{(0)}(0) = \bar{V}_0$
 
 \begin{align}
 A = \tanh\qty{{\bar{V}_0/4}}
@@ -253,29 +284,39 @@ Solving for $\Phi^{(0)}$,
 \end{align}
 
 where we have defined
+\begin{align}
+\label{eq:expz0}
+e^{\xi_0}=-\tanh{\left(\frac{\bar{V}_0}{4}\right)},	
+\end{align}
 
-$$.$$
+which determines $\xi_0$ in terms of boundary conditions.
 
 The minus sign in the previous definition is due to the fact that $\bar{V}_0 < 0$ for our case.
 
+Recovering the original units for the potential we get
+
+\begin{align}
+\label{eq:pot_units}
+\phi^{(0)}(x) =  2\frac{RT}{z\mathcal{F}}\log{\qty{\tanh\qty{\frac{\kappa\left(x-x_0\right)}{2}}}},
+\end{align}
+
+and  $x_0 = \xi_0/\kappa$.
 
 \begin{figure}[htbp!]
 \centering
 \title{\bf{Solution Of The Steady State Nernst Equation\\ Without Reaction}}
+\label{fig:zero-order}
 \begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{steady-state-poisson-boltzmanphi.eps}
   \caption{}
-  \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.4\textwidth}
   \centering
   \includegraphics[width=\linewidth]{steady-state-poisson-boltzmanE.eps}
   \caption{}
-  \label{fig:sub2}
 \end{subfigure}
 \caption{\textbf{(a)} Analytic solution of system \ref{eq:zero-order} for the electric potential and concentrations.\textbf{(b)} Same solution but showing the electric field and concentrations.}
-\label{fig:test}
 \end{figure}
 
 
@@ -285,18 +326,13 @@ The minus sign in the previous definition is due to the fact that $\bar{V}_0 < 0
 From equation \ref{eq:pot0} we can obtain the electric field, which in terms of $x$ has the form
 
 \begin{align}
-E(x) =  \frac{2\kappa}{\beta q} \csc\qty{\kappa(x-x_0)},
-\label{eq:pot0}
+E(x) =  \frac{2RT\kappa}{z\mathcal{F}} \csc\qty{\kappa(x-x_0)},
+\label{eq:efield0}
 \end{align}
 
 where
 
-\begin{align}
-e^{\xi_0} = -\tanh\qty{\frac{\bar{V}_0}{4}}.
-\label{eq:expz0}
-\end{align}
-
-From electrostatics we know that the border condition for the electric field at a conductors interface is
+From electrostatics we know that the boundary condition for the electric field at a conductors interface is
 \begin{align}
 	E(x)\big|_{interface} = \frac{\sigma}{\epsilon}.
 \end{align}
@@ -309,54 +345,55 @@ We thus obtain the surface charge in terms of the voltage at the interface
 
 which using Eq. \ref{eq:expz0} can be written as
 
-\begin{align}
+\begin{align}\label{eq:charge_density}
 	\sigma(V_0) = -\frac{2 \epsilon \kappa}{\beta q} \frac{\tanh\qty{\frac{q\beta V_0}{4}}}{\tanh\qty{\frac{q\beta V_0}{4}}-1}.
 \end{align}
 
 This equation can be solved for $V_0$ in terms of the surface charge density $\sigma$
 
 \begin{align}
+\label{eq:voltage_surface}
 	V_0 = \tanh^{-1}\qty{-\frac{8\epsilon\kappa}{(q \beta)^2 \sigma} \qty{1 \pm \frac{1}{2}\sqrt{1+\frac{\beta^2 q^2\sigma^2}{\epsilon^2\kappa^2}}}}.
 \end{align}
-
+Equations \ref{eq:charge_density} and \ref{eq:voltage_surface} are plotted in \ref{fig:charge_density} and \ref{fig:voltage_surface} respectively.
 
 \begin{figure}[htbp!]
 \centering
-\title{Surface Charge Density And Voltage In Terms of eachother}
-\begin{subfigure}{.4\textwidth}
+\title{Surface Charge Density And Voltage In Terms Of The Bulk Voltage}
+\begin{subfigure}{\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{sigma-voltage.eps}
+  \includegraphics[width=0.7\linewidth]{sigma-voltage.eps}
   \caption{}
   \label{fig:sub1}
-\end{subfigure}%
-\begin{subfigure}{.4\textwidth}
+\end{subfigure}\\
+\begin{subfigure}{\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{voltage-sigma.eps}
+  \includegraphics[width=0.7\linewidth]{voltage-sigma.eps}
   \caption{}
   \label{fig:sub2}
 \end{subfigure}
 \caption{\textbf{(a)} Surface charge density in terms of the voltage at the interface. \textbf{(b)} Inverse of (a): Voltage in terms of the surface charge density}
-\label{fig:test}
+\label{fig:charge_density}
 \end{figure}
 
 
 \begin{figure}[htbp!]
 \centering
 \title{Surface Charge Density And Voltage In Terms Of The Bulk Concentration}
-\begin{subfigure}{.4\textwidth}
+\begin{subfigure}{.7\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{sigma-concentration.eps}
+  \includegraphics[width=\textwidth]{sigma-concentration.eps}
   \caption{}
-  \label{fig:sub1}
-\end{subfigure}%
-\begin{subfigure}{.4\textwidth}
+  \label{fig:suface-charge-concentration}
+\end{subfigure}\\
+\begin{subfigure}{.7\textwidth}
   \centering
-  \includegraphics[width=\linewidth]{voltage-concentration.eps}
+  \includegraphics[width=\textwidth]{voltage-concentration.eps}
   \caption{}
-  \label{fig:sub2}
+  \label{fig:voltage-concentration}
 \end{subfigure}
 \caption{\textbf{(a)} Surface charge density in terms of the bulk concentration. \textbf{(b)} Voltage at the interface in terms of the bulk concentration (a)}
-\label{fig:test}
+\label{fig:voltage_surface}
 \end{figure}
 
 
@@ -395,7 +432,7 @@ We can write \ref{eq:concentration-diff-first4}  as
 
 $$\frac{d}{d\xi}\left(C^{(1)}_+(\xi)\mu(\xi) \right)=-\frac{\mu(\xi)}{\kappa},$$
 
-where $z=|z_\pm|$. Integrating over $x$ and considering that $C^{(1)}_+(\xi)\mu(\xi)\big|_{\xi \rightarrow \infty} = C^{(1)}_{+,b} = 0$ due to border conditions, we get
+where $z=|z_\pm|$. Integrating over $x$ and considering that $C^{(1)}_+(\xi)\mu(\xi)\big|_{\xi \rightarrow \infty} = C^{(1)}_{+,b} = 0$ due to boundary conditions, we get
 
 $$C^{(1)}_+(\xi) =\frac{1}{\kappa\mu(\xi)}\int_{0}^{\xi}\mu(\xi')d\xi'.$$
 
@@ -403,77 +440,19 @@ Eq. \ref{eq:concentration-diff-first5} can be integrated by separation of variab
 
 $$C^{(1)}_-(\xi) = C^{(1)}_{b,-}e^{\phi^{(0)}(\xi)}.$$
 
-Since our border condition yields $ C^{(1)}_{b,-} = 0$, the contribution to first order of the negative ion concentration is zero. 
+Since our boundary condition yields $ C^{(1)}_{b,-} = 0$, the contribution to first order of the negative ion concentration is zero. 
 
 Computing the integral, we find to first order in the current the following solutions for the concentrations.
 
 \begin{eqnarray}
-C^{(1)}_+(\xi) &=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}},\\
+C^{(1)}_+(\xi) &=& \frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}},\\
 C^{(1)}_-(\xi) &=& 0.
 \label{eq:firstordersol}
 \end{eqnarray}
 
+In appendix \ref{appendix:first-order-potential} we show the calculation of the first order potential. 
 
 
-\section{Potential to first order in the current}
-
-Now we need to solve Eq. \ref{eq:concentration-diff-first6}
-\begin{eqnarray}
-\frac{\partial^2  \Phi^{(1)}}{\partial \xi^2} &=& -(C^{(1)}_{+}(\xi)-C^{(1)}_{-}(\xi)).
-\end{eqnarray}
-
-Expanding, we have 
-
-\begin{eqnarray}\nonumber
-\frac{\partial^2  \Phi^{(1)}}{\partial \xi^2} &=& -C^{(1)}_{+}(\xi)\\
-&=& -\frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}+2\tanh\qty{\frac{\xi-\xi_0}{2}}.
-\end{eqnarray}
-
-
-Integrating twice and using the fact that $\Psi'^{(1)} = 0$, $\Psi^{(1)} = 0$ we obtain
-
-\begin{eqnarray}
-\Phi'^{(1)}(\xi) = \frac{1}{\kappa} \qty{A + B\xi + C\xi^2 + D \tanh{\frac{\xi-\xi_0}{2}}+E\xi\tanh{\frac{\xi-\xi_0}{2}}} .
-\end{eqnarray}
-
-
-And 
-
-\begin{eqnarray}
-\Phi^{(1)}(\xi) = -\frac{1}{\kappa} (A(\xi_\delta - \xi) + \frac{B}{2}(\xi_\delta^2-\xi^2) + \frac{C}{3}(\xi_\delta^3 - \xi^3) + \\
-D\log\bigg|\frac{\cosh{\frac{\xi_\delta-\xi}{2}}}{\cosh{\frac{\xi-\xi}{2}}}\bigg| + E \qty{\xi_\delta\log|\cosh\qty{\frac{\xi_\delta-\xi_0}{2}}-\xi\log|\cosh\qty{\frac{\xi-\xi_0}{2}}}-EI_\delta(\xi),
-\end{eqnarray}
-
-
-where
-
-\begin{eqnarray*}
-	A = 2\gamma\xi_\delta - \frac{2\xi_\delta}{\gamma} - 2 \gamma - \frac{\xi_\delta^2}{2},\\
-	B = -\qty{\xi_\delta -\frac{2}{\gamma}},\\
-	C = \frac{3}{2}\\
-	D = -2 \qty{\xi_\delta - \frac{2}{\gamma}},\\
-	E = 2,\\
-	\gamma = \tanh\qty{\frac{\xi_0}{2}},
-\end{eqnarray*}
-
-and
-
-\begin{align}
-	I_\delta(\xi) = \int_\xi^{\xi_\delta} \log\bigg|\cosh\qty{\frac{\xi-\xi_0}{2}}\bigg| d\xi.
-\end{align}
-
-
-
-
-This integral must be evaluated numerically for each value of $\xi$. In order to do this, we use the Simpson Rule. Fig. \ref{fig:analytic-results} shows the potential to first order in the current alongside with the zero order potential. 
-
-
-\begin{figure}[h!]
- \centering
- \includegraphics[width = \linewidth]{analytic-results}
- \caption{Analytic results. (a), (b) are the concentrations of each species of electrolytes. (c) is the electric potential and (d) the electric potential. Each plot is compared for 3 different values of the reaction rate.}
- \label{fig:analytic-results}
-\end{figure}
 
 
 

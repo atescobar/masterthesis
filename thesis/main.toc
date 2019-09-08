@@ -1,101 +1,125 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}Diffusion Of Electrolytes In Solution}{3}{chapter.1}
+\contentsline {chapter}{\numberline {1}Diffusion Of Electrolytes In Solution}{4}{chapter.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Diffusion Processes}{3}{section.1.1}
+\contentsline {section}{\numberline {1.1}Diffusion Processes}{4}{section.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.1}Historical Note}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Historical Note}{4}{subsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.2}Derivation Of Fick's Second Law}{3}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.2}Derivation Of Fick's Second Law}{4}{subsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.3}Diffusion Coefficients}{5}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.3}Diffusion Coefficients}{6}{subsection.1.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.4}Langevin Equation}{6}{subsection.1.1.4}
+\contentsline {subsection}{\numberline {1.1.4}Langevin Equation}{7}{subsection.1.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.5}Diffusion Of Electrolyte}{7}{subsection.1.1.5}
+\contentsline {subsection}{\numberline {1.1.5}Diffusion of Electrolytes}{8}{subsection.1.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.1.6}Copper Electro-refining Process}{8}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.6}Copper Electro-refining Process}{9}{subsection.1.1.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}Langmuir Adsorption Model}{9}{section.1.2}
+\contentsline {section}{\numberline {1.2}Langmuir Adsorption Model}{10}{section.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Diffusion Of Electrolytes In Electro-refining Context}{10}{section.1.3}
+\contentsline {section}{\numberline {1.3}Diffusion Of Electrolytes In Electro-refining Context}{12}{section.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Review Of Numerical Methods For ODE And PDE Solving}{12}{chapter.2}
+\contentsline {section}{\numberline {1.4}Context Of This Work}{13}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Runge-Kutta Method}{12}{section.2.1}
+\contentsline {chapter}{\numberline {2}Review Of Numerical Methods For ODE And PDE Solving}{14}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}The Shooting Method}{13}{section.2.2}
+\contentsline {section}{\numberline {2.1}Runge-Kutta Method}{14}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Ridder's Method}{14}{section.2.3}
+\contentsline {section}{\numberline {2.2}The Shooting Method}{15}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Finite Difference Methods}{15}{section.2.4}
+\contentsline {section}{\numberline {2.3}Ridder's Method}{16}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.1}Error In Finite Difference Methods}{16}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.4}Finite Difference Methods}{17}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Applying Finite Difference Methods to PDEs}{17}{section.2.5}
+\contentsline {subsection}{\numberline {2.4.1}Error In Finite Difference Methods}{18}{subsection.2.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.1}Boundary Conditions}{17}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.5}Applying Finite Difference Methods to PDEs}{19}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.2}Cauchy boundary conditions}{18}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.1}Boundary Conditions}{19}{subsection.2.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.5.3}Robin boundary conditions}{19}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.2}Cauchy boundary conditions}{20}{subsection.2.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Steady State Solution}{21}{chapter.3}
+\contentsline {subsection}{\numberline {2.5.3}Robin boundary conditions}{21}{subsection.2.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Linearization of the Poisson Equation}{21}{section.3.1}
+\contentsline {chapter}{\numberline {3}Steady State Solution}{23}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Steady State Solution To The Diffusion-Reaction Problem}{22}{section.3.2}
+\contentsline {section}{\numberline {3.1}Linearization of the Poisson Equation}{23}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Zero order solution to Poisson's equation for the electrolyte solution}{25}{section.3.3}
+\contentsline {section}{\numberline {3.2}Steady State Solution To The Diffusion-Reaction Problem}{24}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Charge Density At The Interface}{28}{section.3.4}
+\contentsline {section}{\numberline {3.3}Zero order solution to Poisson's equation for the electrolyte solution}{27}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Solution to the concentration at first order in the current $I_0$}{30}{section.3.5}
+\contentsline {section}{\numberline {3.4}Charge Density At The Interface}{29}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.6}Potential to first order in the current}{31}{section.3.6}
+\contentsline {section}{\numberline {3.5}Solution to the concentration at first order in the current $I_0$}{33}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.7}Numerical Analysis}{32}{section.3.7}
+\contentsline {section}{\numberline {3.6}Numerical Analysis}{34}{section.3.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.8}Results}{33}{section.3.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Dynamic Solution}{36}{chapter.4}
+\contentsline {chapter}{\numberline {4}Dynamic Solution}{35}{chapter.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.1}Diffusion Only}{36}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Analytic Solution To The Diffusion-Only Problem}{37}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Diffusion Reaction Equation}{38}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.2}Numeric Solution To The Diffusion Only Equation}{40}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.3}Diffusion-Reaction Equation With Forced Current through the system.}{39}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.3}Numeric Solution To The Diffusion Equation With Reaction At The Interface}{43}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.4}Concentration Dependent Reaction}{41}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.4}Analytic Solution To The Diffusion Equation With Reaction At The Interface}{44}{subsection.4.1.4}
+\contentsline {section}{\numberline {4.5}Diffusion-Reaction Equation With Nernst Convection Term.}{44}{section.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Concentration Dependent Reaction}{47}{section.4.2}
+\contentsline {chapter}{\numberline {5}Results and analysis}{46}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Steady State}{48}{subsection.4.2.1}
+\contentsline {section}{\numberline {5.1}Steady State Solution In Forced Current Regime}{46}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.2}Dynamic Solution}{49}{subsection.4.2.2}
+\contentsline {section}{\numberline {5.2}Concentration Dependent Boundary Condition}{49}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Diffusion-Reaction Equation With Forced Current through the system.}{54}{section.4.3}
+\contentsline {subsection}{\numberline {5.2.1}Time evolution}{49}{subsection.5.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Steady State Solution}{54}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {5.2.2}Electric field at the surface of the electrode}{51}{subsection.5.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Dynamic Solution}{55}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {5.2.3}Grounded electrode limit}{52}{subsection.5.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Diffusion-Reaction Equation With Nernst Convection Term.}{58}{section.4.4}
+\contentsline {subsection}{\numberline {5.2.4}Electric Field Fluctuation As A Function Of Time}{53}{subsection.5.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Discrete equations}{59}{subsection.4.4.1}
+\contentsline {chapter}{\numberline {6}Conclusions}{56}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Matrix equations}{60}{subsection.4.4.2}
+\contentsline {section}{\numberline {6.1}Conclusions}{56}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Results and analysis}{63}{chapter.5}
+\contentsline {section}{\numberline {6.2}Further Work}{56}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Concentration Dependent Boundary Condition}{64}{section.5.1}
+\contentsline {section}{\numberline {6.3}Code}{57}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.1}Time evolution}{64}{subsection.5.1.1}
+\contentsline {chapter}{Appendices}{58}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.2}Electric field at the surface of the electrode}{66}{subsection.5.1.2}
+\contentsline {chapter}{\numberline {A}Calculations Of Chapter \ref {ch:2}}{59}{Appendix.a.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.3}Grounded electrode limit}{67}{subsection.5.1.3}
+\contentsline {section}{\numberline {A.1}Potential to first order in the current}{59}{section.a.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.1.4}Electric Field Fluctuation As A Function Of Time}{68}{subsection.5.1.4}
+\contentsline {chapter}{\numberline {B}Calculations And Numerical Analysis Of Chapter \ref {ch:3}}{61}{Appendix.a.B}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}Analytic Solution To The Diffusion-Only Problem}{61}{section.a.B.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.1.1}Numerical Solution To The Diffusion Only Equation}{64}{subsection.a.B.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.1.2}Numerical Solution To The Diffusion Equation With Reaction At The Interface}{66}{subsection.a.B.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Solution Of The Diffusion Equation With Langmuir Reaction At The Interface}{68}{section.a.B.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.2.1}Steady State}{68}{subsection.a.B.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.2.2}Dynamic Solution}{69}{subsection.a.B.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Analytic Solution To The Diffusion Equation With Reaction At The Interface}{72}{section.a.B.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}Diffusion-Reaction Equation With Forced Current through the system.}{76}{section.a.B.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.4.1}Steady State Solution}{76}{subsection.a.B.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.4.2}Dynamic Solution}{77}{subsection.a.B.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.5}Numerical Solution Of The Nernst-Planck Equation}{79}{section.a.B.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.5.1}Discrete equations}{79}{subsection.a.B.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.6}Matrix equations}{81}{section.a.B.6}

@@ -1,19 +1,171 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is '/Users/creative-work/github/masterthesis/thesis/main.blg'
-[59] biber-darwin:313> INFO - === Tue Jun 25, 2019, 07:33:54
-[82] Biber.pm:371> INFO - Reading '/Users/creative-work/github/masterthesis/thesis/main.bcf'
-[193] Biber.pm:857> INFO - Found 11 citekeys in bib section 0
-[210] Biber.pm:3976> INFO - Processing section 0
-[222] Biber.pm:4136> INFO - Looking for bibtex format file 'bibfilename.bib' for section 0
-[225] bibtex.pm:1500> INFO - LaTeX decoding ...
-[245] bibtex.pm:1316> INFO - Found BibTeX data source 'bibfilename.bib'
-[248] Utils.pm:193> WARN - Duplicate entry key: 'fick' in file 'bibfilename.bib', skipping ...
-[283] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/2x/q2k7nkl97_q828ffy60gntn00000gp/T/mwhFgdeybx/bibfilename.bib_37494.utf8, line 144, warning: 59 characters of junk seen at toplevel
-[284] Utils.pm:193> WARN - I didn't find a database entry for 'Dolde2011' (section 0)
-[300] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[300] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[300] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[300] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[314] bbl.pm:617> INFO - Writing '/Users/creative-work/github/masterthesis/thesis/main.bbl' with encoding 'UTF-8'
-[320] bbl.pm:720> INFO - Output to /Users/creative-work/github/masterthesis/thesis/main.bbl
-[321] Biber.pm:110> INFO - WARNINGS: 3
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: /Users/creative-work/github/masterthesis/thesis/main.aux
+The style file: biblatex.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: bibfilename.bib
+I was expecting an "="---line 26 of file bibfilename.bib
+ :    author = {Maze}, j.~r. 
+ :                           and {Stanwix}, P.~L. and {Hodges}, J.~S. and {Hong}, S. and
+I'm skipping whatever remains of this entry
+Repeated entry---line 152 of file bibfilename.bib
+ : @article{fick
+ :              ,
+I'm skipping whatever remains of this entry
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2633 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2637 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2643 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2647 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2651 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2657 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2661 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2661 of file biblatex.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+Too many commas in name 1 of "Mark E. Schlesinger, Mathew J. King, Kathrin C. Sole, William G. Davenport" for entry schlesinger
+while executing---line 2749 of file biblatex.bst
+You've used 13 entries,
+            6268 wiz_defined-function locations,
+            1259 strings with 10802 characters,
+and the built_in function-call counts, 60712 in all, are:
+= -- 4200
+> -- 1017
+< -- 267
++ -- 1253
+- -- 357
+* -- 4127
+:= -- 5886
+add.period$ -- 0
+call.type$ -- 13
+change.case$ -- 149
+chr.to.int$ -- 31
+cite$ -- 24
+duplicate$ -- 6203
+empty$ -- 6151
+format.name$ -- 667
+if$ -- 12710
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 0
+newline$ -- 366
+num.names$ -- 501
+pop$ -- 4116
+preamble$ -- 1
+purify$ -- 205
+quote$ -- 0
+skip$ -- 1914
+stack$ -- 0
+substring$ -- 7329
+swap$ -- 1494
+text.length$ -- 233
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 430
+warning$ -- 0
+while$ -- 685
+width$ -- 0
+write$ -- 354
+(There were 51 error messages)

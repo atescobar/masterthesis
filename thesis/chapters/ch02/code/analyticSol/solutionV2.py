@@ -11,7 +11,7 @@ params0 = {
     "V0": -0.15,
     "D1": 1.05,
     "D2":  0.76,
-    "Cb": 1,
+    "Cb": 1e-3,
     #d = 1.544E-6
     "epsilon": 80.9 * 8.85418782E-12,
     "length": 1.0
@@ -49,7 +49,7 @@ class model:
         return 2 * np.log(np.abs(np.tanh(0.5 * (xi-self.xi_0))))
 
     def C1(self, xi):
-        return (1 / self.k) * np.exp( -self.phi0(xi) ) * ( xi - np.tanh(0.5 * (xi-self.xi_0)) - np.tanh( self.xi_0 / 2 ) )
+        return (1 / self.k) * (( self.xi_d - xi - 2 / self.g ) * np.tanh((xi-self.xi_d)/2) ** 2 + 2 *  np.tanh((xi-self.xi_d)/2))
 
     def C0(self, xi):
         return self.Cb * np.exp( - self.phi0(xi) )
@@ -127,7 +127,9 @@ class model:
         return I[0]
 
     def phiprime(self, xi):
-        return xi ** 2 / 2 - 2 * self.g * xi + 2 * (2 * self.g - xi ) * self.coth(0.5*(xi-self.xi_0))
+        psi_xi = -( self.xi_d - 2 / self.g - xi ) * ((xi - self.xi_0) - 2 * np.tanh((xi-self.xi_0)/2)) - (xi ** 2 - self.xi_0 * xi)
+        psi_delta = - 2 / self.g * ((self.xi_d - self.xi_0) - 2 * np.tanh((self.xi_d-self.xi_0)/2)) + (self.xi_d ** 2 - self.xi_0 * self.xi_d)
+        return psi_xi + psi_delta
 
     def phiprime0(self, xi):
         return self.coth( 0.5 * (xi-self.xi_0) ) * ( self.sech( 0.5 * (xi-self.xi_0) ) ) ** 2
@@ -135,23 +137,25 @@ class model:
     def phi1(self, xi):
         aRes = []
         c = -self.phiprime(self.length)
-        A = 2 * self.xi_d / self.g + 2 * self.g + self.xi_d ** 2 / 2 - 2 * self.g * self.xi_d
-        B = (self.xi_d - 2/self.g)
-        C = -3/2
-        D = 2 * (self.xi_d - 2/self.g)
-        E = -2
-        response = A * (self.xi_d - xi) + B/2 * (self.xi_d ** 2 - xi **2) + C/3 * (self.xi_d**3 - xi **3) + D * np.log(np.abs(np.cosh((self.xi_d-self.xi_0)/2)/np.abs(np.cosh((xi-self.xi_0)/2)))) + E * (self.xi_d * np.log(np.abs(np.cosh((self.xi_d-self.xi_0)/2))) - xi * np.log(np.abs(np.cosh((xi-self.xi_0)/2)))-self.IG(xi))
+        A = 2 * self.xi_d * self.g - 2 * self.xi_d / self.g + self.xi_d ** 2 / 2 - 2 * self.g
+        B = -(self.xi_d - 2/self.g)
+        C = 3/2
+        D = -2 * (self.xi_d - 2/self.g)
+        E = 2
+        response = -(A * (self.xi_d - xi) + B/2 * (self.xi_d ** 2 - xi **2) + C/3 * (self.xi_d**3 - xi **3) + D * np.log(np.abs(np.cosh((self.xi_d-self.xi_0)/2)/np.abs(np.cosh((xi-self.xi_0)/2))))) - E * (self.xi_d * np.log(np.abs(np.cosh((self.xi_d-self.xi_0)/2))) - xi * np.log(np.abs(np.cosh((xi-self.xi_0)/2)))-self.IG(xi))
         return response
 
     def phi(self, xi, r = 1e-5):
         print("r value = " + str(r))
         return self.phi0(xi) + r/self.k * self.phi1(xi)
 
+
     def Efield(self, xi, r):
-        return self.phiprime0(xi) + r * self.phiprime(xi)
+        return -self.k * (self.phiprime0(xi) - r * self.phiprime(xi))
+
 
     def Efield0(self, xi):
-        return self.phiprime0(xi)
+        return -self.phiprime0(xi)
 
     def plot_potential(self, xi, p0, p1):
         plt.figure()

@@ -1,17 +1,19 @@
 \section{Langmuir Adsorption Model}
 
-Adsorption is a process of adding a particular substance to the surfaces of a solid. This is different than absorption where the substance is actually absorbed into the solid.
+Adsorption is the addition of molecules from a gas or liquid to a solid surface (the adsorbent). This process differs from absorption in which the liquid substance permeates into the solid. Adsorption can occur in three main ways: physisorption in which Van der Waals interactions are responsible for the process, chemisorption in which the adsorbate bonds with a functional group at the surface of the adsorbent and it can also occur due to electrostatic forces.
+
+Adsorption is usually described by isotherms: processes in which the temperature is constant. Phenomenological models were the main characterization of adsorption until in 1918 Irving Langmuir proposed a model based on kinetics and statistical thermodynamics.
 
 Consider the following scenario: we have a substance $B_{(l)}$ in liquid state and $B_{(s)}$ in solid state. The total amount of $B$ substance is
 
 \begin{align}
-	VC_B = QC_{(l)} + S C_{(s)}.
+	VB = QB_{(l)} + S B_{(s)},
 \end{align}
 
-Since the interaction can only be at the surface, then $V = Q$. Thus,
+where V is the total volume, Q is the volume of the liquid phase and S is the volume of the surface. Since the volume of the surface can be neglected compared to that of the liquid phase, then $V = Q$. Thus,
 
 \begin{align}
-	C_{(s)} = \frac{QC_B - QC_{(l)}}{S}.
+	B_{(s)} = \frac{QB_B - QB_{(l)}}{S}.
 \end{align}
 
 Which yields the amount of substance that is adsorbed to the surface. 
@@ -19,25 +21,27 @@ Which yields the amount of substance that is adsorbed to the surface.
 Adsorption depends on the amount of available sites for substance $B$ to attach itself into. The general equation for the reaction is
 
 \begin{align}
-	C_{(l)} + \left[\text{Open Sites}\right] \rightleftharpoons C_{(s)}.
+	B_{(l)} + \text{Open Sites} \rightleftharpoons B_{(s)}.
 \end{align} 
 
 Therefore the equilibrium constant for this reaction is
 
 \begin{align}
-	K_{eq} = \frac{[C_{(s)}]}{[C_{(l)}][\text{Open Sites}]}.
+	K_{eq} = \frac{[B_{(s)}]}{[B_{(l)}][\text{Open Sites}]},
 \end{align}
+
+where square brackets denote concentration of the species inside of them.
 
 Let $S_T$ be the total number of sites available for this process. The number of total available sites at a given point will be $S_T -C_{(s)}$. Therefore
 
 \begin{align}
-	K_{eq} = \frac{[C_{(s)}]}{[C_{(l)}][S_T -C_{(s)}]}.
+	K_{eq} = \frac{[B_{(s)}]}{[B_{(l)}][S_T -B_{(s)}]}.
 \end{align}
 
-Solving for $C_{(s)}$
+Solving for $B_{(s)}$
 
 \begin{align}
-	[C_{(s)}] = \frac{K_{eq}[S_T][C_{(l)}]}{1+K_{eq}[C_{(l)}]}.
+	[B_{(s)}] = \frac{K_{eq}[S_T][B_{(l)}]}{1+K_{eq}[B_{(l)}]}.
 \end{align} 
 
 To calculate the equilibrium constant of the reaction, we can use the Gibb's free energy, which is
@@ -50,12 +54,12 @@ To calculate the equilibrium constant of the reaction, we can use the Gibb's fre
 where $V_0$ is the electrolytic cell's potential and $z$ is the electrolyte's valence. The equilibrium constant can be found to be
 
 \begin{align}
-	K_{eq} = \exp\qty{\frac{zF}{RT}V_0}.
+	K_{eq} = \exp\qty{\frac{zF}{RT}V_0},
 \end{align}
 
-Therefore, by knowing the concentration of sites of attachment for $B$ we obtain the adsorption model known as the Langmuir isotherm (it is called an isotherm because the equilibrium constant also depend on temperature) \cite{langmuir}.
+where $\mathcal{F} = e N_a$ is Faraday's constant: the amount of charge per mol ($N_a$ is Avogadro's number). Therefore, by knowing the concentration of sites of attachment for $B$ we obtain the adsorption model known as the Langmuir isotherm (it is called an isotherm because the equilibrium constant also depends on temperature) \cite{langmuir}.
+\newline
 
-
-
+\textit{Note:} The valence of an atom is the amount of electrons available in it's highest energy level (also called the valence level). When electrolyte is in solution, it will loose or earn electrons from the valence level in order to complete it with the most stable configuration (eight electrons). In particular, atoms which have lower valence will loose these electrons and therefore become positively charged. On the other hand, atoms with higher valence will capture electrons from the medium they are immersed in and complete 8 electrons for their valence level, therefore becoming negatively charged. In this work, we use the word valence to describe the number of electrons an ion will take or give when in disolved in water, which coincides with the classic meaning of valence for lower valence ions (those which become positively charged) but not for higher valence elements, where one can match the newly defined valence with the number $8-n$, where $n$ being the amount of electrons in the outer shell for a particular species. Therefore, in this work we define valence as the amount of electrons exchanged with the solute.
 
 

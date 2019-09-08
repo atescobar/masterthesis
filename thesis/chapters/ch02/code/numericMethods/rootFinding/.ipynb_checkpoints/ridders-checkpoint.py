@@ -2,13 +2,16 @@ import math
 from numpy import sign
 from numpy import abs
 
+
 def ridder(f,a,b,tol=1e-2):
     fa = f(a)
+    
     if fa == 0.0: 
     	return a
 
 
     fb = f(b)
+
     if fb == 0.0: 
     	return b
 

@@ -1,5 +1,5 @@
-\subsection{Analytic Solution To The Diffusion Equation With Reaction At The Interface}
-\label{sec:analytic-diffusion-reaction}
+\section{Analytic Solution To The Diffusion Equation With Reaction At The Interface}
+\label{appendix:diffusion-reaction-only}
 
 In this section we compute the analytic solution to the diffusion equation, subject to a chemical reaction at the interface ($x = 0$).
 We need to solve the equation
@@ -11,6 +11,7 @@ We need to solve the equation
 which must meet the border conditions
 
 \begin{align}
+\label{eq:border-conditions-reaction-diffusion}
 	C(x = \delta, t) = C_b,\\
 	-D\frac{\partial C(x = 0, t)}{\partial x} = -r,
 \end{align}
@@ -24,16 +25,17 @@ and the initial condition
 First, we will compute the steady state solution, that is
 
 \begin{align}
+\label{eq:ss-condition}
 	\frac{\partial C_{SS}}{\partial t} = 0.
 \end{align}
 
-Which, from \ref{eq:diffusion-only} takes the form
+Replacing \ref{eq:ss-condition} into \ref{eq:diffusion-only} takes the form
 
 \begin{align}
 	C_{SS}(x) = Ax+B,
 \end{align}
 
-where $A$ and $B$ are constants to be determined. From border conditions \ref{eq:border-conditions-reaction-diffusion},
+where $A$ and $B$ are constants to be determined. From boundary conditions \ref{eq:border-conditions-reaction-diffusion},
 \begin{align}
 	A = \frac{r}{D},\\
 	B = C_b - \frac{r\delta}{D},
@@ -110,19 +112,10 @@ $$C(\xi, \tau) = C_{SS}(\xi) + C_b \rho(\xi, \tau).$$
 or explicitly
 
 \begin{align}\nonumber
-	C_-(x,0) = C_b\qty{1- \frac{4}{\pi} \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)}\exp\qtys{-\qty{\frac{(2n+1)\pi}{2}}^2\frac{D_- t}{\delta^2}}\cos\qty{\frac{(2n+1)\pi}{2} \frac{x}{\delta}}}\\ -\frac{r\delta}{D}\qty{1-\xi - \frac{8}{\pi^2}\sum_{n=0}^\infty \frac{1}{(2n+1)^2}\exp\qtys{-\qty{\frac{(2n+1)\pi}{2}}^2\frac{D_- t}{\delta^2}}\cos\qty{\frac{(2n+1)\pi}{2} \frac{x}{\delta}}}.
-	\label{eq:solution-diffusion}
+	C(t, x) = C_b\qty{1- \frac{4}{\pi} \sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)}\exp\qtys{-\qty{\frac{(2n+1)\pi}{2}}^2\frac{D_- t}{\delta^2}}\cos\qty{\frac{(2n+1)\pi}{2} \frac{x}{\delta}}}\\ -\frac{r\delta}{D}\qty{1-\xi - \frac{8}{\pi^2}\sum_{n=0}^\infty \frac{1}{(2n+1)^2}\exp\qtys{-\qty{\frac{(2n+1)\pi}{2}}^2\frac{D_- t}{\delta^2}}\cos\qty{\frac{(2n+1)\pi}{2} \frac{x}{\delta}}}.
+	\label{eq:solution-diffusion-analytic}
 \end{align}
 
 \newpage
-In order to compare the numeric and analytic solution, we compute the numeric solution for $r = \frac{150 \times 10 }{{2 \cdot  96 485.3329 }} \frac{A}{m^2 C} = 7.77\times 10^{-4}$.
 
-
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=\textwidth]{diffusion-reaction-comparison}
-\caption{Concentration profiles at increasingly large $\tau$. The method only yields physically reasonable results for very small  current densities. This is due to the fact that we cannot impose current when there charge carriers. The effect is seen in the green curve ($\tau = 0.01$)}
-\label{fig:diffusion-reaction-comparison}
-\end{figure}
 

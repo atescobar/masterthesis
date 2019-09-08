@@ -1,25 +1,32 @@
 \section{Diffusion Of Electrolytes In Electro-refining Context}
 
-We know that electro-refining  apperas to be
+The mass balance for the $Cu^{+2}$ ($C_{+}$) and $SO_{4}^{-2}$ ($C_{-}$) ionic species that participate in the electro-refining process of Copper is described by the system of coupled Nerst-diffusion equations, along with Poisson's equation that describes the electric potential $\phi(x)$
+
 \begin{eqnarray}
 \frac{\partial C_+}{\partial t}+\nabla\cdot \mathbf{N}_+ = 0, \\
 \frac{\partial C_-}{\partial t}+\nabla\cdot \mathbf{N}_- = 0, \\
 \nabla^2\phi(x)=-\frac{\rho(x)}{\epsilon}.
 \end{eqnarray}
-Where $C_s$ is the concentration of each species and $N_s$ is the diffusive flux for each species.
+Where $C_s$ is the concentration of each species and $N_s$ is the diffusive flux for each species. Here, $\mathcal{F}$ is Faraday's constant, $\phi$ the electric potential, $R$ the ideal gas constant and $T$ the temperature of the system. $\mathcal{D}_\pm$ are the diffusion coefficients and $C_\pm$ is the concentration of each species. 
 In our model, the flux is defined as
 
-$$\mathbf{N}_+= -D_+\left(\nabla C_+(x) +\frac{z_+ F}{RT}C_+(x)\nabla\phi(x)\right)$$,
+$$\mathbf{N}_+= -D_+\left(\nabla C_+(x) -\frac{z_+ F}{RT}C_+(x)\nabla\phi(x)\right)$$,
 $$\mathbf{N}_-= -D_-\left(\nabla C_-(x) +\frac{z_- F}{RT}C_-(x)\nabla\phi(x)\right)$$.
 
-Therefore, the diffusion equation with electric field interaction incorporated is \cite{Dolde2011}
+Here, the first contribution $\nabla C_s$ accounts diffusion processes due to random interaction with solute particles. The second term is due the electric forced over one mol of substance over the volume in which it is contained: the electric force density. Therefore, from fick's second law
 
 \begin{eqnarray}
-\frac{\partial C_+}{\partial t}=\nabla\cdot\left[ \mathcal{D}_+\left(\nabla C_+(x) +\frac{z F}{RT}C_+(x)\nabla\phi(x)\right)\right]= 0, \\
-\frac{\partial C_-}{\partial t}=\nabla\cdot\left[ \mathcal{D}_-\left(\nabla C_-(x) -\frac{z F}{RT}C_-(x)\nabla\phi(x)\right)\right] = 0.
+\frac{\partial C_s}{\partial t}= -\mathbf{N_s}, s=\pm
 \end{eqnarray}
 
-where $z = |z_+|=|z_-|$ is the valence of the electrolyte, $D_{\pm}$ are the diffusion coefficients for each chemical species and $F = 96485.33\,C\,mol^{-1}$ is Faraday's constant.
+the diffusion equation with electric field interaction incorporated is \cite{Dolde2011}
+
+\begin{eqnarray}
+\frac{\partial C_+}{\partial t}=\nabla\cdot\left[ \mathcal{D}_+\left(\nabla C_+(x) -\frac{z F}{RT}C_+(x)\nabla\phi(x)\right)\right]= 0, \\
+\frac{\partial C_-}{\partial t}=\nabla\cdot\left[ \mathcal{D}_-\left(\nabla C_-(x) +\frac{z F}{RT}C_-(x)\nabla\phi(x)\right)\right] = 0.
+\end{eqnarray}
+
+where $z = |z_+|=|z_-|$ is the valence of the electrolyte, $D_{\pm}$ are the diffusion coefficients (in units of $m^2/s$) for each chemical species and $F = 96485.33\,C$ is Faraday's constant.
 
 The reaction we are modeling is the cation reduction. In particular, we are interested in copper reduction at the surface
 \begin{equation}
@@ -28,9 +35,17 @@ Cu^{+2} + 2 e^{-} \rightarrow Cu^{0}.
 
 This chemical reaction yields the following border condition for the flux
 \begin{eqnarray}
+\label{eq:boundary-condition-flux}
 \left.\mathbf{N}_{+}\cdot\hat{n}\right|_{Surface} &=& \frac{I_{0}}{z_{+}FA},\nonumber\\
 \left.\mathbf{N}_{-}\cdot\hat{n}\right|_{Surface} &=& 0.
 \label{eq_bc1}
 \end{eqnarray}
 
-with $A$ being the total area of the surface, $I_{0}$ the total electric current and $\hat{n}$ the unit normal of the surface.
+with $A$ being the total area of the surface in $m^2$, $I_{0}$ the total electric current in $A$ and $\hat{n}$ the unit normal of the surface.
+
+
+This boundary conditions for the flux have an interesting physical meaning. We are analyzing the interaction of electrolytes with an electrode. Particularly, the positively charged species $s=+$ ($Cu^{+2}$, for instance) interacts with the electrode whereas the negatively charged species $s=-$ ($SO_4^{-2}$) does not. This means, that the flux for the first species permeates the boundary, and this we model by introducing the chemical reaction. As the second species does not interact with the electrode, the flux in this case is zero at the boundary: no particles of type $s=-$ can go through it.
+
+
+
+
