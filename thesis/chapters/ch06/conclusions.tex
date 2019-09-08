@@ -1,0 +1,26 @@
+\section{Conclusions}
+
+One of the objectives of this work (outlined in Sec. \ref{sec:context}) was to provide a model to connect surface electric field fluctuations with the bulk concentration, which is one of our boundary conditions for our system. Using methods described in \ref{ch:results-analysis}, we have found through both numerical and analytical results that the surface electric field is proportional to the square root of the bulk concentration, that is
+
+\begin{align}
+	E_{surface}(t) \propto \sqrt{C_b}.
+\end{align}
+
+In terms of the strategy to simulate the copper electro-refining process, Fig. \ref{fig:efield-noise-fit} suggests that electric field noise can be modeled using the steady state solution alone. This is because the relaxation time (with the parameters used in \ref{sec:analysis-efield}, which are all sensible values for this type of processes) is about $50 ns$ (see Fig \ref{fig:efield-noise-fit}), which compared with the time scale this processes take (hours to days \cite{schlesinger}) is neglectible.
+
+Also, the ionic force \ref{eq:ionic-force} gives us a measure of the screening length of the electrolyte. In the context of building an NV-Center, nano-diamond based sensor to measure the electric field fluctuations, special care has to be taken in positioning the sensor. This because, for the electro-refining process parameters the ionic force $\kappa$ of the order of nanometers to hundred of nanometers.
+
+A final conclusion is that this work and the results obtained in it can be used for optimized control over the process of electro-refinement of copper.
+
+\section{Further Work}
+
+This work offers a set of results which can be used to obtain insights into the electro-refinement of copper process. To gain further insight work still needs to be done. In particular, we are interested in the stochastic nature of the electric field fluctuations at the surface. Nevertheless, our results are determinant and continuos. This is because we are dealing with average quantities, and the evolution of these quantities as a whole. A stochastic component can be introduced to study the evolution of the system, which is interesting as an approach to simulating data obtained by the sensor or even calibrate the sensor according to the simulated data. 
+
+The stochastic component can be introduced in two ways. Firstly, we can introduce fluctuations of the boundary condition of the problem. The convenience of this approach is its ease of implementation. Basically, the equations remain the same and we make the boundary conditions to fluctuate around the mean value following a distribution. 
+
+The second approach is to model the microscopic equations and simulate the distribution of particles in the system through the master equation method. Both of these approaches would be interesting to investigate further.
+
+
+\section{Code}
+
+The numerical methods used in this work where modified from \cite{kiusalaas} and are written in Python 3. These methods such as Finite Difference methods, Runge-Kutta methods and other complementary methods are available on GitHub \textit{https://github.com/atescobar/NumericMethods}. The code of the simulation itself can be requested through personal email to \textit{atescobar@uc.cl}.

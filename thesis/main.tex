@@ -12,14 +12,24 @@
 \usepackage{multicol}
 \usepackage{authblk}
 \usepackage{subcaption}
-\usepackage[backend=biber, style=nature]{biblatex}  
+\usepackage[backend=bibtex, style=nature]{biblatex}  
+\usepackage[toc,page]{appendix}
 
 \usepackage{mwe}
 \usepackage{relsize}
 \usepackage[font={small,it}]{caption}
 \graphicspath{{./img/}}
 
-\bibliography{bibfilename.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=false, %set true if you want colored links
+    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
+
+
+\addbibresource{bibfilename}
 
 %user-defined commands
 
@@ -50,7 +60,7 @@
 \font\myfont=cmr12 at 16pt
 
 
-\title{\bf{Mathematical model for the concentration and electric potential profiles in a solution of electrolytes under a redox reaction}}
+\title{\bf{Nernst-Planck Equation For Electrolytes In The Context Of Copper Electro-refinement.}}
 
 \author{{\myfont Student: Agust\'in Escobar Blanc\\Professor: Enrique Mu\~ noz Tavera}}
 \affil{\textit{Departamento de F\'isica, Facultad de F\'isica, Pontificia Universidad Cat\'olica de Chile}}
@@ -61,12 +71,13 @@
 
 \tableofcontents
 
+\input{acknowledgment}
 \chapter{Diffusion Of Electrolytes In Solution}
 \input{chapters/ch01/diffusion-processes.tex}
 \input{chapters/ch01/electrorefinery.tex}
 \input{chapters/ch01/langmuir-absorptio.tex}
 \input{chapters/ch02/0-diffusion-reaction-system.tex}
-
+\input{chapters/ch03/context.tex}
 
 \chapter{Review Of Numerical Methods For ODE And PDE Solving}
 \input{chapters/ch01/numerical-methods.tex}
@@ -76,24 +87,43 @@
 \input{chapters/ch02/1-analytic-solution.tex}
 \input{chapters/ch02/2-numeric-solution.tex}
 
+
 \chapter{Dynamic Solution}
 \input{chapters/ch03/3-dynamic-solution-analytic.tex}
 \input{chapters/ch03/diffusion-only-numeric.tex}
-\input{chapters/ch03/diffusion-reaction-numeric.tex}
-\input{chapters/ch03/diffusion-reaction-analytic.tex}
-\input{chapters/ch03/diffusion-reaction-concentration-dependent.tex}
+\input{chapters/ch03/diffusion-reaction-only.tex}
 \input{chapters/ch03/diffusion-w-concentration-dependent-reaction.tex}
+\input{chapters/ch03/diffusion-reaction-numeric.tex}
+\input{chapters/ch03/diffusion-reaction-concentration-dependent.tex}
+
 \input{chapters/ch03/complete-dynamic-problem.tex}
-\input{chapters/ch03/forced-current-dynamic-solution.tex}
+%\input{chapters/ch03/forced-current-dynamic-solution.tex}
+
 
 \chapter{Results and analysis}
 \input{chapters/ch04/results_ss.tex}
 \input{chapters/ch04/results.tex}
-\input{chapters/ch04/results-forced.tex}
+%\input{chapters/ch04/results-forced.tex}
+
+\chapter{Conclusions}
+\input{chapters/ch06/conclusions.tex}
+
+\begin{appendices}
+\chapter{Calculations Of Chapter \ref{ch:2}}
+\input{chapters/appendix1.tex}
+\chapter{Calculations And Numerical Analysis Of Chapter \ref{ch:3}}
+\input{chapters/appendix2.tex}
+\input{chapters/appendix3.tex}
+\input{chapters/appendix7.tex}
+\input{chapters/appendix4.tex}
+\input{chapters/ch03/diffusion-reaction-analytic.tex}
+\input{chapters/appendix5.tex}
+\input{chapters/appendix6.tex}
+\end{appendices}
 
 
 \newpage
-\printbibliography
+\printbibliography 
 
 
 \end{document}

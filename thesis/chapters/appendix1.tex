@@ -1,0 +1,51 @@
+\section{Potential to first order in the current}
+\label{appendix:first-order-potential}
+Now we need to solve Eq. \ref{eq:concentration-diff-first6}
+\begin{eqnarray}
+\frac{\partial^2  \Phi^{(1)}}{\partial \xi^2} &=& -(C^{(1)}_{+}(\xi)-C^{(1)}_{-}(\xi)).
+\end{eqnarray}
+
+Expanding, we have 
+
+\begin{eqnarray}\nonumber
+\frac{\partial^2  \Phi^{(1)}}{\partial \xi^2} &=& -C^{(1)}_{+}(\xi)\\
+&=&- \frac{1}{\kappa} \qty{\xi_\delta-\xi-\frac{2}{\gamma}}\tanh^2\qty{\frac{\xi-\xi_0}{2}}-\frac{2}{\kappa}\tanh\qty{\frac{\xi-\xi_0}{2}}.
+\end{eqnarray}
+
+
+Integrating twice and using the fact that $\Phi'^{(1)}(\xi_\delta) = 0$, $\Phi^{(1)}(\xi_\delta) = 0$ we obtain
+
+\begin{eqnarray}
+\Phi'^{(1)}(\xi) = \frac{1}{\kappa} \qty{A + B\xi + C\xi^2 + D \tanh{\frac{\xi-\xi_0}{2}}+E\xi\tanh{\frac{\xi-\xi_0}{2}}} .
+\end{eqnarray}
+
+
+And 
+
+\begin{eqnarray}
+\Phi^{(1)}(\xi) = -\frac{1}{\kappa} (A(\xi_\delta - \xi) + \frac{B}{2}(\xi_\delta^2-\xi^2) + \frac{C}{3}(\xi_\delta^3 - \xi^3) + \\
+D\log\bigg|\frac{\cosh{\frac{\xi_\delta-\xi}{2}}}{\cosh{\frac{\xi-\xi}{2}}}\bigg| + E \qty{\xi_\delta\log|\cosh\qty{\frac{\xi_\delta-\xi_0}{2}}-\xi\log|\cosh\qty{\frac{\xi-\xi_0}{2}}}-EI_\delta(\xi),
+\end{eqnarray}
+
+
+where
+
+\begin{eqnarray*}
+	A = 2\gamma\xi_\delta - \frac{2\xi_\delta}{\gamma} - 2 \gamma - \frac{\xi_\delta^2}{2},\\
+	B = -\qty{\xi_\delta -\frac{2}{\gamma}},\\
+	C = \frac{3}{2}\\
+	D = -2 \qty{\xi_\delta - \frac{2}{\gamma}},\\
+	E = 2,\\
+	\gamma = \tanh\qty{\frac{\xi_0}{2}},
+\end{eqnarray*}
+
+and
+
+\begin{align}
+	I_\delta(\xi) = \int_\xi^{\xi_\delta} \log\bigg|\cosh\qty{\frac{\xi-\xi_0}{2}}\bigg| d\xi.
+\end{align}
+
+
+
+
+This integral must be evaluated numerically for each value of $\xi$. In order to do this, we use the Simpson Rule. Fig. \ref{fig:analytic-results} shows the potential to first order in the current alongside with the zero order potential. 

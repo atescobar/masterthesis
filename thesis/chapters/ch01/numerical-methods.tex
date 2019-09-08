@@ -1,3 +1,4 @@
+In this chapter, we study and implement numerical methods for solving ODEs(Ordinary differential equations) and PDE (Partial differential equations). In section 2.1-2.3 we study the Two Point Boundary Value problem using the Runge-Kutta method. Next, in section 2.4 we study finite difference methods to treat PDE as numerical simulations given an initial condition to finally apply our model's boundary conditions \ref{eq:boundary-condition-flux} in section 2.5.
 \section{Runge-Kutta Method}
 \label{sec:run_kut}
 
@@ -10,7 +11,7 @@ be the system of equations we want to solve with the method. We approximate the 
 
 $$\frac{\vec{y}(x+h)-\vec{y}(x)}{h} = \vec{F}(x + h, \vec{y}+\vec{y}(x+h))$$
 
-We want to approximate the left hand side with a series expansion to arbitrary order in $h$. We obtain thus an expression for $y(x+h)$,
+We want to approximate the left hand side with a series expansion to arbitrary order in $h$. We thus obtain an expression for $y(x+h)$,
 
 $$\vec{y}(x+h)=\vec{y}(x)+ h\vec{F}(x + h, \vec{y}+\vec{y}(x+h)).$$
 
@@ -54,38 +55,47 @@ We don't know what the error of the next step will be, but we can define a toler
 
 \begin{equation}
 h_2= h_1\qty{\frac{\epsilon}{e(h_1)}}^{1/5}
-\label{eq:error}
 \end{equation}
 
-This method is good for our purposes since the curves we are trying to analyze are flat at the begining but have sharp slopes towards the interface (see Fig. \ref{fig:concentration} and \ref{fig:firstorderphi}).
+This method is good for our purposes since the curves we are trying to analyze are flat at the beginning but have sharp slopes towards the interface as will be seen in Chapter 3.
 
 \section{The Shooting Method}
-
-The method described in section \ref{sec:run_kut} can solve the system of equations if the border conditions are all known at a given value of $x = x_0$. Nevertheless, as it can be seen from \ref{eq:border-conditions},
+\label{sec:shooting-method}
+The method described in section \ref{sec:run_kut} can solve the system of equations if the boundary conditions are all known at a given value of $x = x_0$. Nevertheless, as it can be seen from \ref{eq:two-point-boundary-conditon} through \ref{eq:two-point-boundary-conditon2},
 that we have boundary conditions at $x=0$ (the interface) and at $x=\delta$ the bulk solution (see Fig. \ref{fig:geometry}). This is a complication which can be overcome by using the shooting method. The idea is to transform the problem with boundary conditions 
 
-$$C_+(\delta) = C_-(\delta) = C_b$$
-$$\phi(\delta) = 0$$
-$$\phi(0) = V_0$$
+\begin{align}
+\label{eq:two-point-boundary-conditon}
+	C_+(\delta) = C_-(\delta) = C_b,\\
+	\phi(\delta) = 0,\\
+	\label{eq:two-point-boundary-conditon2}
+	\phi(0) = V_0,
+\end{align}
+
 
 into the problem
 
 
-$$C_+(\delta) = C_-(\delta) = C_b$$
-$$\phi(\delta) = 0$$
-$$E(\delta) = u,$$
+\begin{align}
+\label{eq:one-point-boundary-conditon}
+	C_+(\delta) = C_-(\delta) = C_b,\\
+	\phi(\delta) = 0,\\
+	E(\delta) = u, 
+\end{align}
+
+
 
 where $u$ is a constant yet to be determined. To determine $u$, we define a residual function
 
 $$r(u) = \phi(0)-V_0.$$
 
-which is zero when the valueof $\phi(0)$ (given an appropriate u) is the original boundary condition. Therefore, the two-point boundary problem is transformed into a  root finding problem. First, we need to find two values of $u$, $u_1$ and $u_2$ such that $r(u_1) < 0$ and  $r(u_2) > 0$. Once we have that, we can use Ridder's method to find the root.
+which is zero when the value of $\phi(0)$ (given an appropriate u) is the original boundary condition. Therefore, the two-point boundary problem is transformed into a  root finding problem. First, we need to find two values of $u$, $u_1$ and $u_2$ such that $r(u_1) < 0$ and  $r(u_2) > 0$. Once we have that, we can use Ridder's method to find the root.
 
 \section{Ridder's Method}
 
-In this method it is assumed that the root is bracketed within to values.  We define an auxiliary function 
+In this method it is assumed that the root is contained within two given values.  We define an auxiliary function 
 $$G(x) = F(x)e^{(x-x1)Q}$$
-where $Q$ is determined by imposing that the points $(x_1, G(x_1))$, $(x_2, G(x_2))$ and $(x_3, G(x_3))$ be in a straight line. That is, if $x_1-x_2 = 2h$ and f $x_1-x_3 = h = x_3-x_2$ we should get
+where $Q$ is determined by imposing that the points $(x_1, G(x_1))$, $(x_2, G(x_2))$ and $(x_3, G(x_3))$ be in a straight line. That is, if $x_1-x_2 = 2h$ and $x_1-x_3 = h = x_3-x_2$ we should get
 
 \begin{equation}
 G(x_3) = \frac{G(x_1)-G(x_2)}{2}.
@@ -95,34 +105,34 @@ G(x_3) = \frac{G(x_1)-G(x_2)}{2}.
 Using equation \ref{eq:line-requirement}, we obtain that
 
 \begin{eqnarray}
-e^{hQ} = \frac{f(x_1)+f(x_2)e^{2hQ}}{2}
+e^{hQ} = \frac{F(x_1)+F(x_2)e^{2hQ}}{2}
 \end{eqnarray}
 
 Which is a quadratic equation on $e^{hQ}$. Solving for this quantity we obtain
 
 \begin{equation}
-e^{hQ} = \frac{f(x_3)\pm\sqrt{f(x_3)^2-f(x_2)f(x_1)}}{f(x_2)}
+e^{hQ} = \frac{F(x_3)\pm\sqrt{F(x_3)^2-F(x_2)f(x_1)}}{F(x_2)}
 \end{equation}
 
-Now that we have determined completely our function $G(x)$, we can do linear interpolation on it to get a better estimation of the root of f(x). Let $x_r$  be it. Then
+Now that we have determined completely our function $G(x)$, we can do linear interpolation on it to get a better estimation of the root of F(x). Let $x_r$  be it. Then
 
-$$x_r^{\pm} = x_3 \pm (x_3-x_1)\frac{f(x_3)}{\sqrt{f^2(x_3)-f(x_1)f(x_2)}}$$
+$$x_r^{\pm} = x_3 \pm (x_3-x_1)\frac{F(x_3)}{\sqrt{F^2(x_3)-F(x_1)F(x_2)}}$$
 
 It can be show that 
 \begin{itemize}
-\item If $f(x_1)-f(x_2) < 0$, we should pick the $x_r^-$ solution
-\item If $f(x_1)-f(x_2) > 0$, we should pick the $x_r^+$ solution
+\item If $F(x_1)-F(x_2) < 0$, we should pick the $x_r^-$ solution
+\item If $F(x_1)-F(x_2) > 0$, we should pick the $x_r^+$ solution
 \end{itemize}
 
 When we have our solution, we make $x_3 = x_r^{s}$ ($s+,-$, for every case) and find a new correction to $x_r$. We stop when $x_r^+-x_r^-$ is below the define tolerance.
 
 To test convergence, out method assumes the function we are passing on is of the form
 
-$$f(x) = g(x) -g_0,$$
+$$F(x) = g(x) -g_0,$$
 
 where we are trying to find $x_0$ such that $g(x_0) = g_0$. This means that when the root is found, we should get 
 
-$$f(x_0) \in [-\epsilon,+\epsilon],$$
+$$F(x_0) \in [-\epsilon,+\epsilon],$$
 
 where $\epsilon>0$ is a predefined tolerance.
 
@@ -133,14 +143,14 @@ where $\epsilon>0$ is a predefined tolerance.
 
 \begin{align}
 	\label{eq:forward-difference}
-	f(x_{i+1})=f(x_i) + hf (x_i) + \frac{h^2}{2!} f''(x_i)\mathcal{O}(h^3).
+	f(x_{i+1})=f(x_i) + hf '(x_i) + \frac{h^2}{2!} f''(x_i) + \mathcal{O}(h^3).
 \end{align}
 
 where $h = (x_{max}-x_{min})/M$ and $x_{i+1} = x_i$. Other  schemes are the backward 
 
 \begin{align}
 \label{eq:backward-difference}
-	f(x_{i-1})=f(x_i) - hf (x_i) + + \frac{h^2}{2!} f''(x_i)\mathcal{O}(h^3),
+	f(x_{i-1})=f(x_i) - hf '(x_i) + \frac{h^2}{2!} f''(x_i) + \mathcal{O}(h^3),
 \end{align}
 
 and the central difference scheme
@@ -148,11 +158,11 @@ and the central difference scheme
 
 \begin{align}
 \label{eq:central-difference}
-	f(x_{i-1}) + f(x_{i+1})= 2f(x_i) + hf''(x_i) + \mathcal{O}(h^4),
+	f(x_{i-1}) + f(x_{i+1})= 2f(x_i) + \frac{h^2}{2}f''(x_i) + \mathcal{O}(h^3),
 \end{align}
 
 
-There are several ways to define the derivative acording to equations \label{eq:backward-difference}, \label{eq:forward-difference} and \label{eq:central-difference} this but they all follow the same principles: partition the integration interval in $M$ intervals and compute derivatives of functions at each point as the subtraction of the neighboring terms. Thus we can approximate a function's derivative in three different ways
+There are several ways to define the derivative acording to equations \ref{eq:backward-difference}, \ref{eq:forward-difference} and \ref{eq:central-difference} this but they all follow the same principles: partition the integration interval in $M$ intervals and compute derivatives of functions at each point as the subtraction of the neighboring terms. Thus we can approximate a function's derivative in three different ways
 
 \begin{align}
 	f'(x_i) &= \frac{f(x_{i+1})-f(x_{i})}{h} + \mathcal{O}(h^2),\\
@@ -182,7 +192,7 @@ Usually, operators $\mathcal{D_+}$, $\mathcal{D_-}$ and $\mathcal{D_0}$ are defi
 \subsection{Error In Finite Difference Methods}
 
 
-In the above approximated derivatives we have assumed we'll expand up to first order in $h$. For general order $h^p$ error we should expect it to behave as \cite{leveque_ch1}
+In the above approximated derivatives we have assumed we will expand up to first order in $h$. For general order $h^p$ error we should expect it to behave as \cite{leveque_ch1}
 
 \begin{align}
 	E(h)\approx Ch^p,
@@ -197,22 +207,23 @@ or equivalently
 In figure \ref{fig:leveque_errors_plotting} a plot is given of the error in computing \ref{eq:differnece-operators} in terms of the parameter $h$
 
 
-
 \begin{figure}[h!]
+\title{Error In Finite Difference Methods In Terms Of Grid Size}
 \centering
+
 	\includegraphics[width=0.5\textwidth]{leveque_errors_plotting}
 	\caption{Plotting error for the different numerical differentiation schemes (plot extracted from reference \cite{leveque_ch1})}
 \label{fig:leveque_errors_plotting}
 \end{figure}
 
-
+\newpage
 \section{Applying Finite Difference Methods to PDEs}
 
 For one dimensional diffusion-like equations
 
 \begin{align}
+\label{eq:generic-pde}
 \frac{\partial f}{\partial t} &= \frac{\partial^2 f}{\partial x^2} + F(x, f(x), f'(x)).
-\label{eq:finite-difference}
 \end{align}
 
 We will discretize the derivative as described in \ref{eq:forward-difference} and replacing 
@@ -223,17 +234,16 @@ We will discretize the derivative as described in \ref{eq:forward-difference} an
 
 which yields the following derivation rules for temporal and spacial derivatives
 \begin{align}
-\frac{\partial \rho}{\partial \tau}^{n+1, k}= \frac{C^{n+1, k}-\rho^{n, k}}{\Delta t},\\
-\frac{\partial^2 \rho}{\partial x^2}^{n+1, k} = \frac{\rho^{n+1, k-1}-2\rho^{n, k}+\rho^{n+1, k+1}}{\Delta \xi^2}.
+\frac{\partial f}{\partial t} = \frac{\rho^{n+1, k}-\rho^{n, k}}{\Delta t},\\
+\frac{\partial^2 f}{\partial x^2} = \frac{\rho^{n+1, k-1}-2\rho^{n, k}+\rho^{n+1, k+1}}{\Delta \xi^2}.
 \end{align}
 
-Replacing these approximations into equation \ref{eq:diffusion} we get
+Replacing these approximations into equation \ref{eq:generic-pde} we get
 
 \begin{align}	
 \label{eq:linear-eq-numeric}
     -\alpha \rho^{n+1,k-1} + ( 1 + 2\alpha ) \rho^{n+1,k} -\alpha \rho^{n+1,k+1} =  \rho^{n,k}\\
     k \in [1, ... , m-1]
-    \label{eq:equations-n}
 \end{align}
 
 where $\alpha = \Delta t / \Delta x^2$.
@@ -244,7 +254,7 @@ A reasonable question emerges when we are trying to solve the set of linear equa
 \begin{align}
     -\alpha \rho^{n+1,0} + ( 1 + \alpha ) \rho^{n+1,1} -\alpha \rho^{n+1,2} = \rho^{n,1},\\
     -\alpha \rho^{n+1,m-2} + ( 1 + 2\alpha ) \rho^{n+1,m-1} -\alpha \rho^{n+1,m} = \rho^{n,m-1},
-    \label{eq:border-equations}
+    \label{eq:boundary-equations1}
 \end{align}
 
 from where we can recognize that we do not know the values of $\rho^{n+1,0}$ and $\rho^{n+1,m}$.
@@ -274,7 +284,7 @@ Then in discrete form
     \rho^{n, m-1} = b.
 \end{align}
 
-The boundary equations \ref{eq:border-equations} thus yield
+The boundary equations \ref{eq:boundary-equations1} thus yield
 
 \begin{align}
 	\label{eq:boundary-equations-cauchy}
@@ -291,7 +301,8 @@ We want to put these equations (the boundary equations and all the equations in 
                     \rho^{n, m-1} 
                     \end{bmatrix},
 \end{align}
-Since we need to include boundary conditions, we use equations \ref{eq:boundary-equations-cauchy} to eliminate $\rho^{n, 0}$, $\rho^{n, m}$. We want to write equations \ref{eq:equations-n} as
+
+Since we need to include boundary conditions, we use equations \ref{eq:boundary-equations-cauchy} to eliminate $\rho^{n, 0}$, $\rho^{n, m}$. We want to write equations \ref{eq:boundary-equations-cauchy} as
 
 \begin{align}
     \bf{\underline{A}} \bf{\rho^{n+1}}  = \bf{\rho^n} + \bf{b},
@@ -318,8 +329,7 @@ and
            \vdots  &\cdots  & \ddots & \ddots &  \ddots&  \\
             \vdots & \cdots & 0  &  -\alpha & ( 1 + 2 \alpha ) & -\alpha \\
             0 & \cdots &0  & 0 & -\alpha & ( 1 + 2 \alpha )
-         \end{bmatrix}
-         \label{eq:discretization-matrix},
+         \end{bmatrix},
 \end{align}
 
 be an $m\times m$ matrix.
@@ -331,14 +341,14 @@ If the initial state of the system is $f(0,x)$, we get
     k \in [1,..., M-1].
 \end{align}
 
-This means that the shape of $\bf{\underline{A}}$ is $M-2 \times M-2$ and the numerical solution is solved in the interval  $k \in [0,..., M]$, leaving $k=0$ and $k=M$ as the overflow terms to push the boundary conditions.
+This means that the dimensions of $\bf{\underline{A}}$ is $M-2 \times M-2$ and the numerical solution is solved in the interval  $k \in [0,..., M]$, leaving $k=0$ and $k=M$ as the overflow terms to push the boundary conditions.
 
 
 
 
 \subsection{Robin boundary conditions}
 
-Now we turn to the more complex case of Robin boundary conditions. We consider for simplicity the case of Robin boundary conditions at $x=0$ and Dirichlet boundary conditions at.$x = \delta$. That is
+Now we turn to the more complex case of Robin boundary conditions. We consider for simplicity the case of Robin boundary conditions at $x=0$ and Dirichlet boundary conditions at $x = \delta$. That is
 \begin{align}
 	\qty{w_1\frac{\partial \rho(t,0)}{\partial x}+w_2\rho(t,0)} = g,\\
 	\rho(t,\delta) = b.
@@ -361,7 +371,7 @@ Therefore we can write
 	\rho^{n, 0} = \frac{\rho^{n,1} - \frac{\Delta x a }{w_1}}{\qty{1 - \frac{\Delta x w_2 }{w_1}}} = \gamma\qty{\rho^{n,1} - \frac{\Delta x a }{w_1}} \\
 \end{align}
 
-Replacing this result in \ref{eq:border-equations} 
+Replacing this result in \ref{eq:boundary-equations-cauchy} 
 
 \begin{align}
 	\label{eq:boundary-equations-robin}
@@ -397,7 +407,7 @@ and
             \vdots & \cdots & 0  &  -\alpha & ( 1 + 2 \alpha ) & -\alpha \\
             0 & \cdots &0  & 0 & -\alpha & ( 1 + 2 \alpha )
          \end{bmatrix}
-         \label{eq:discretization-matrix},
+         \label{eq:discretization-matrix-with-bc},
 \end{align}
 
 be an $m\times m$ matrix. Where

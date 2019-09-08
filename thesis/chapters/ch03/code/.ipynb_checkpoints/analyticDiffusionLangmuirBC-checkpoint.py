@@ -1,5 +1,9 @@
 import numpy as np
 from bisection import findRoot
+import json
+
+with open('model_parameters.json', 'r') as file:
+    params = json.loads(file.read())
 
 
 def C_an(xi, tau, LAMBDA_, params, tol = 1e-12):
@@ -21,7 +25,7 @@ def C_an(xi, tau, LAMBDA_, params, tol = 1e-12):
     D = params['diffusionCoefficientCu']
     d = params['laminarFlowRegion']
     kf = params['reactionRate']
-    
+    i0 = params['reactionRate']
     ## Summing contributions
     for i in range(0,len(LAMBDA_)):
         a = LAMBDA_[i]

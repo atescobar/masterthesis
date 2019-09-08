@@ -1,12 +1,16 @@
 import numpy as np
+import json
 
-
+with open('model_parameters.json', 'r') as file:
+    params = json.loads(file.read())
+    
 def C_an(xi, tau, Cb):
     # note that tau = D t / xb ** 2, where t is the time
-    F = 96485.3415
-    kf = 1e1
-    i0 = 150
-    i1 = 0 #i0/(F * kf)
+    Cb = params['bulkConcentration']
+    F = params['Fa']
+    kf = params['reactionRate']
+    i0 = params['reactionRate']
+    i1 = i0/(F * kf)
     total = np.zeros(len(xi))
     tolMax  = 1e-2
     tolMin = tolMax*1e-2

@@ -3,8 +3,8 @@
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
-% This file may safely be deleted. It will be recreated by
-% biber as required.
+% This file may safely be deleted. It will be recreated as
+% required.
 %
 \begingroup
 \makeatletter
@@ -16,315 +16,364 @@
   {}
 \endgroup
 
+\datalist[entry]{none/global//global/global}
+  \entry{cussler}{book}{}
+    \name{author}{1}{}{%
+      {{hash=CE}{%
+         family={Cussler},
+         familyi={C\bibinitperiod},
+         given={E.L.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge}%
+    }
+    \strng{namehash}{CE1}
+    \strng{fullhash}{CE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Diffusion: Mass Transfer In Fluid Systems}
+    \field{year}{2009}
+  \endentry
 
-\refsection{0}
-  \datalist[entry]{none/global//global/global}
-    \entry{cussler}{book}{}
-      \name{author}{1}{}{%
-        {{hash=42549116d3c16bbead4e3bb3fc9e440c}{%
-           family={Cussler},
-           familyi={C\bibinitperiod},
-           given={E.L.},
-           giveni={E\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Cambridge}%
-      }
-      \strng{namehash}{42549116d3c16bbead4e3bb3fc9e440c}
-      \strng{fullhash}{42549116d3c16bbead4e3bb3fc9e440c}
-      \strng{bibnamehash}{42549116d3c16bbead4e3bb3fc9e440c}
-      \strng{authorbibnamehash}{42549116d3c16bbead4e3bb3fc9e440c}
-      \strng{authornamehash}{42549116d3c16bbead4e3bb3fc9e440c}
-      \strng{authorfullhash}{42549116d3c16bbead4e3bb3fc9e440c}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Diffusion: Mass Transfer In Fluid Systems}
-      \field{year}{2009}
-    \endentry
-    \entry{fick}{article}{}
-      \name{author}{1}{}{%
-        {{hash=12dc1d30f5c396b1e319c650311a58b3}{%
-           family={Fick},
-           familyi={F\bibinitperiod},
-           given={Adolf},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{12dc1d30f5c396b1e319c650311a58b3}
-      \strng{fullhash}{12dc1d30f5c396b1e319c650311a58b3}
-      \strng{bibnamehash}{12dc1d30f5c396b1e319c650311a58b3}
-      \strng{authorbibnamehash}{12dc1d30f5c396b1e319c650311a58b3}
-      \strng{authornamehash}{12dc1d30f5c396b1e319c650311a58b3}
-      \strng{authorfullhash}{12dc1d30f5c396b1e319c650311a58b3}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{1}
-      \field{title}{Ueber Diffusion}
-      \field{volume}{170}
-      \field{year}{1855}
-      \field{pages}{59\bibrangedash 86}
-      \range{pages}{28}
-      \verb{doi}
-      \verb 10.1002/andp.18551700105
-      \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.18551700105
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.18551700105
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.18551700105
-      \endverb
-    \endentry
-    \entry{einstein}{article}{}
-      \name{author}{1}{}{%
-        {{hash=c41fe28d266fcc789622049d39b72c39}{%
-           family={Einstein},
-           familyi={E\bibinitperiod},
-           given={A.},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{c41fe28d266fcc789622049d39b72c39}
-      \strng{fullhash}{c41fe28d266fcc789622049d39b72c39}
-      \strng{bibnamehash}{c41fe28d266fcc789622049d39b72c39}
-      \strng{authorbibnamehash}{c41fe28d266fcc789622049d39b72c39}
-      \strng{authornamehash}{c41fe28d266fcc789622049d39b72c39}
-      \strng{authorfullhash}{c41fe28d266fcc789622049d39b72c39}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Annalen der Physik}
-      \field{number}{8}
-      \field{title}{Über die von der molekularkinetischen Theorie der Wärme geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen}
-      \field{volume}{322}
-      \field{year}{1905}
-      \field{pages}{549\bibrangedash 560}
-      \range{pages}{12}
-      \verb{doi}
-      \verb 10.1002/andp.19053220806
-      \endverb
-      \verb{eprint}
-      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19053220806
-      \endverb
-      \verb{urlraw}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19053220806
-      \endverb
-      \verb{url}
-      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19053220806
-      \endverb
-    \endentry
-    \entry{bird}{book}{}
-      \name{author}{1}{}{%
-        {{hash=2c50bbf017ed8c1f25d8d72b759917a0}{%
-           family={R.\bibnamedelimi Byron\bibnamedelima Bird},
-           familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim B\bibinitperiod},
-           given={Edwin\bibnamedelimb N.\bibnamedelimi Lightfoot},
-           giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim L\bibinitperiod},
-           suffix={Warren\bibnamedelimb E.\bibnamedelimi Steward},
-           suffixi={W\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-      }
-      \list{publisher}{2}{%
-        {John Wiley}%
-        {Sons, Inc}%
-      }
-      \strng{namehash}{2c50bbf017ed8c1f25d8d72b759917a0}
-      \strng{fullhash}{2c50bbf017ed8c1f25d8d72b759917a0}
-      \strng{bibnamehash}{2c50bbf017ed8c1f25d8d72b759917a0}
-      \strng{authorbibnamehash}{2c50bbf017ed8c1f25d8d72b759917a0}
-      \strng{authornamehash}{2c50bbf017ed8c1f25d8d72b759917a0}
-      \strng{authorfullhash}{2c50bbf017ed8c1f25d8d72b759917a0}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Transport Phenomena}
-      \field{year}{2001}
-    \endentry
-    \entry{langevin_translation}{article}{}
-      \name{author}{2}{}{%
-        {{hash=922b00d6c5055ee6c3f7c177d00ca3e8}{%
-           family={Lemons},
-           familyi={L\bibinitperiod},
-           given={Don\bibnamedelima S.},
-           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=6aa59e92c37bab15338b814f2ee1c353}{%
-           family={Gythiel},
-           familyi={G\bibinitperiod},
-           given={Anthony},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{91cd94942a226966038cd389f234b270}
-      \strng{fullhash}{91cd94942a226966038cd389f234b270}
-      \strng{bibnamehash}{91cd94942a226966038cd389f234b270}
-      \strng{authorbibnamehash}{91cd94942a226966038cd389f234b270}
-      \strng{authornamehash}{91cd94942a226966038cd389f234b270}
-      \strng{authorfullhash}{91cd94942a226966038cd389f234b270}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{American Journal of Physics}
-      \field{number}{11}
-      \field{title}{Paul Langevin’s 1908 paper “On the Theory of Brownian Motion” [“Sur la théorie du mouvement brownien,” C. R. Acad. Sci. (Paris) 146, 530–533 (1908)]}
-      \field{volume}{65}
-      \field{year}{1997}
-      \field{pages}{1079\bibrangedash 1081}
-      \range{pages}{3}
-      \verb{doi}
-      \verb 10.1119/1.18725
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1119/1.18725
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1119/1.18725
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1119/1.18725
-      \endverb
-    \endentry
-    \entry{langevin_original}{book}{}
-      \name{author}{1}{}{%
-        {{hash=f85e7fc917be3477125ce88c62919897}{%
-           family={Langevin},
-           familyi={L\bibinitperiod},
-           given={Paul},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{f85e7fc917be3477125ce88c62919897}
-      \strng{fullhash}{f85e7fc917be3477125ce88c62919897}
-      \strng{bibnamehash}{f85e7fc917be3477125ce88c62919897}
-      \strng{authorbibnamehash}{f85e7fc917be3477125ce88c62919897}
-      \strng{authornamehash}{f85e7fc917be3477125ce88c62919897}
-      \strng{authorfullhash}{f85e7fc917be3477125ce88c62919897}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Sur la théorie du mouvement brownien}
-      \verb{urlraw}
-      \verb https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brownien
-      \endverb
-      \verb{url}
-      \verb https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brownien
-      \endverb
-    \endentry
-    \entry{deen}{book}{}
-      \name{author}{1}{}{%
-        {{hash=16d06fc1d440592cab5856564cfaa9e3}{%
-           family={Deen},
-           familyi={D\bibinitperiod},
-           given={William\bibnamedelima M.},
-           giveni={W\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{fullhash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{bibnamehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{authorbibnamehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{authornamehash}{16d06fc1d440592cab5856564cfaa9e3}
-      \strng{authorfullhash}{16d06fc1d440592cab5856564cfaa9e3}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Analysis Of Transport Phenomena}
-      \field{year}{1998}
-    \endentry
-    \entry{langmuir}{article}{}
-      \name{author}{1}{}{%
-        {{hash=e7d22a8c99140f9e1a0a08c12643914f}{%
-           family={Langmuir},
-           familyi={L\bibinitperiod},
-           given={Irving},
-           giveni={I\bibinitperiod}}}%
-      }
-      \strng{namehash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \strng{fullhash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \strng{bibnamehash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \strng{authorbibnamehash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \strng{authornamehash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \strng{authorfullhash}{e7d22a8c99140f9e1a0a08c12643914f}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the American Chemical Society}
-      \field{number}{9}
-      \field{title}{The Adsorption Of Gases On Plane Surfaces Of Glass, Mica And Platinum.}
-      \field{volume}{40}
-      \field{year}{1918}
-      \field{pages}{1361\bibrangedash 1403}
-      \range{pages}{43}
-      \verb{doi}
-      \verb 10.1021/ja02242a004
-      \endverb
-      \verb{eprint}
-      \verb https://doi.org/10.1021/ja02242a004
-      \endverb
-      \verb{urlraw}
-      \verb https://doi.org/10.1021/ja02242a004
-      \endverb
-      \verb{url}
-      \verb https://doi.org/10.1021/ja02242a004
-      \endverb
-    \endentry
-    \entry{kiusalaas}{book}{}
-      \name{author}{1}{}{%
-        {{hash=e3fa67daf57941419a7fd5d65d809333}{%
-           family={Kiusalaas},
-           familyi={K\bibinitperiod},
-           given={Jaan},
-           giveni={J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {SIAM}%
-      }
-      \strng{namehash}{e3fa67daf57941419a7fd5d65d809333}
-      \strng{fullhash}{e3fa67daf57941419a7fd5d65d809333}
-      \strng{bibnamehash}{e3fa67daf57941419a7fd5d65d809333}
-      \strng{authorbibnamehash}{e3fa67daf57941419a7fd5d65d809333}
-      \strng{authornamehash}{e3fa67daf57941419a7fd5d65d809333}
-      \strng{authorfullhash}{e3fa67daf57941419a7fd5d65d809333}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Finite Difference Methods for Ordinary and Partial Differential Equations}
-      \field{year}{2007}
-    \endentry
-    \entry{leveque_ch1}{inbook}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Finite Difference Methods for Ordinary and Partial Differential Equations}
-      \field{title}{1. Finite Difference Approximations}
-      \field{pages}{3\bibrangedash 11}
-      \range{pages}{9}
-      \verb{doi}
-      \verb 10.1137/1.9780898717839.ch1
-      \endverb
-      \verb{eprint}
-      \verb https://epubs.siam.org/doi/pdf/10.1137/1.9780898717839.ch1
-      \endverb
-      \verb{urlraw}
-      \verb https://epubs.siam.org/doi/abs/10.1137/1.9780898717839.ch1
-      \endverb
-      \verb{url}
-      \verb https://epubs.siam.org/doi/abs/10.1137/1.9780898717839.ch1
-      \endverb
-    \endentry
-  \enddatalist
-  \missing{Dolde2011}
-  \missing{langenvin}
-\endrefsection
+  \entry{fick}{article}{}
+    \name{author}{1}{}{%
+      {{hash=FA}{%
+         family={Fick},
+         familyi={F\bibinitperiod},
+         given={Adolf},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{FA1}
+    \strng{fullhash}{FA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/andp.18551700105
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.18551700105
+    \endverb
+    \field{number}{1}
+    \field{pages}{59\bibrangedash 86}
+    \field{title}{Ueber Diffusion}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.18551700105
+    \endverb
+    \field{volume}{170}
+    \field{journaltitle}{Annalen der Physik}
+    \field{year}{1855}
+  \endentry
+
+  \entry{einstein}{article}{}
+    \name{author}{1}{}{%
+      {{hash=EA}{%
+         family={Einstein},
+         familyi={E\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{EA1}
+    \strng{fullhash}{EA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1002/andp.19053220806
+    \endverb
+    \verb{eprint}
+    \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/andp.19053220806
+    \endverb
+    \field{number}{8}
+    \field{pages}{549\bibrangedash 560}
+    \field{title}{Über die von der molekularkinetischen Theorie der Wärme
+  geforderte Bewegung von in ruhenden Flüssigkeiten suspendierten Teilchen}
+    \verb{url}
+    \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/andp.19053220806
+    \endverb
+    \field{volume}{322}
+    \field{journaltitle}{Annalen der Physik}
+    \field{year}{1905}
+  \endentry
+
+  \entry{bird}{book}{}
+    \name{author}{1}{}{%
+      {{hash=RBBENLWES}{%
+         family={R.\bibnamedelima Byron\bibnamedelima Bird},
+         familyi={R\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim
+  B\bibinitperiod},
+         suffix={Warren E.\bibnamedelima Steward},
+         suffixi={W\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+         given={Edwin N.\bibnamedelima Lightfoot},
+         giveni={E\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{2}{%
+      {John Wiley}%
+      {Sons, Inc}%
+    }
+    \strng{namehash}{RBBWESENL1}
+    \strng{fullhash}{RBBWESENL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Transport Phenomena}
+    \field{year}{2001}
+  \endentry
+
+  \entry{langevin_translation}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LDS}{%
+         family={Lemons},
+         familyi={L\bibinitperiod},
+         given={Don\bibnamedelima S.},
+         giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gythiel},
+         familyi={G\bibinitperiod},
+         given={Anthony},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LDSGA1}
+    \strng{fullhash}{LDSGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1119/1.18725
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1119/1.18725
+    \endverb
+    \field{number}{11}
+    \field{pages}{1079\bibrangedash 1081}
+    \field{title}{Paul Langevin’s 1908 paper “On the Theory of Brownian
+  Motion” [“Sur la théorie du mouvement brownien,” C. R. Acad. Sci.
+  (Paris) 146, 530–533 (1908)]}
+    \verb{url}
+    \verb https://doi.org/10.1119/1.18725
+    \endverb
+    \field{volume}{65}
+    \field{journaltitle}{American Journal of Physics}
+    \field{year}{1997}
+  \endentry
+
+  \entry{langevin_original}{book}{}
+    \name{author}{1}{}{%
+      {{hash=LP}{%
+         family={Langevin},
+         familyi={L\bibinitperiod},
+         given={Paul},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LP1}
+    \strng{fullhash}{LP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Sur la théorie du mouvement brownien}
+    \verb{url}
+    \verb https://fr.wikisource.org/wiki/Sur_la_th%C3%A9orie_du_mouvement_brown
+    \verb ien
+    \endverb
+  \endentry
+
+  \entry{schlesinger}{book}{}
+    \name{author}{1}{}{%
+      {{hash=MESKCSWGDMJK}{%
+         family={Mark E.\bibnamedelima Schlesinger},
+         familyi={M\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim
+  S\bibinitperiod},
+         suffix={Mathew J.\bibnamedelima King},
+         suffixi={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim
+  K\bibinitperiod},
+         given={Kathrin C. Sole William G.\bibnamedelima Davenport},
+         giveni={K\bibinitperiod\bibinitdelim C\bibinitperiod S\bibinitperiod
+  W\bibinitperiod G\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {ELSEVIER}%
+    }
+    \strng{namehash}{MESMJKKCSWGD1}
+    \strng{fullhash}{MESMJKKCSWGD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Extractive Metallurgy Of Copper}
+    \field{year}{2011}
+  \endentry
+
+  \entry{langmuir}{article}{}
+    \name{author}{1}{}{%
+      {{hash=LI}{%
+         family={Langmuir},
+         familyi={L\bibinitperiod},
+         given={Irving},
+         giveni={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LI1}
+    \strng{fullhash}{LI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1021/ja02242a004
+    \endverb
+    \verb{eprint}
+    \verb https://doi.org/10.1021/ja02242a004
+    \endverb
+    \field{number}{9}
+    \field{pages}{1361\bibrangedash 1403}
+    \field{title}{The Adsorption Of Gases On Plane Surfaces Of Glass, Mica And
+  Platinum.}
+    \verb{url}
+    \verb https://doi.org/10.1021/ja02242a004
+    \endverb
+    \field{volume}{40}
+    \field{journaltitle}{Journal of the American Chemical Society}
+    \field{year}{1918}
+  \endentry
+
+  \entry{Dolde2011}{article}{}
+    \name{author}{11}{}{%
+      {{hash=DF}{%
+         family={Dolde},
+         familyi={D\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=FH}{%
+         family={Fedder},
+         familyi={F\bibinitperiod},
+         given={H.},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=DMW}{%
+         family={Doherty},
+         familyi={D\bibinitperiod},
+         given={M.\bibnamedelima W.},
+         giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+      {{hash=NT}{%
+         family={N{\"o}bauer},
+         familyi={N\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Rempp},
+         familyi={R\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=BG}{%
+         family={Balasubramanian},
+         familyi={B\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=WT}{%
+         family={Wolf},
+         familyi={W\bibinitperiod},
+         given={T.},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=RF}{%
+         family={Reinhard},
+         familyi={R\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=HLCL}{%
+         family={Hollenberg},
+         familyi={H\bibinitperiod},
+         given={L.\bibnamedelima C.\bibnamedelima L.},
+         giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+      {{hash=JF}{%
+         family={Jelezko},
+         familyi={J\bibinitperiod},
+         given={F.},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=WJ}{%
+         family={Wrachtrup},
+         familyi={W\bibinitperiod},
+         given={J.},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group SN -}%
+    }
+    \strng{namehash}{DF+1}
+    \strng{fullhash}{DFFHDMWNTRFBGWTRFHLCLJFWJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{459 EP \bibrangedash }
+    \field{title}{Electric-field sensing using single diamond spins}
+    \verb{url}
+    \verb https://doi.org/10.1038/nphys1969
+    \endverb
+    \field{volume}{7}
+    \field{journaltitle}{Nature Physics}
+    \field{year}{2011}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{NatureMaze}{article}{}
+    \name{author}{1}{}{%
+      {{hash=M}{%
+         family={Maze},
+         familyi={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{M1}
+    \strng{fullhash}{M1}
+    \field{labelnamesource}{author}
+  \endentry
+
+  \entry{kiusalaas}{book}{}
+    \name{author}{1}{}{%
+      {{hash=KJ}{%
+         family={Kiusalaas},
+         familyi={K\bibinitperiod},
+         given={Jaan},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {SIAM}%
+    }
+    \strng{namehash}{KJ1}
+    \strng{fullhash}{KJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Finite Difference Methods for Ordinary and Partial
+  Differential Equations}
+    \field{year}{2007}
+  \endentry
+
+  \entry{leveque_ch1}{inbook}{}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Finite Difference Methods for Ordinary and Partial
+  Differential Equations}
+    \verb{doi}
+    \verb 10.1137/1.9780898717839.ch1
+    \endverb
+    \verb{eprint}
+    \verb https://epubs.siam.org/doi/pdf/10.1137/1.9780898717839.ch1
+    \endverb
+    \field{pages}{3\bibrangedash 11}
+    \field{title}{1. Finite Difference Approximations}
+    \verb{url}
+    \verb https://epubs.siam.org/doi/abs/10.1137/1.9780898717839.ch1
+    \endverb
+  \endentry
+\enddatalist
 \endinput
-
